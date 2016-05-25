@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>虚机详情</title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+	
+	//////////////////////
+	$(".select2").click(function(){
+		if($(this).find(".select2_1_list").is(":hidden")){
+			$(this).find(".select2_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select2_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select2 .select2_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select2 span").text(thistext);
+		$(this).parents("dt").find(".select2_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+	
+	//滚动js 50x50
+	$(".m_slide_box").each(function(){
+		var list = $(this).find(".ul_list ul");
+		var items = $(this).find(".ul_list ul li");
+		var prev = $(this).find(".left a");
+		var next = $(this).find(".right a");
+		var item_width = 160; //单个宽度
+		var sum = items.size(); //item数量
+		var sum_width = item_width * sum; //总宽度
+		var index = 0; //索引
+		if(sum > 1){
+			prev.addClass("disabled");
+			list.width(sum_width);
+			prev.click(function(){
+				if(index > 0){
+					index --;
+					next.removeClass("disabled");
+					list.animate({left:-item_width*index});
+				}
+				if(index == 0){
+					$(this).addClass("disabled");
+				}
+			});
+			next.click(function(){
+				if(index < sum - 6){
+					index ++;
+					prev.removeClass("disabled");
+					list.animate({left:-item_width*index});
+				}
+				if(index == sum - 6){
+					$(this).addClass("disabled");
+				}
+			});
+		}
+	});
+	
+	
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+   <div class="header_m">
+   <div class="logo"><img src="images/default/logo1.jpg"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+   </div>
+</div>
+<div class="main">
+   <div class="SubNav m_right">
+      <ul class="accordion">
+         <li>
+              <div class="pannel">
+                 <div class="left1 pos1 current"></div>
+                 <div class="left2 current"><a href="#">我的云平台</a></div>
+              </div>
+              <ul class="sub-menu">
+                 <li><a href="#" >云平台1</a></li>
+                 <li style="border-bottom:none;"><a href="#" class="current">云平台1</a></li>
+              </ul>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+                <div class="left1 pos2"></div>
+                <div class="left2"><a href="#">待办事项<span class="span">15</span></a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                 <div class="left1 pos3"></div>
+                 <div class="left2"><a href="#">租户管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                <div class="left1 pos4"></div>
+                <div class="left2"><a href="#">虚机管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class=" pannel">
+                 <div class="left1 pos5"></div>
+                 <div class="left2"><a href="#">模板管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                <div class="left1 pos6"></div>
+                <div class="left2"><a href="#">云资源管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+             <div class="pannel">
+                <div class="left1 pos7"></div>
+                <div class="left2"><a href="#">公告管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+             <div class="pannel">
+                <div class="left1 pos8"></div>
+                <div class="left2"><a href="#">消费明细</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+                <div class="left1 pos9"></div>
+                <div class="left2"><a href="#">资源镜像</a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+               <div class="left1 pos10"></div>
+               <div class="left2"><a href="#">虚机日志</a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+      </ul>
+   </div>
+   <!----右侧---->
+   <div class="mainPanel">
+      <div class="toph"><img src="images/default/home.png"/><a href="#">云管理员</a></div>
+      <!----滚动---->
+      <div class="list m_slide_box">
+                <div class="left"><a href="javascript:void(0);" onfocus="this.blur();">上翻</a></div>
+                <div class="ul_list">
+                    <ul>
+                        <li>
+                          <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                        </li>
+                        <li>
+                          <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                         </li>
+                        <li>
+                            <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                        </li>
+                        <li>
+                            <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                        </li>
+                        <li>
+                            <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                        </li>
+                        <li>
+                             <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                        </li>
+                        <li>
+                             <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                        </li>
+                        <li>
+                             <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                        </li>
+                        <li>
+                            <div class="left_pic"><a href="#"></a></div>
+                          <div class="left_txt">Vm_01</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right"><a href="javascript:void(0);" onfocus="this.blur();">下翻</a></div>
+                <div class="clear"></div>
+            </div>
+      <!----结束---->
+      <div class="clear"></div>
+    <div class="cloud_con">
+         <div class="cloud_con_left">
+            <h2 class="bbt">Server2008</h2>
+            <div class="cmain">
+              <div class="pic_default"><img src="images/default/default.jpg"/></div>
+            <div class="btn_default">
+                  <ul>
+                     <li><a href="#" class="current">开机</a></li>
+                     <li><a href="#">关机</a></li>
+                     <li><a href="#">重启</a></li>
+                     <li><a href="#">暂停</a></li>
+                     <li><a href="#">连接</a></li>
+                  </ul>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="tps">虚机运行状态：正在运行</div>
+         </div>
+         <div class="cloud_con_left">
+            <h2 class="bbt">系统属性</h2>
+            <div class="fmain">
+                <ul>
+                   <li>VmName：CVm20140805003</li>
+                   <li>操作系统：64-bit edition of Windows Server 2012 Datacenter</li>
+                   <li>CPU核数：1核</li>
+                   <li>内存：1024M</li>
+                   <li>硬盘：30G</li>
+                   <li>IP地址：192.168.10.221</li>
+                   <li>光驱：挂载资源<span>挂载资源</span></li>
+                </ul>               
+            <div class="clear"></div>
+            </div>
+         </div>
+         <div class="box">
+            <p class="box1"><img src="images/default/cloud21.jpg"/></p>
+            <p class="box2">点击这里申请升级虚机</p>
+            <p class="box3"><a href="#"><img src="images/default/cloud22.jpg"/></a></p>
+         </div>
+        <div class="clear"></div>
+      </div>
+      <div class="wth">
+        <h2>使用概览</h2>
+        <div class="newx">
+           <span><img src="images/default/n1.jpg"/>李某人</span>
+           <span><img src="images/default/n2.jpg"/>其他角色</span>
+           <span><img src="images/default/n3.jpg"/>可用</span>
+        <div class="clear"></div>
+        </div>
+        <div class="x-a">
+           <div class="x-a_z">50</div>
+           <div class="x-a_x">70</div>
+        </div>
+        <div class="s-x">
+           <span>李某人</span>
+           <span style="float:right;">共40核</span>
+        <div class="clear"></div>
+        </div>
+      <div class="clear"></div>
+      </div>
+<div class="wth">
+        <h2>硬盘</h2>
+      <table width="1029" border="0" cellspacing="0" cellpadding="0" class="clst">
+  <tr>
+    <th width="241" height="32">名称</td>
+    <th width="261">类型</td>
+    <th width="253">主机缓存</td>
+    <th width="274">主机缓存</td>
+  </tr>
+  <tr>
+    <td height="32">microstot</td>
+    <td>操作系统盘</td>
+    <td>读/写</td>
+    <td>读/写</td>
+  </tr>
+  <tr>
+    <td height="32">microstot</td>
+    <td>操作系统盘</td>
+    <td>读/写</td>
+    <td>读/写</td>
+  </tr>
+</table>
+
+      <div class="clear"></div>
+      </div>
+      <div class="wth">
+        <h2>扩展</h2>
+      <table width="1029" border="0" cellspacing="0" cellpadding="0" class="clst">
+  <tr>
+    <th width="241" height="32">名称</td>
+    <th width="261">版本
+    <th width="253">状态</td>
+    <th width="274">消息
+  </tr>
+  <tr>
+    <td height="32">microstot</td>
+    <td>操作系统盘</td>
+    <td>读/写</td>
+    <td>读/写</td>
+  </tr>
+  <tr>
+    <td height="32">microstot</td>
+    <td>操作系统盘</td>
+    <td>读/写</td>
+    <td>读/写</td>
+  </tr>
+</table>
+
+      <div class="clear"></div>
+      </div>
+   </div>
+<div class="clear"></div>
+</div>
+</body>
+</html>

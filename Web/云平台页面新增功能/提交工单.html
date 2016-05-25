@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>应用虚机监控列表</title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript"  src="js/style.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+
+</div>
+<div id="header">
+   <div class="header_m">
+      <div class="logo"><img src="images/default/logo1.jpg"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+  </div>
+</div>
+<div class="main">
+   <div class="SubNav">
+    <ul class="accordion">
+             <li>
+                  <div class="pannel">
+                     <div class="left1 pos1"></div>
+                     <div class="left2"><a href="首页.html">首页</a></div>
+                  </div>
+                 <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos2"></div>
+                    <div class="left2"><a href="创建虚拟机.html">创建虚拟机</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos3 "></div>
+                    <div class="left3 "><a href="服务器硬件监控.html">服务器监控硬件</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos4 "></div>
+                    <div class="left4 "><a href="群集监控.html">群集监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos5"></div>
+                    <div class="left5"><a href="设置报警规则.html">设置报警规则</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos6"></div>
+                    <div class="left6"><a href="审批租户.html">审批租户</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos7"></div>
+                    <div class="left7"><a href="数据中心监控.html">数据中心监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos8 current"></div>
+                    <div class="left8 current"><a href="提交工单.html">提交工单</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos9"></div>
+                    <div class="left9"><a href="虚拟机升级.html">虚拟机升级</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos10"></div>
+                    <div class="left10"><a href="巡检报告.html">巡检报告</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos11"></div>
+                    <div class="left11"><a href="巡检报告列表.html">巡检报告列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos12"></div>
+                    <div class="left12"><a href="巡检设置.html">巡检设置</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos14"></div>
+                    <div class="left14"><a href="应用虚机列表2.html">应用虚机列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             
+          </ul>
+
+   </div>
+   
+   
+   <!----右侧---->
+ <div class="mainPanel">
+     <div class="toph" style="margin-bottom:20px;">
+     	<img src="images/default/home.png"/><a href="#">工单管理>提交工单</a>
+    </div>
+    <div class="content">
+        <div class="contTBottom">
+        	<div class="contTBottomH">
+                <dl>
+                    <dt><span>*</span> 内部/外部工单：</dt>
+                    <dd>
+                        <p class="inward">
+                    	<input type="radio" name="neibu" value="neibu" checked="checked"/> 内部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="neibu"  value="waibu" />外部
+                        </p>
+                        <p class="outward">向软件提供商提交工单</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="contTBottomM">
+            	<dl>
+            		<dt><span style="color:#F00;">*</span> 选择工单类型：</dt>
+                    <dd>
+                    <input type="radio" name="neibu" value="neibu" checked="checked"/> 平台BUG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="neibu"  value="waibu" checked="checked"/>系统故求助障 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="neibu"  value="shiyongbangzhu" checked="checked"/>使用帮助 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input type="radio" name="neibu"  value="yijianfankui" checked="checked"/>意见反馈 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </dd>
+            	</dl>
+            </div>
+            <div class="contTBottomN">
+            	<dt>
+                <span style="color:#F00;">*</span> 问题描述：
+                </dt>
+                <dd>
+                <textarea style="width:744px; height:180px;">
+                </textarea>
+                </dd>
+            </div>
+           <div class="contTBottomF">
+           		<dt>
+                提交人信息：
+                </dt>
+                <dd>
+                	刘延辉 156493708 liuyanhui@hyitech.com
+                </dd>
+           </div> 
+           <div class="contTBottomE">
+           		<dt>
+                 上传附件：
+                </dt>
+                <dd>
+                    <a  href="#" class="file">
+                    <input type="file"  value="上传附件" class="file" />上传附件
+                    </a>
+                    <br />
+                	可以上传最多3个附件，每个附件大小不超过2MB 。附件支持的格式有：'jpg', 'bmp', 'png', 'gif','txt','rar','zip','doc','docx'
+                    <br />
+                    <br />
+                	<a href="#"><img src="images1/tijiao.png" width="100" height="40" /> </a>
+                </dd>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

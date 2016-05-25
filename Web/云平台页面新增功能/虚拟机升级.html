@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>虚拟机升级</title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript"  src="js/style.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div class="upUpu">
+    <h3><span class="closeG"></span></h3>
+    <div class="periodD">
+    	<dl>
+         	<dt><span>统计周期：5分钟</span> &nbsp;&nbsp;&nbsp;<span>统计方法：最大值</span></dt>
+            <dd>
+            	<p><span class="current">今日</span><span>两天</span><span>两月</span><span>五月</span><span>一年</span></p>
+            </dd>
+        </dl>
+    </div>
+ <div class="ciPan">
+	<h4>
+        	<span class="current">cpu</span><span>内存</span><span>磁盘</span><span>入流量</span><span>出流量</span>
+            </h4>
+        <ul>
+        	<li class="current"><img src="images1/u156.png" width="780"  /></li>
+        	<li><img src="images1/u155.png" width="780"  /></li>
+        	<li><img src="images1/u154.png" width="780"  /></li>
+        	<li><img src="images1/uik.png" width="780" height="295" /></li>
+            <li><img src="images1/uih.png" width="780"/></li>
+        </ul>
+   
+ </div>
+
+</div>
+<div class="upU">
+	<div class="shengji">
+     <span style="color:#F00;font-size:18px">虚拟机升级 审批</span>
+     <span class="spanR"></span>
+    </div>
+     <dl>
+     	<dt>
+        	<h2 class="content">
+                <span>升级信息</span>
+               
+            </h2>
+             <div class="messag">
+           	   <p><span>虚拟主机：</span><span>Test001</span></p>
+               <p><span>CPU : </span><span>1核<img src="images1/arr.png" width="15" height="6" />2核</span></p>
+                <p><span>内存 :</span> <span>4G<img src="images1/arr.png" width="15" height="6" />2G</span></p>
+                <p><span>系统盘 : </span> <span>60G</span></p>
+                <p><span>数据盘1：60G</span>  <span>数据盘2 : 20G</span></p>
+                <p><span>所属云：教学云</span> </p>
+                <p><span>所属网络：教学网络</span> </p>
+                <p><span>申请日期：</span> <span>2015-02-02 10:20</span></p>
+                <p><span>到期日期：</span> <span>2015-02-02 10:20</span></p>
+                
+             </div>
+        </dt>
+        <dd>
+        	<h2 class="content">
+                 <span class="zhanyong">云资源占用情况</span>
+                 <span class="history"><a href="#">使用历史</a></span>
+            </h2>              
+            <ul>
+            	<li>
+                	<img src="images1/hong.png" width="140"  />
+                    <p>CPU使用率 (共40核)</p>
+                </li>
+            	<li>
+                    <img src="images1/lvse.png" width="140"  />
+                    <p>内存使用率 (共60G)</p>
+                </li>
+            	<li>
+                	<img src="images1/lanse.png" width="140"  />
+                    <p>硬盘使用率 (共600G)</p>
+                </li>
+            </ul>
+            
+             <p class="shuoming">
+                <span>申请说明:</span> <span><textarea name="" id="" style="width:400px;height:80px;"></textarea></span>
+            </p>
+            <p class="anniu">
+            	<span><a href="#"><img src="images1/tongguo.png" width="100" height="30" /></a></span> <span><a href="#"><img src="images1/juju.png" width="100" height="30" /></a></span>
+            </p>
+        </dd>
+     </dl>
+</div>
+
+
+
+
+
+<div class="downD">
+</div>
+<div id="header">
+   <div class="header_m">
+      <div class="logo"><img src="images/default/logo1.jpg"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+  </div>
+</div>
+<div class="main">
+   <div class="SubNav">
+     <ul class="accordion">
+             <li>
+                  <div class="pannel">
+                     <div class="left1 pos1"></div>
+                     <div class="left2"><a href="首页.html">首页</a></div>
+                  </div>
+                 <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos2"></div>
+                    <div class="left2"><a href="创建虚拟机.html">创建虚拟机</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos3 "></div>
+                    <div class="left3 "><a href="服务器硬件监控.html">服务器监控硬件</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos4 "></div>
+                    <div class="left4 "><a href="群集监控.html">群集监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos5"></div>
+                    <div class="left5"><a href="设置报警规则.html">设置报警规则</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos6"></div>
+                    <div class="left6"><a href="审批租户.html">审批租户</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos7"></div>
+                    <div class="left7"><a href="数据中心监控.html">数据中心监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos8"></div>
+                    <div class="left8"><a href="提交工单.html">提交工单</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos9 current"></div>
+                    <div class="left9 current"><a href="虚拟机升级.html">虚拟机升级</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos10"></div>
+                    <div class="left10"><a href="巡检报告.html">巡检报告</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos11"></div>
+                    <div class="left11"><a href="巡检报告列表.html">巡检报告列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos12"></div>
+                    <div class="left12"><a href="巡检设置.html">巡检设置</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos14"></div>
+                    <div class="left14"><a href="应用虚机列表2.html">应用虚机列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             
+          </ul>
+
+   </div>
+   
+   
+   <!----右侧---->
+   <div class="mainPanel">
+     <div class="toph">
+     	<img src="images/default/home.png"/><a href="#">虚机审批</a>
+    </div>
+    <div class="content">
+      <div class="weiPi">
+    	<ul>
+    		<li class="current">待审批</li>
+    		<li>已审批</li>
+    	</ul>
+       </div>
+      <div class="hirer">
+      	<dl>
+          <dt><span>申请人 ：<input type="" style="background:none;" /> </span> &nbsp;&nbsp;
+             <span>虚机名称 ：<input type="" style="background:none;" /> </span> &nbsp;&nbsp;
+             <span>申请日期 <input type="" /> 至 <input type="" /></span></dt>
+      	  <dd><img src="images1/chaxun.png" width="80" height="40" /></dd>
+      	</dl>
+      </div>
+      
+      
+           <div class="toplist">
+        <div class="toplist_left">待审批</div>
+        <div class="toplist_right">
+        </div>
+     </div> 
+     <table width="1028" class="clist" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th width="5%"><span class="ft">序号</span></th>
+            <th width="6%"><span class="ft">申请人<span></th>
+            <th width="9%"><span class="ft">虚机名称</span></th>
+            <th width="8%"><span class="ft">申请时间</span></th>
+            <th width="9%"><span class="ft">联系电话</span></th>
+            <th width="8%"><span class="ft">内存(G)</span></th>
+            <th width="10%"><span class="ft">CPU(核)</span></th>
+            <th width="10%"><span class="ft">硬盘(G)</span></th>
+            <th style="background:none;">操作</th>
+          </tr>
+          <tr style="width:59px; height:43px;text-align:center;">
+            <td>1</td>
+            <td>sslee</td>
+            <td style="color:#39F">window8 test</td>
+            <td>20</td>
+            <td>187585476</td>
+            <td>20</td>
+            <td>100</td>
+            <td>60</td>
+            <td><a href="#" class="shenpi">审批</a></td>
+          </tr>
+        </table>
+              <div class="pages">
+                 <p class="pages_home"><a href="#">首页</a></p> 
+                 <p class="pages_f"></p>
+                 <ul>
+                    <li><a href="#" class="current">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                 </ul>
+                 <p class="pages_e"></p>
+                 <p class="pages_home"><a href="#">尾页</a></p>
+      </div>
+      </div>
+</body>
+</html>

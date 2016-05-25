@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>弹出</title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+   <div class="header_m">
+     <div class="logo"><img src="images/default/logo1.jpg" alt="云计算信息门户"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+   </div>
+</div>
+<div class="main">
+   <div class="SubNav">
+      <ul class="accordion">
+         <li>
+              <div class="pannel">
+                 <div class="left1 pos1 current"></div>
+                 <div class="left2 current"><a href="#">我的云平台</a></div>
+              </div>
+              <ul class="sub-menu">
+                 <li><a href="#" >云平台1</a></li>
+                 <li style="border-bottom:none;"><a href="#" class="current">云平台1</a></li>
+              </ul>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+                <div class="left1 pos2"></div>
+                <div class="left2"><a href="#">待办事项<span class="span">15</span></a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                 <div class="left1 pos3"></div>
+                 <div class="left2"><a href="#">租户管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                <div class="left1 pos4"></div>
+                <div class="left2"><a href="#">虚机管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class=" pannel">
+                 <div class="left1 pos5"></div>
+                 <div class="left2"><a href="#">模板管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                <div class="left1 pos6"></div>
+                <div class="left2"><a href="#">云资源管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+             <div class="pannel">
+                <div class="left1 pos7"></div>
+                <div class="left2"><a href="#">公告管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+             <div class="pannel">
+                <div class="left1 pos8"></div>
+                <div class="left2"><a href="#">消费明细</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+                <div class="left1 pos9"></div>
+                <div class="left2"><a href="#">资源镜像</a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+               <div class="left1 pos10"></div>
+               <div class="left2"><a href="#">虚机日志</a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+      </ul>
+   </div>
+   <!----右侧---->
+   <div class="mainPanel">
+       <div class="pop-up">
+           <dl class="pop-up_top">
+             <dt>创建虚机</dt>
+             <dd><a href="#"><img src="images/default/close.png"/></a></dd>
+           </dl>
+           <div class="pop-up_all">
+             <div class="pop-up_cen fixed">
+              <div class="col">
+                  <ul>
+                    <li>
+                      <p class="ps1">虚机名称：</p>
+                      <p class="ps2"><input type="" value=""/></p>
+                    <div class="clear"></div>
+                    </li>
+                    <li>
+                      <p class="ps1">创建日期 ：</p>
+                      <dl class="ps2">
+                         <dt class="btleft"><input type="" value="" class="btleft_w" /></dt>
+                         <dd class="btright"><a href="#"><img src="images/default/data.png"/></a></dd>
+                      </dl>
+                    <div class="clear"></div>
+                    </li>
+                    <li>
+                      <p class="ps1">虚机类型：</p>
+                      <p class="ps2"><input type="" value=""/></p>
+                    <div class="clear"></div>
+                    </li>
+                 </ul>
+              </div>
+           <div class="clear"></div>
+         </div>
+             <div class="pop-up_gray">
+             <table width="426" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f8fa">
+  <tr>
+    <td width="86" height="35">虚机名称：</td>
+    <td colspan="3" align="left"><span class="ws">dddddddddddddd</span></td>
+    </tr>
+  <tr>
+    <td height="26">CPU(核)：</td>
+    <td width="126" align="left"><span class="ws">10</span></td>
+    <td width="71">内存（M）:</td>
+    <td width="143" align="left"><span class="ws">10</span></td>
+  </tr>
+  <tr>
+    <td height="26">硬盘(G)： </td>
+    <td align="left"><span class="ws">10</span></td>
+    <td>价格（元）:</td>
+    <td align="left"><span class="ws">10</span></td>
+  </tr>
+  <tr>
+    <td height="35">操作系统：</td>
+    <td colspan="3" align="left"><span class="ws">Win8</span></td>
+    </tr>
+</table>
+
+             </div>
+             <div class="tip"><span class="hong">提示信息：</span>虚机的默认账号为admin，密码为123.com</div> 
+             <dl class="btn">
+                <dt>确定</dt>
+                <dd>取消</dd>
+             <div class="clear"></div>
+             </dl>
+           <div class="clear"></div>
+           </div>
+     </div>
+   </div>
+<div class="clear"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>定期巡检》巡检周期设置</title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript"  src="js/style.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div class="up"></div>
+<div class="down">
+	<div class="downHeader">
+        <span class="xuanze">选择要监控的服务器</span>
+    	<span class="guan"><img src="images1/guan.png" width="14" height="14" /></span>
+    </div>
+    <div class="downM">
+    <div class="downMiddle">
+       <span class="xuniji">
+     	服务器名称/IP:&nbsp;<input type="text"  class="fuwuqi"/>&nbsp;&nbsp;
+        <input type="radio"  name="suzhuji" value="xuniji" checked="checked"/>虚拟机&nbsp;
+    	<input type="radio"  name="suzhuji" value="suzhuji"/>宿主机&nbsp;
+        </span>
+        <span class="pic">
+            <a href="#"><img src="images1/qun.png" width="80" height="40" /></a>
+            <a href="#"><img src="images1/chaxun.png" width="80" height="40" /></a>
+        </span>
+    </div>
+    <div class="downContent">
+    	<table width="778" class="clist" border="0" cellspacing="0" cellpadding="0" style="font-size:14px; margin:0 auto" >
+        <tr bgcolor="#FFFFFF">
+            <th width="8%" height="30"><span class="chk current"></span></th>
+            <th width="20%" height="30"><span class="ft">名称</span></th>
+            <th width="20%">IP地址</th>
+            <th width="20%">所属用户</th>
+            <th width="20%" style="background:none;">创建时间</th>
+        </tr>
+        <tr style="height:50px; text-align:center;">
+        	<td><span class="chk"></span></td>
+        	<td>Web服务器</td>
+        	<td>192.168.20.11</td>
+        	<td>刘先生</td>
+        	<td>2015-05-05 10:21</td>
+        </tr>
+          <tr style="height:50px; text-align:center;" bgcolor="#FFFFFF">
+        	<td><span class="chk"></span></td>
+        	<td>Web服务器</td>
+        	<td>192.168.20.11</td>
+        	<td>刘先生</td>
+        	<td>2015-05-05 10:21</td>
+        </tr>
+		<tr style="height:50px; text-align:center;">
+        	<td><span class="chk "></span></td>
+        	<td>Web服务器</td>
+        	<td>192.168.20.11</td>
+        	<td>刘先生</td>
+        	<td>2015-05-05 10:21</td>
+        </tr>
+        <tr style="height:50px; text-align:center;" bgcolor="#FFFFFF">
+        	<td><span class="chk"></span></td>
+        	<td>Web服务器</td>
+        	<td>192.168.20.11</td>
+        	<td>刘先生</td>
+        	<td>2015-05-05 10:21</td>
+        </tr>
+       <tr style="height:50px; text-align:center;">
+        	<td><span class="chk"></span></td>
+        	<td>Web服务器</td>
+        	<td>192.168.20.11</td>
+        	<td>刘先生</td>
+        	<td>2015-05-05 10:21</td>
+        </tr>
+
+         </table>
+    </div>
+          <div class="pages">
+      <p class="pages_home"><a href="#">首页</a></p> 
+         <p class="pages_f"></p>
+         <ul>
+            <li><a href="#" class="current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+         </ul>
+         <p class="pages_e"></p>
+         <p class="pages_home"><a href="#">尾页</a></p>
+     </div>
+      
+   </div>
+<div class="clear"></div>
+</div>
+
+    </div>
+<div id="header">
+   <div class="header_m">
+      <div class="logo"><img src="images/default/logo1.jpg"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+  </div>
+</div>
+<div class="main">
+   <div class="SubNav">
+     <ul class="accordion">
+             <li>
+                  <div class="pannel">
+                     <div class="left1 pos1"></div>
+                     <div class="left2"><a href="首页.html">首页</a></div>
+                  </div>
+                 <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos2"></div>
+                    <div class="left2"><a href="创建虚拟机.html">创建虚拟机</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos3 "></div>
+                    <div class="left3 "><a href="服务器硬件监控.html">服务器监控硬件</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos4 "></div>
+                    <div class="left4 "><a href="群集监控.html">群集监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos5"></div>
+                    <div class="left5"><a href="设置报警规则.html">设置报警规则</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos6"></div>
+                    <div class="left6"><a href="审批租户.html">审批租户</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos7"></div>
+                    <div class="left7"><a href="数据中心监控.html">数据中心监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos8"></div>
+                    <div class="left8"><a href="提交工单.html">提交工单</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos9"></div>
+                    <div class="left9"><a href="虚拟机升级.html">虚拟机升级</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos10"></div>
+                    <div class="left10"><a href="巡检报告.html">巡检报告</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos11"></div>
+                    <div class="left11"><a href="巡检报告列表.html">巡检报告列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos12 current"></div>
+                    <div class="left12 current"><a href="巡检设置.html">巡检设置</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos14"></div>
+                    <div class="left14"><a href="应用虚机列表2.html">应用虚机列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             
+          </ul>
+
+   </div>
+   
+   
+   <!----右侧---->
+ <div class="mainPanel">
+     <div class="toph" style="margin-bottom:20px;">
+     	<img src="images/default/home.png"/><a href="#">定期巡检 》 巡检周期设置</a>
+    </div>
+    <div class="content">
+    	<div class="OA">
+        	巡检项目：OA应用
+        </div>
+        <div class="period">
+        	<div class="periodH">
+            	<ul>
+            		<li>
+                         <span class="spanFirst">巡检周期 ：</span>
+                         <span class="spanSecond">
+                         <input type="radio" name="meitian" value="meitian"  checked="checked"/> 每天&nbsp;
+                         <input type="text" style="width:49px; height:26px;" /> : 
+                         <input type="text"  style="width:49px; height:26px;"/>
+                         </span>
+                    </li>
+            		<li>
+                    	 <span class="spanFirst"></span>
+                         <span class="spanSecond"><input type="radio" name="meitian" value="meizhou" checked="checked"/> 每周&nbsp;
+                          <select name="" id="" style="width:60px;height:30px;">
+                         	<option value="">星期一</option>
+                         	<option value="">星期二</option>
+                            <option value="">星期三</option>
+                            <option value="">星期四</option>
+                            <option value="">星期五</option>
+                            <option value="">星期六</option>
+                            <option value="">星期日</option>
+                         </select>&nbsp;
+                         <input type="text" style="width:49px; height:26px;" /> : 
+                         <input type="text"  style="width:49px; height:26px;"/>
+                         </span>
+                    </li>
+            		<li>
+                    	 <span class="spanFirst"></span>
+                         <span class="spanSecond"><input type="radio" name="meitian" value="meiyue" checked="checked"/> 每月&nbsp;&nbsp;
+                          <select name="" id="" style="width:50px;height:30px;">
+                         	<option value="">1</option>
+                         	<option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                         	<option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                         </select>&nbsp;&nbsp;&nbsp;
+                         <input type="text" style="width:49px; height:26px;" /> : 
+                         <input type="text"  style="width:49px; height:26px;"/>
+                         </span>
+                    </li>
+            	</ul>
+            </div>
+          <div class="warm">
+           	<p>提醒：巡检时间请尽量避开业务高峰期，以免对服务器性能造成影响</p>
+              <p>
+                  <a href="巡检报告列表.html" ><img src="images1/u67.png" width="100" height="40" /></a>
+               	  <a href="#" ><img src="images1/list1.png" width="100" height="40" /></a>
+              </p>
+            </div>
+            <div class="control">
+            	<p class="addd" style="color:#09F;">+添加巡检目标</p>
+                <span class="My"></span>192.168.20.12|web服务器&nbsp; <span class="cuo"></span>&nbsp; &nbsp; 
+                <span class="hy"></span>192.168.20.12|web服务器&nbsp; <span class="cuo"></span>&nbsp;  
+                <span class="My"></span>192.168.20.12|web服务器&nbsp; <span class="cuo"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

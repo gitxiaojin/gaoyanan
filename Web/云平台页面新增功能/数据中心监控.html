@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>list1</title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript"  src="js/style.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+
+<div id="header">
+   <div class="header_m">
+      <div class="logo"><img src="images/default/logo1.jpg"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+  </div>
+</div>
+<div class="main">
+   <div class="SubNav">
+     <ul class="accordion">
+             <li>
+                  <div class="pannel">
+                     <div class="left1 pos1"></div>
+                     <div class="left2"><a href="首页.html">首页</a></div>
+                  </div>
+                 <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos2"></div>
+                    <div class="left2"><a href="创建虚拟机.html">创建虚拟机</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos3 "></div>
+                    <div class="left3 "><a href="服务器硬件监控.html">服务器监控硬件</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos4 "></div>
+                    <div class="left4 "><a href="群集监控.html">群集监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos5"></div>
+                    <div class="left5"><a href="设置报警规则.html">设置报警规则</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos6"></div>
+                    <div class="left6"><a href="审批租户.html">审批租户</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos7 current"></div>
+                    <div class="left7 current"><a href="数据中心监控.html">数据中心监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos8"></div>
+                    <div class="left8"><a href="提交工单.html">提交工单</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos9"></div>
+                    <div class="left9"><a href="虚拟机升级.html">虚拟机升级</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos10"></div>
+                    <div class="left10"><a href="巡检报告.html">巡检报告</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos11"></div>
+                    <div class="left11"><a href="巡检报告列表.html">巡检报告列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos12"></div>
+                    <div class="left12"><a href="巡检设置.html">巡检设置</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos14"></div>
+                    <div class="left14"><a href="应用虚机列表2.html">应用虚机列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             
+          </ul>
+
+   </div>
+   
+   
+   <!----右侧---->
+   <div class="mainPanel">
+     <div class="toph">
+     	<img src="images/default/home.png"/><a href="#">应用管理>数据中心监控</a>
+    </div>
+       <div class="middleHeader">
+            <div class="guanL">
+            <span> 所属用户： <input type="text" /></span> <span> &nbsp;&nbsp;应用名称： <input type="text" value='张三' maxlength="3" color="#ccc"></span>
+            </div>
+            <div class="guanR">
+               <input type="radio" checked="checked" name="guanliyuan" value="guanliyuan" /> 管理员
+               <input type="radio" checked="checked" name="guanliyuan" value="bumen" /> 部门
+            </div>
+       </div>
+     <div class="contMess">
+       	<div class="contMessH">
+         	<p><span class="icon"></span>&nbsp; &nbsp;<span>网络中心管理人：程宏军</span> &nbsp; &nbsp; &nbsp;<span>手机 ： 13265900</span>&nbsp; &nbsp; &nbsp;<span>座机 : 85660987</span></p>
+       </div>
+       <div class="contMessC">
+       		<ul>
+       			<li>
+                    <div class="TopHeader">
+                    	<ul>
+                            <li>
+                                <img src="images1/cpu.png" width="76" height="76" />
+                                <p>cpu</p>
+                            </li>
+                             <li>
+                                <img src="images1/neicun.png" width="75" height="75" />
+                                 <p>内存</p>
+                            </li>
+                            <li>
+                               <img src="images1/yignpan.png" width="76" height="76" />
+                               <p>硬盘</p>
+                            </li>
+                        </ul>
+                    </div>
+                  <div class="TopBottom">
+                    	<dl>
+                        	<dt><img src="images1/icon1.png" width="99" height="93" />
+                            	<p class="speed">网络：上传速度204kb/s</p>
+                            </dt>
+                            <dd><img src="images1/icon1.png" width="99" height="93" />
+                                 <p class="speed">网络：下载速度300kb/s</p>
+                            </dd>
+                        </dl>
+                  <div class="OA">OA系统健康指数 &nbsp;&nbsp;&nbsp;<span class="hong"></span>&nbsp;Web &nbsp;&nbsp;&nbsp;<span class="huang"></span>&nbsp;Data </div>
+                  <div class="bg"></div>
+                  <p class="phone">
+                   <span> 售后：南京金智</span> <span>手机：1583057498</span><br/>
+                   <span>座机：8660047</span> <span>服务期限：2015年6月至九月</span>
+                  </p>
+               </div>
+              </li>
+       			<li>
+                    <div class="TopHeader">
+                    	<ul>
+                            <li>
+                                <img src="images1/cpu.png" width="76" height="76" />
+                                <p>cpu</p>
+                            </li>
+                             <li>
+                                <img src="images1/neicun.png" width="75" height="75" />
+                                 <p>内存</p>
+                            </li>
+                            <li>
+                               <img src="images1/yignpan.png" width="76" height="76" />
+                               <p>硬盘</p>
+                            </li>
+                        </ul>
+                    </div>
+                  <div class="TopBottom">
+                    	<dl>
+                        	<dt><img src="images1/icon1.png" width="99" height="93" />
+                            	<p class="speed">网络：上传速度204kb/s</p>
+                            </dt>
+                            <dd><img src="images1/icon1.png" width="99" height="93" />
+                                 <p class="speed">网络：下载速度300kb/s</p>
+                            </dd>
+                        </dl>
+                  <div class="OA">OA系统健康指数 &nbsp;&nbsp;&nbsp;<span class="hong"></span>&nbsp;Web &nbsp;&nbsp;&nbsp;<span class="huang"></span>&nbsp;Data </div>
+                  <div class="bg"></div>
+                  <p class="phone">
+                   <span> 售后：南京金智</span> <span>手机：1583057498</span><br/>
+                   <span>座机：8660047</span> <span>服务期限：2015年6月至九月</span>
+                  </p>
+               </div>
+              </li>
+       			<li>
+                    <div class="TopHeader">
+                    	<ul>
+                            <li>
+                                <img src="images1/cpu.png" width="76" height="76" />
+                                <p>cpu</p>
+                            </li>
+                             <li>
+                                <img src="images1/neicun.png" width="75" height="75" />
+                                 <p>内存</p>
+                            </li>
+                            <li>
+                               <img src="images1/yignpan.png" width="76" height="76" />
+                               <p>硬盘</p>
+                            </li>
+                        </ul>
+                    </div>
+                  <div class="TopBottom">
+                    	<dl>
+                        	<dt><img src="images1/icon1.png" width="99" height="93" />
+                            	<p class="speed">网络：上传速度204kb/s</p>
+                            </dt>
+                            <dd><img src="images1/icon1.png" width="99" height="93" />
+                                 <p class="speed">网络：下载速度300kb/s</p>
+                            </dd>
+                        </dl>
+                  <div class="OA">OA系统健康指数 &nbsp;&nbsp;&nbsp;<span class="hong"></span>&nbsp;Web &nbsp;&nbsp;&nbsp;<span class="huang"></span>&nbsp;Data </div>
+                  <div class="bg"></div>
+                  <p class="phone">
+                   <span> 售后：南京金智</span> <span>手机：1583057498</span><br/>
+                   <span>座机：8660047</span> <span>服务期限：2015年6月至九月</span>
+                  </p>
+               </div>
+              </li>
+                     			<li>
+                    <div class="TopHeader">
+                    	<ul>
+                            <li>
+                                <img src="images1/cpu.png" width="76" height="76" />
+                                <p>cpu</p>
+                            </li>
+                             <li>
+                                <img src="images1/neicun.png" width="75" height="75" />
+                                 <p>内存</p>
+                            </li>
+                            <li>
+                               <img src="images1/yignpan.png" width="76" height="76" />
+                               <p>硬盘</p>
+                            </li>
+                        </ul>
+                    </div>
+                  <div class="TopBottom">
+                    	<dl>
+                        	<dt><img src="images1/icon1.png" width="99" height="93" />
+                            	<p class="speed">网络：上传速度204kb/s</p>
+                            </dt>
+                            <dd><img src="images1/icon1.png" width="99" height="93" />
+                                 <p class="speed">网络：下载速度300kb/s</p>
+                            </dd>
+                        </dl>
+                  <div class="OA">OA系统健康指数 &nbsp;&nbsp;&nbsp;<span class="hong"></span>&nbsp;Web &nbsp;&nbsp;&nbsp;<span class="huang"></span>&nbsp;Data </div>
+                  <div class="bg"></div>
+                  <p class="phone">
+                   <span> 售后：南京金智</span> <span>手机：1583057498</span><br/>
+                   <span>座机：8660047</span> <span>服务期限：2015年6月至九月</span>
+                  </p>
+               </div>
+              </li>
+                     			<li>
+                    <div class="TopHeader">
+                    	<ul>
+                            <li>
+                                <img src="images1/cpu.png" width="76" height="76" />
+                                <p>cpu</p>
+                            </li>
+                             <li>
+                                <img src="images1/neicun.png" width="75" height="75" />
+                                 <p>内存</p>
+                            </li>
+                            <li>
+                               <img src="images1/yignpan.png" width="76" height="76" />
+                               <p>硬盘</p>
+                            </li>
+                        </ul>
+                    </div>
+                  <div class="TopBottom">
+                    	<dl>
+                        	<dt><img src="images1/icon1.png" width="99" height="93" />
+                            	<p class="speed">网络：上传速度204kb/s</p>
+                            </dt>
+                            <dd><img src="images1/icon1.png" width="99" height="93" />
+                                 <p class="speed">网络：下载速度300kb/s</p>
+                            </dd>
+                        </dl>
+                  <div class="OA">OA系统健康指数 &nbsp;&nbsp;&nbsp;<span class="hong"></span>&nbsp;Web &nbsp;&nbsp;&nbsp;<span class="huang"></span>&nbsp;Data </div>
+                  <div class="bg"></div>
+                  <p class="phone">
+                   <span> 售后：南京金智</span> <span>手机：1583057498</span><br/>
+                   <span>座机：8660047</span> <span>服务期限：2015年6月至九月</span>
+                  </p>
+               </div>
+              </li>
+              <li>
+                    <div class="TopHeader">
+                    	<ul>
+                            <li>
+                                <img src="images1/cpu.png" width="76" height="76" />
+                                <p>cpu</p>
+                            </li>
+                             <li>
+                                <img src="images1/neicun.png" width="75" height="75" />
+                                 <p>内存</p>
+                            </li>
+                            <li>
+                               <img src="images1/yignpan.png" width="76" height="76" />
+                               <p>硬盘</p>
+                            </li>
+                        </ul>
+                    </div>
+                  <div class="TopBottom">
+                    	<dl>
+                        	<dt><img src="images1/icon1.png" width="99" height="93" />
+                            	<p class="speed">网络：上传速度204kb/s</p>
+                            </dt>
+                            <dd><img src="images1/icon1.png" width="99" height="93" />
+                                 <p class="speed">网络：下载速度300kb/s</p>
+                            </dd>
+                        </dl>
+                  <div class="OA">OA系统健康指数 &nbsp;&nbsp;&nbsp;<span class="hong"></span>&nbsp;Web &nbsp;&nbsp;&nbsp;<span class="huang"></span>&nbsp;Data </div>
+                  <div class="bg"></div>
+                  <p class="phone">
+                   <span> 售后：南京金智</span> <span>手机：1583057498</span><br/>
+                   <span>座机：8660047</span> <span>服务期限：2015年6月至九月</span>
+                  </p>
+               </div>
+              </li>
+
+       		</ul>
+       </div>
+     </div>
+     </div>  
+</body>
+</html>

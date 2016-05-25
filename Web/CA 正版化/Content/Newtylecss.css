@@ -1,0 +1,367 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body{margin:0;padding:0;list-style:none;font-family:"微软雅黑"; font-size:12px;border:0;}
+body{line-height: 1.428571429;}
+body{background:url(../Images/shuomingbg.png) center top no-repeat;}
+/*全局公共样式控制*/
+a:link,a:hover{list-style:none;text-decoration:none; cursor:pointer;}
+a:visited{list-style:none; text-decoration:none;}
+ul,ul li{list-style:none;margin:0;padding:0;}
+.marbot{margin-top:30px;} 
+input{border:none;}
+/********************第一部分推广的编辑*****************************/
+.banner{background:url(../Images/banner.png) no-repeat;height:310px;width:100%;display:none;position:relative;}
+.banner span{background:url(../Images/cha.png) no-repeat; width:38px;height:38px;display:inline-block;position:absolute;right:50px;top:30px;cursor:pointer;}
+/********************第一部分NAVTop的编辑************************/
+.Navleft{width:10%;float:left;}
+.NavMiddle{width:40%;height:68px;float:left;}
+.dropmenu li.current{color:#FFF;heigth:50px;text-align:center;width:13%;}
+.dropmenu ul{width:100%;}
+.dropmenu li{float:left;color:#C8C8C8;line-height:68px;cursor:pointer;width:13%;height:50px; text-align:center;font-size:14px;}
+.head-v3{position:relative;z-index:100;min-width:1000px}
+.head-v3 .navigation-inner{margin:0 auto;width:980px;position:relative}
+/********************下拉菜单的编辑************************/
+.nav-down-menu{padding-top:30px;padding-bottom:10px;}
+.navigation-up{height:60px;}
+.navigation-up .navigation-v3{float:left;_margin-left:10px}
+.navigation-up .navigation-v3 ul{float:left}
+.navigation-up .navigation-v3 li{float:left;font:normal 16px/59px "microsoft yahei";color:#fff}
+.navigation-up .navigation-v3 .nav-up-selected{background:#344157}
+.navigation-up .navigation-v3 .nav-up-selected-inpage{background:#344157;}
+.navigation-up .navigation-v3 li h2{font-weight:normal;padding:0;margin:0;font-size:14px;line-height:67px;}
+.navigation-up .navigation-v3 li h2 a{padding:0 25px;color:#FFF;display:inline-block;height:60px;font-family:"microsoft yahei";cursor:pointer;}
+.navigation-down{position:absolute;top:0;left:0px;width:100%}
+.navigation-down li a{color:#FFF;}
+.navigation-down li a:hover{color:#99F;text-decoration:underline;}
+.navigation-down .nav-down-menu{width:100%;margin:0;background:#344157;position:absolute;top:0px;box-shadow:-1px -1px 5px #000;}
+.navigation-down .nav-down-menu .navigation-down-inner{margin:auto;width:1200px;position:relative}
+/********************以上是下拉菜单的编辑************************/
+.menu .hc_lnav{position:relative;}
+.menu .hc_lnav ul{position:absolute;left:165px;top:0;width:165px;z-index:10000;height:auto;box-shadow:4px 4px 5px -1px #999;
+border-right:1px #999 solid;border-bottom:1px #999 solid;background:#FFF;border-right:1px #99F solid;border-bottom:1px #99F solid;display:none;}
+.menu .hc_lnav ul li:hover{background:#E5E5E5;}
+.menu ul.hc_lnav .li01{height:40px;background-color:#F0F0F0;line-height:40px;text-align:center;cursor:pointer;box-shadow:1px -1px 0px rgba(255, 255, 255, 0.6) inset;border-bottom:1px solid rgba(9, 9, 9, 0.125);color:#5D5D5D;background:#F7F7F7;}
+.menu a:link,.menu a:hover{text-decoration:none;color:#FFF;}
+.menu a:visited{text-decoration:none;color:#FFF;}
+.menu ul .li01.current{background:#E5E5E5;color:#5D5D5D;}
+.menu ul .li01:hover{background:#E5E5E5;color:#5D5D5D;}
+.menu .head{height:50px;background:#9999ff;text-align:center;line-height:50px;color:#FFF;font-size:14px;font-weight:bold;}
+#subnav li{display:none;padding:30px 0 20px 0px;}
+#subnav li.current{display:block;}
+#subnav p a{color:#999;height:20px;display:inline-block;font-size:14px;}
+#subnav p a:hover{color:#09F; text-decoration:underline;}
+.navblock{position:absolute;width:100%;top:70px;background:#FFF;z-inidex:10;box-shadow:0 0 10px #999999;}
+.NavR{position:absolute;top:5px; right:0;}
+.NavSor{cursor:pointer;margin:0;}
+.NavTop{width:100%;height:28px;background:#E5E5E5; color:#999;padding-top:5px;font-size:12px;}
+.colour{color:#F00;}
+.NavT{position:relative;z-index:100;}
+.NavT .fixedd{width:100%;z-index:1000;background:#000;height:70px;box-shadow:1px 1px 5px #FFF inset;border-bottom:2px #9999ff solid;}
+.NavT .fixedd img{margin-top:10px;}
+.search{overflow:hidden;margin-top:17px;width:auto; }
+.txt{width:180px;height:35px;padding-left:12px;float:left;color:#CCC;font-size:12px;}
+.but{width:50px;height:35px;background:url(../Images/btn.png) center center no-repeat;background-color:#9999ff;float:left;}
+.but:hover{width:50px;height:35px;background:url(../Images/btn.png) center center no-repeat;background-color:#09F;}
+.hunt{margin-top:5px;font-size:12px;color:#999;}
+.menuAll{width:100%;height:auto;display:none;box-shadow:0 0 10px #CCCCCC;}
+.menuAll li{height:auto;display:none;padding-top:20px;font-size:14px;background:#FFF;padding-bottom:20px;}
+.menuAll li.current{display:block;}
+.itemAll li{display:none;background:#FFF;box-shadow:0 0 10px #CCC;padding:20px;}
+.itemAll li.current{display:block;}
+.cate{font-size:18px;color:#E5E5E5;height:30px;width:170px;border-bottom:1px #376A8F solid;}
+.wrapall{position:relative;}
+/********************第3部分content 软件切换的编辑************************/
+.nav-tabs{background:#E7E7E7;}
+.bit{border-right:1px #e5e5e5 solid;}
+.line{border-bottom:1px #e5e5e5 solid;background:#FFF;}
+/*.blong-itemT{margin-bottom:30px;}*/
+p.detail{margin-top:14px;height:16px;}
+p.detail span{width:67px;height:31px;border:1px solid #E5E5E5;display:inline-block;line-height:31px;text-align:center;cursor:pointer;margin-right:7px;}
+p.detail span:hover{background:#99F;color:#FFF;}
+.blong-itemo{border:1px solid #e5e5e5;margin-bottom:30px;background:rgba(255,255,255,0.3);margin-top:30px;height:120px;}
+.interchange{font-size:12px;color:#bababa;}
+.software{background:url(../Images/01.png) 10px center no-repeat;width:150px; height:50px;display:inline-block;padding-left:45px;padding-top:20px;color:#a8a8a8; }
+.Win{padding-top:10px;border-right:1px #E5E5E5 solid;height:110px;}
+.Win a{color:#999;}
+.soft{width:350px; height:50px;padding-top:20px;color:#a8a8a8;padding-left:190px;}
+.soft span{margin-left:20px;display:inline-block;height:40px;cursor:pointer;}
+.soft span.current{display:inline-block;float:left;border-bottom:2px #2577e3 solid;}
+.downLoad{background:url(../Images/download.png)left top no-repeat;width:17px;height:17px;display:inline-block;cursor:pointer;margin-right:10px;}
+.downLoad:hover{background:url(../Images/download.gif) no-repeat;}
+.Off{height:50px;line-height:50px;font-size:20px;}
+.Off .Off{background:url(../Images/Win.png) left center no-repeat;width:225px;height:50px;display:inline-block;}
+.Off span{background:url(../Images/Off.png) left center no-repeat;width:225px;height:50px;display:inline-block;}
+.introduction{height:100px;width:210px;padding-top:20px;padding-left:10px;overflow:hidden;}
+.introduction dt{float:left;width:70px;background:url(../Images/03.png) left center no-repeat;height:75px;transition:all 0.6s;cursor:pointer;
+-webkit-transition:all 0.6s;
+-ms-transition:all 0.6s;
+-o-transition:all 0.6s;
+-moz-transition:all 0.6s
+}
+.introduction dt:hover{ transform:rotateY(180deg);
+-webkit-transform:rotateY(180deg);
+-ms-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+
+}
+
+.introduction .dto{float:left;width:70px;background:url(../Images/windows.png) left center no-repeat;height:75px;}
+.introduction .dtT{float:left;width:70px;background:url(../Images/momo.png) left center no-repeat;height:75px;}
+.lie{width:100%;}
+.lie .software{background:url(../Images/02.png) 30px center no-repeat;width:165px; height:50px;display:inline-block;padding-left:65px;padding-top:20px;color:#000;font-size:14px;}
+.cp{height:125px;overflow:hidden;width:230px;padding-top:20px;}
+.cp dt{float:left;height:110px;width:70px; }
+.cp dt img{margin-left:8px; transition:all 0.6s;cursor:pointer;
+-webkit-transition:all 0.6s;
+-ms-transition:all 0.6s;
+-o-transition:all 0.6s;
+-moz-transition:all 0.6s
+}
+.cp dt img:hover{ transform:rotateY(180deg);
+-webkit-transform:rotateY(180deg);
+-ms-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+
+}
+.cp dd{float:right;height:110px;width:153px;line-height:20px;}
+@media (max-width:981px) {
+	}
+/********************切换************************/	
+.Hp li{display:none;}
+.Hp li.current{display:block;}
+.Wp li{display:none;}
+.Wp li.current{display:block;}
+.TiTlebg{background:#FFF;border-bottom:1px #9999ff solid;position:relative;}
+.Softlist span.current{background:#FFF;border-top:3px #9999ff solid;border-right:1px #9999ff solid;border-left:1px #9999ff solid;top:-1px;left:-1px;border-bottom:none;}
+.Softlist span{width:auto;height:35px;background:#F2F2F2;display:inline-block;float:right;line-height:24px;text-align:center;margin-top:20px;
+cursor:pointer;border-top:1px #E0E0E0 solid;border-bottom:1px solid #9999ff;border-left:1px #E0E0E0 solid;padding:5px;}
+.Softlist span:hover{background:#FFF;border-top:3px #9999ff solid;border-right:1px #9999ff solid;border-left:1px #9999ff solid;}
+.Softform{margin-top:1px;position:absolute;right:0;top:-5px;} 
+.Softlist{margin-top:1px;position:absolute;right:0;top:-5px;}
+.Softform span.current{background:#FFF;border-top:3px #9999ff solid;border-right:1px #9999ff solid;border-left:1px #9999ff solid;top:-1px;left:-1px;border-bottom:none;}
+.Softform span{width:auto;height:35px;background:#F2F2F2;display:inline-block;float:right;line-height:24px;text-align:center;margin-top:20px;
+cursor:pointer;border-top:1px #E0E0E0 solid;border-bottom:1px solid #9999ff;border-left:1px #E0E0E0 solid;padding:5px;}
+.Softform span:hover{background:#FFF;border-top:3px #9999ff solid;border-right:1px #9999ff solid;border-left:1px #9999ff solid;}
+
+/********************手机软件下载区************************/
+.blong-item3{margin-bottom:30px;}
+.blong-item3 .lie{background:#FFF;}
+.blong-item3 .lie .software{background:url(../Images/04.png) 30px center no-repeat;width:165px;height:50px;display:inline-block;padding-left:58px;padding-top:20px;color:#000;}
+.brick-item{height:220px;padding:20px 0;background:#FFF;transition:all 2s;width:180px;border-right:1px #E5E5E5 solid;position:relative;cursor:pointer;overflow:hidden;margin:0 auto;}
+.brick-item .review-wrapper{position:absolute;left:0;bottom:-40px;width:180px;height:40px;line-height:40px;}
+.brick-item .review-wrapper span{width:90px;height:40px;background:#9999ff;display:inline-block;float:left;text-align:center;color:#FFF;}
+.brick-item .review-wrapper span:hover{background:#7979fb;}
+.brick-item:hover{box-shadow:0 0 20px #999;}
+.figure-img{width:160px;height:98px;margin:0 auto 10px;padding-top:20px;text-align:center;}
+/********************左边区域************************/
+.main{height:145px;background:url(../Images/little-bg.png);margin-left:10px;margin-top:30px;}
+.main .head{height:40px;background:#d1dde1;line-height:40px;}
+.main .head span{background:url(../ImagesTu/zheng.png) 10px center no-repeat;padding-left:40px;color:#000;height:40px;display:inline-block;}
+.main p{height:40px;margin:0 auto;line-height:24px;font-size:16px;}
+.main p span.zhong{display:inline-block;background:url(../Images/iconW.png) 20px center no-repeat;padding-left:45px;}
+.main p span.Enicon{background:url(../Images/iconzhe.png) right bottom no-repeat; width:90px;height:45px;display:inline-block;}
+.main .promote span.zhong{display:inline-block;background:url(../Images/iconF.png) 20px center no-repeat;padding-left:45px;}
+.main .promote span.Enicon{background:url(../Images/iconzho.png) right bottom no-repeat; width:90px;height:45px;display:inline-block; cursor:pointer;}
+.main .promote span.Enicon:hover{background:url(../Images/iconzheH.png) right bottom no-repeat; width:90px;height:45px;display:inline-block;}
+/********************最新公告************************/
+.Notice{height:315px;background:#FFF;margin-left:10px;margin-bottom:30px;font-size:14px;}
+.Notice .head{height:40px;line-height:40px;background:url(../Images/bgg.png) center top no-repeat;text-align:center;color:#999;font-size:14px;}
+.Notice .head a{float:right;margin-right:10px;color:#9999ff;font-size:12px;}
+.Notice p{height:51px;border-bottom:1px #CCCCCC dashed;margin:0 auto;font-size:12px;padding:10px 16PX;}
+.Notice p:hover{color:#9999ff;}
+.Notice p.current{color:#9999ff;}
+.small{font-size:12px;}
+.Notice .experience img{margin:0 auto;}
+/********************下载排行榜************************/
+.seniority{height:auto;background:#FFF;margin-left:10px;margin-bottom:30px;}
+.seniority .head{height:40px;line-height:40px;background:url(../Images/bgg.png) center top no-repeat;text-align:center;color:#999;font-size:14px;}
+.seniority .head a{float:right;margin-right:10px;color:#9999ff;font-size:12px;}
+.seniority p{height:42px;line-height:40px;text-align:center;}
+.seniority p .pic{background:url(../Images/u29.png)24px 12px no-repeat;display:inline-block; padding-left:44px;}
+.seniority p .pico{background:url(../Images/u37.png) 24px 12px no-repeat;display:inline-block; padding-left:44px;}
+.seniority p .pict{background:url(../Images/u45.png) 24px 12px no-repeat;display:inline-block; padding-left:44px;}
+.seniority p .picf{background:url(../Images/u53.png) 24px 12px no-repeat;display:inline-block; padding-left:44px;}
+.seniority p .pic_tu{background:url(../Images/u50.png) 24px 12px no-repeat;display:inline-block; padding-left:44px;}
+.seniority p .Load{width:40px;height:25px;border:1px solid #e5e5e5;display:inline-block;line-height:25px;text-align:center;margin-left:36px;cursor:pointer;}
+.seniority p .Load:hover{background:#99F;color:#FFF;}
+/********************论坛贴吧************************/
+.shenji{margin-bottom:20px;}
+.shenji .shenji{margin:0 auto;}
+.forum{height:492px;background:#FFF;margin-left:10px;margin-bottom:40px;}
+.forum .head{height:40px;line-height:40px;background:url(../Images/bgg.png) center top no-repeat;text-align:center;color:#999;font-size:14px;}
+.forum .head a{float:right;margin-right:10px;color:#9999ff;font-size:12px;}
+.forum p{text-align:center;height:20px;line-height:21px;}
+.forum p span{width:5px;height:5px;background:#999;display:inline-block;}
+/********************footer************************/
+.footer{background:rgba(255,255,255,0.5);color:#9C9C9C;}
+.fasten{position:fixed;right:-162px;top:50%; cursor:pointer;}
+.fasten span{background:url(../ImagesTu/jishu.png) left center no-repeat;width:86px;height:67px;display:inline-block;}
+.all span{ position:absolute; left:-29px; top:50%; margin-top:-58px; cursor:pointer;}
+@media (max-width:981px) {
+.remain{display:none;}	
+.hut{display:none;}
+.main p span.Enicon{display:none}
+.main .promote span.Enicon,.seniority p .Load{display:none}
+.allow{display:none;}
+.search{display:none;}
+/*.NavMiddle{display:none;}
+*/
+.NavMiddle{width:100%;font-size:12px;}
+}
+/*第一部分公共样式控制*/
+.bordNo{border:none;}
+.tab-wrap{margin-top:30px;}
+/****************************************************************以上为CA首页********************************************************************/
+.main-site{height:258px;background:#FFF;transition:all 2s;cursor:pointer;position:relative;overflow:hidden;}
+.main-site .Cha{height:38px;}
+.main-site .Cha span{width:30px;height:30px;display:inline-block; border-radius:50%;background:#993;position:absolute;color:#FFF;text-align:center;line-height:30px;}
+.main-site .Cha .number{background:#8cc63f;right:70px;top:10px;}
+.main-site .Cha .chinese{background:#f7a603;right:20px;top:10px;}
+.main-site dl{heigth:auto;}
+.main-site .num{margin-right:40px;}
+.main-site .big{margin-right:4px;}
+.main-site dl{width:auto;overflow:hidden;margin:0 auto;}
+.main-site dl dt{height:70px;background:url(../Images/windows.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.Offone{height:70px;background:url(../Images/Office.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.taobao{height:70px;background:url(../Images/taobao.png)55px top no-repeat;width:123px;}
+.main-site dl dt.tengxun{height:70px;background:url(../Images/tngxun.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.qiyi{height:70px;background:url(../Images/qiyi.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.huohu{height:70px;background:url(../Images/huohu.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.guge{height:70px;background:url(../Images/guge.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.PS{height:70px;background:url(../Images/ps.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.xiangji{height:70px;background:url(../Images/xiangji.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.weibo{height:70px;background:url(../Images/weibo.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.mai{height:70px;background:url(../Images/mai.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.WinSeven{height:70px;background:url(../Images/windowse.png) 55px top no-repeat;width:123px;}
+.main-site dl dt.OffSeven{height:70px;background:url(../Images/office2007.png) 55px top no-repeat;width:123px;}
+
+
+
+.main-site dd span.xing{display:inline-block;width:15px;height:14px;background:url(../Images/xingyi.png) no-repeat;}
+.main-site dd span{background:url(../Images/xing2.png) no-repeat;display:inline-block;width:15px;height:14px;}
+.main-site dl dd{height:70px;padding-top:10px;margin-left:10px;}
+.main-site:hover{box-shadow:0 0 10px #999;}
+.main-site p.Profession{color:#00acee;font-weight:bold;font-size:16px;}
+.main-site p.detail{text-align:center;margin-top:10px;}
+.main-site p.detail span{width:67px;height:31px;border:1px solid #E5E5E5;display:inline-block;line-height:31px;text-align:center;cursor:pointer;margin-left:10px;}
+.main-site p.detail span:hover{background:#F60;color:#FFF;}
+.location{color:#999;padding-top:25px;padding-bottom:30px;}
+.location span{background:url(../Images/location.png) no-repeat;padding-left:15px;}
+.advertise{color:#23AC38;font-size:22px;padding-top:25px;padding-bottom:15px;}
+.distance{margin-top:30px;}
+
+
+/****************************************************************以上为下载中心********************************************************************/
+.list-cp{font-size:22px;color:#333;margin-bottom:20px;}
+.cate-item{background:#FFF;padding-top:20px;height:auto;margin-bottom:30px;}
+.leftSide .Wicon{background:url(../Images/WinBg.png) center top no-repeat;height:235px;}
+.leftSide .jihuo{background:url(../Images/btn_banner_pc_down.png) center 20px no-repeat;height:100px;cursor:pointer;}
+.leftSide .jihuo:hover{background:url(../Images/btn-bannwr.png) center 20px no-repeat;height:100px;}
+.rightSide .squre{background:#61c275;width:11px;height:86px;display:inline-block;position:absolute;left:-6px;top:0;}
+.rightSide{border-left:1px #E5E5E5 solid;padding-bottom:20px;position:relative; }
+.rightSide .shade{color:#000;font-weight:bold;font-size:20px;}
+.mod{margin-top:10px;}
+.mod span.xing{display:inline-block;width:15px;height:14px;background:url(../Images/xingyi.png) left bottom no-repeat;}
+.mod span{background:url(../Images/xing2.png) left bottom no-repeat;display:inline-block;width:15px;height:14px;}
+.rightSide .hot-mod{margin-bottom:4px;}
+.rightSide .hot-brick{margin-bottom:4px;margin-left:40px;}
+.rightSide p.Profession{color:#00acee;font-weight:bold;font-size:14px;margin-bottom:30px;}
+.rightSide a{margin-bottom:30px;}
+.Wenben{margin-left:40px;line-height:24px;text-indent:2em;color:#999999;overflow:hidden;}
+.title{font-size:18px;color:#000;margin-bottom:10px;margin-left:44px;}
+.lose{display:none;}
+.more{cursor:pointer;}
+.camTitle{background-color:#F9F9F9;background:url(../Images/camTitleBg.jpg)  repeat-x;height:49px;}
+.camTitle a{height:46px;line-height:46px;}
+.camTitle a:link,.camTitle a:hover{text-decoration:none;}
+.camTitle a:visited{text-decoration:none;}
+.camTitle a.current{display:inline-block;padding:0 25px;border-top:3px #61c275 solid;height:46px;color:#000;border-right:1px #f4f4f4 solid;}
+.camTitle a{display:inline-block;padding:0 25px;height:46px;color:#000}
+.inputLong{background:#FFF;padding:20px;}
+#Art{height:100px;width:100%;background:url(../Images/inputBg.png) left top repeat-x; background-color:#FBFBFB;border:1px solid #C1C1C1;padding:5px;}
+.faction{width:400px;}
+.faction span{background:url(../Images/biaoqing.png) left top no-repeat;height:27px;display:inline-block;padding-left:30px;}
+.talk{float:right;}
+.comment{width:100%;padding:20px 0;overflow:hidden;border-bottom:1px #F4F4F4 solid;}
+.comment li{padding:10px 20px;}
+.comment li .name{color:#4095CE;}
+.gengduo{cursor:pointer;padding-top:20px;padding-bottom:20px;}
+.allow{height:50px;padding-top:9px;margin-top:5px;}
+.allow input{border:1px #FFFFFF solid;padding:3px 4px;width:130px;margin-bottom:40px;height:30px;background:rgba(255,255,255,0.5);}
+.sheet th{background:#E0E0E0;text-align:center;}
+td{text-align:center;}
+/****************************************************************以上为我的操作日志********************************************************************/
+.txte{border:1px #E5E5E5 solid;padding-left:12px;}
+.modal-header{background:#CCC;}
+.pointer a{cursor:pointer;}
+
+/****************************************************************软件类型管理********************************************************************/
+.tianjia{width:67px;height:31px;border:1px solid #E5E5E5;display:inline-block;line-height:28px;text-align:center;cursor:pointer;margin-right:7px;background:#FFF;}
+.tianjia:hover{background:#F60;color:#FFF;}
+.tag{position:relative;padding-top:20px;}
+.tag-head{margin-top:40px;}
+.baocun{width:67px;height:31px;border:1px solid #E5E5E5;display:inline-block;line-height:31px;text-align:center;cursor:pointer;margin-right:7px;background:#FFF;
+position:absolute;right:20px;bottom:20px;}
+.baocun a:link,.baocun a:hover,{text-decoration:none;color:#FFF;}
+.baocun a:visited{text-decoration:none;color:#FFF;}
+.Dele{font-size:16px;margin-top:60px;}
+.baocun:hover{background:#F60;color:#FFF;}
+/*****模态窗口***********/
+.modal-header{background:#E5E5E5;color:#999;}
+.close{color:#000;}
+/****************************************************************常见问题 使用帮助********************************************************************/
+.img_tu img{margin:0 auto;}
+.editor{ cursor:pointer;}
+.wrong{cursor:pointer;}
+.return{cursor:pointer;text-decoration:underline;}
+.rolling{background:#FFF;padding:20px;overflow-y:auto;overflow-x:hidden;height:300px;margin-bottom:30px;}
+/*******************************************************部门管理*****************************************************************************/
+.aligncenter{width:100%;height:500px;background:#FFF;overflow-y:scroll;overflow-x:hidden;padding:20px; color:#999;border-bottom:2px #E5E5E5 solid}
+.department{font-size:20px;}
+.gelement{width:100%;height:40px;line-height:40px;}
+.return{margin-top:30px;width:100%;height:40px;text-align:left;}
+.Dele .choice{width:180px;height:43px;padding-left:44px; background:url(../Images/tanhao.png) left top no-repeat; display:inline-block;line-height:35px;}
+/*******************************************************安装软件管理*****************************************************************************/
+.Img{margin-top:20px;margin-left:15px;}
+.case{line-height:80px;}
+.PicTu{background:url(../Images/03.png) center center no-repeat;width:64px;height:67px;}
+.PicTuT{background:url(../Images/05.png) center center no-repeat;width:64px;height:67px;}
+.Pagination span.xing{display:inline-block;width:15px;height:14px;background:url(../Images/xingyi.png) left bottom no-repeat;}
+.Pagination span{background:url(../Images/xing2.png) left bottom no-repeat;display:inline-block;width:15px;height:14px;}
+.mainNews a{cursor:pointer;}
+/*******************************************************软件下载统计*****************************************************************************/
+.fold-line{margin-bottom:40px;}
+/*******************************************************用户管理*****************************************************************************/
+.Times{cursor:pointer;}
+.setcounts{width:80px; text-align:center;display:inline-block;}
+/*******************************************************Windows 软件使用技巧管理*****************************************************************************/
+.Version{font-size:12px;text-indent:2em;padding:15px;}
+.ki{background:#FFF;}
+.dot{width:10PX;height:10PX;background:#3CF;border-radius:50%;display:inline-block;padding-left:10px;}
+/*******************************************************登陆页*****************************************************************************/
+.loginContent{background:url(../Images/loginbg.jpg) center center no-repeat;height:460px;width:100%;}
+.login{width:300px;height:310px;background:rgba(255,255,255,0.3);margin-top:20px; box-shadow:0 0 10PX #999999;border-radius:10px;padding:20px 20px 15px 20px;}
+.loginTu{margin-top:40px;}
+.loginTitle{font-size:20px;color:#999;margin-bottom:40px;}
+.accout{margin-top:10px;}
+.sort{width:100%;height:125px;background:#FFF;border:1px solid #E6E6E6;}
+.sort ul li{float:left;border-right:1px solid #E6E6E6;width:239px;height:125px; cursor:pointer;font-size:22px;color:#333;line-height:125px;text-align:center;}
+.sort ul li img{margin-right:8px;}
+.sort ul li:hover{background:#F6F6F6;}
+.copyright{height:200px;line-height:50px;}
+/*******************************************************角色*****************************************************************************/
+.NO{color:#F00;}
+/*******************************************************bootstrap 样式的修改*****************************************************************************/
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus{background:#9999ff;color:#FFF;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus
+{background:#9999ff;color:#FFF;}
+.nav-tabs > li > a{border-radius:0;}
+/*.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{border-top:3px #09F solid;border-left:1px #09F solid;border-right:1px #09F solid;}
+.nav-tabs{border-bottom:1px #09F solid;}以上是第一个切换按钮颜色更改*/
+.pagination > .active > a{border:1px #FFFFFF solid;}
+a:hover, a:focus{color:#999;}
+.nav > li > a{color:#C2C2C2;}
+.nav > li > a:hover{background:none;color:#FFF;}

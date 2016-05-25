@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>list1</title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+   <div class="header_m">
+      <div class="logo"><img src="images/default/logo1.jpg" alt="云计算信息门户"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+   </div>
+</div>
+<div class="main">
+   <div class="SubNav">
+      <ul class="accordion">
+         <li>
+              <div class="pannel">
+                 <div class="left1 pos1 current"></div>
+                 <div class="left2 current"><a href="#">我的云平台</a></div>
+              </div>
+              <ul class="sub-menu">
+                 <li><a href="#" >云平台1</a></li>
+                 <li style="border-bottom:none;"><a href="#" class="current">云平台1</a></li>
+              </ul>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+                <div class="left1 pos2"></div>
+                <div class="left2"><a href="#">待办事项<span class="span">15</span></a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                 <div class="left1 pos3"></div>
+                 <div class="left2"><a href="#">租户管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                <div class="left1 pos4"></div>
+                <div class="left2"><a href="#">虚机管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class=" pannel">
+                 <div class="left1 pos5"></div>
+                 <div class="left2"><a href="#">模板管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                <div class="left1 pos6"></div>
+                <div class="left2"><a href="#">云资源管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+             <div class="pannel">
+                <div class="left1 pos7"></div>
+                <div class="left2"><a href="#">公告管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+             <div class="pannel">
+                <div class="left1 pos8"></div>
+                <div class="left2"><a href="#">消费明细</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+                <div class="left1 pos9"></div>
+                <div class="left2"><a href="#">资源镜像</a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+               <div class="left1 pos10"></div>
+               <div class="left2"><a href="#">虚机日志</a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+      </ul>
+   </div>
+   <!----右侧---->
+   <div class="mainPanel">
+     <div class="toph"><img src="images/default/home.png"/><a href="#">待办事项</a> > <a href="#"><span>租户审批</span></a></div>
+
+<div class="search">
+         <div class="search_right">
+            <span class="txt1">Vcenter IP</span>
+            <div class="fomr1"><input onfocus="this.value=''" onblur="if(this.value==''){this.value=''}" type="text" value="" /></div>
+            <span class="txt1">用户名</span>
+            <div class="fomr1"><input onfocus="this.value=''" onblur="if(this.value==''){this.value=''}" type="text" value="" /></div>
+             <span class="txt1">密码</span>
+            <div class="fomr1"><input onfocus="this.value=''" onblur="if(this.value==''){this.value=''}" type="text" value="" /></div>
+             <div class="search_but"><a href="#"><img src="images/default/list01.jpg"/></a></div>
+         </div>
+      </div>
+      
+     <div class="toplist">
+        <div class="toplist_left"><a  href="#" class="current">VMware虚机列表</a> | <a  href="#">迁移中的虚机</a></div>
+        
+     </div> 
+     <table width="1080" class="clist" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th width="13%" height="40"><span class="ft">虚机名称</span></th>
+    <th width="15%"><span class="ft">使用空间(GB)</span></th>
+    <th width="14%"><span class="ft">内存(GB)</span></th>
+    <th width="13%"><span class="ft">硬盘(GB)</span></th>
+    <th width="15%"><span class="ft">状态</span></th>
+    <th width="14%"><span class="ft">是否Windows系统</span></th>
+    <th width="16%"><span class="ft">操作</span></th>
+    </tr>
+  <tr>
+    <td height="50">VMAAA</td>
+    <td>30</td>
+    <td>100</td>
+    <td>200</td>
+    <td>4</td>
+    <td>是</td>
+    <td><a href="#"><span class="blues">迁移</span></a></td>
+    </tr>
+  <tr>
+    <td height="50" bgcolor="#f6f8fa">VMAAA</td>
+    <td bgcolor="#f6f8fa">10</td>
+    <td bgcolor="#f6f8fa">20</td>
+    <td bgcolor="#f6f8fa">200</td>
+    <td bgcolor="#f6f8fa">4</td>
+    <td bgcolor="#f6f8fa">是</td>
+    <td bgcolor="#f6f8fa"><a href="#"><span class="blues">迁移</span></a></td>
+    </tr>
+  <tr>
+    <td height="50">VMAAA</td>
+    <td>30</td>
+    <td>100</td>
+    <td>200</td>
+    <td>4</td>
+    <td>是</td>
+    <td><a href="#"><span class="blues">迁移</span></a></td>
+    </tr>
+  <tr>
+    <td height="50" bgcolor="#f6f8fa">VMAAA</td>
+    <td bgcolor="#f6f8fa">10</td>
+    <td bgcolor="#f6f8fa">20</td>
+    <td bgcolor="#f6f8fa">200</td>
+    <td bgcolor="#f6f8fa">4</td>
+    <td bgcolor="#f6f8fa">是</td>
+    <td bgcolor="#f6f8fa"><a href="#"><span class="blues">迁移</span></a></td>
+    </tr>
+  <tr>
+    <td height="50">VMAAA</td>
+    <td>30</td>
+    <td>100</td>
+    <td>200</td>
+    <td>4</td>
+    <td>是</td>
+    <td><a href="#"><span class="blues">迁移</span></a></td>
+    </tr>
+  <tr>
+    <td height="50" bgcolor="#f6f8fa">VMAAA</td>
+    <td bgcolor="#f6f8fa">10</td>
+    <td bgcolor="#f6f8fa">20</td>
+    <td bgcolor="#f6f8fa">200</td>
+    <td bgcolor="#f6f8fa">4</td>
+    <td bgcolor="#f6f8fa">是</td>
+    <td bgcolor="#f6f8fa"><a href="#"><span class="blues">迁移</span></a></td>
+    </tr>
+  <tr>
+    <td height="50">VMAAA</td>
+    <td>30</td>
+    <td>100</td>
+    <td>200</td>
+    <td>4</td>
+    <td>是</td>
+    <td><a href="#"><span class="blues">迁移</span></a></td>
+    </tr>
+ 
+</table>
+
+      
+      <div class="pages">
+   <p class="pages_home"><a href="#">首页</a></p> 
+         <p class="pages_f"></p>
+         <ul>
+            <li><a href="#" class="current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+         </ul>
+         <p class="pages_e"></p>
+         <p class="pages_home"><a href="#">尾页</a></p>
+      </div>
+      
+   </div>
+<div class="clear"></div>
+</div>
+</body>
+</html>

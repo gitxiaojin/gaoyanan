@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+body,html{margin:0;padding:0;font-family:"Microsoft YaHei";}
+body{background:#c3ecdc;}
+/*重置默认样式*/
+ul,ul li,ol,ol li,h1,h2,h4,dt,dl,dd,p{margin:0;padding:0;list-style:none;}
+fieldset, img { border:none;} 
+img{display:block;}
+input{border:none;}
+table{ border-collapse:collapse;}
+a:link,a:hover{text-decoration:none;}
+a:visited{text-decoration:none;}
+/*head*/
+.head{width:100%;height:1140px;margin:0 auto;background:url(../Images/Gheadbg.jpg) center top no-repeat;position:relative;}
+.navTime{position:absolute;left:50%;top:50%;margin-left:-450px;margin-top:-16px;}
+
+/*head ul li鼠标移上*/
+.headmain{height:655px;width:1140px;margin:0 auto;position:relative;}
+.headmain ul{position:absolute;bottom:8px;left:20px;}
+.headmain ul li{float:left;height:44px;list-style:none;cursor:pointer;}
+.headmain ul li a{display:block;}
+.headmain ul .li01:hover{background:url(../Images/li01-mo.png) no-repeat;}
+.headmain ul .li02:hover{background:url(../Images/li02-mo.png) no-repeat;}
+.headmain ul .li03:hover{background:url(../Images/li03-mo.png) no-repeat;}
+.headmain ul .li04:hover{background:url(../Images/li04-mo.png) no-repeat;}
+.headmain ul .li05:hover{background:url(../Images/li05-mo.png) no-repeat;}
+.headmain ul .li06:hover{background:url(../Images/li06-mo.png) no-repeat;}
+.headmain ul .li07:hover{background:url(../Images/li07-mo.png) no-repeat;}
+.headmain ul .li08:hover{background:url(../Images/li08-mo.png) no-repeat;}
+/*head ul li鼠标点击当前状态*/
+.headmain ul li.current{background:url(../Images/current.png) no-repeat;}
+.headmain ul .li01.current{background:url(../Images/current.png) 15px top no-repeat;}
+.headmain ul .li08.current{background:url(../Images/current.png) -15px top no-repeat;}
+/*headB*/
+.headmain .headB{width:1140px;height:487px;margin:0 auto;}
+.htxt{padding-top:90px;}
+.htxt img{margin:0 auto;}
+.headB dl{width:840px;margin:0 auto;overflow:hidden;padding-left:36px;padding-top:30px;}
+.headB dl dt{float:left;padding-top:7px;width:184px;padding-left:10px;}
+.headB dl dd{float:left;padding-top:80px;}
+/*content*/
+.content{width:100%;}
+.contmain{background:url(../Images/Gerbg.jpg) center top no-repeat;height:294px;margin:0 auto;width:1140px;margin-top:60px;padding-top:100px;}
+.contmain .contF{width:930px;height:46px;margin:0 auto;position:relative;}
+.contmain .contF a.dingwei{position:absolute;right:-9px;top:-59px;}
+.caward{width:1020px;height:211px;margin:0 auto;padding-top:16px;}
+.chead .ctable img{margin:0 auto;}
+/*第二部分*/
+.contmainF{background:url(../Images/Gsanbg.jpg) no-repeat center top;width:1048px;height:836px;margin:0 auto;padding-top:30px;position:relative;}
+.contmainF ul{width:840px;margin:0 auto;}
+.contmainF ul li{height:60px;}
+.contmainF ul li dt{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left 5px no-repeat;}
+.contmainF ul li dt.dt02{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -48px no-repeat;}
+.contmainF ul li dt.dt03{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -103px no-repeat;}
+.contmainF ul li dt.dt04{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -158px no-repeat;}
+.contmainF ul li dt.dt05{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -212px no-repeat;}
+.contmainF ul li dt.dt06{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -266px no-repeat;}
+.contmainF ul li dt.dt07{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -319px no-repeat;}
+.contmainF ul li dt.dt08{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -373px no-repeat;}
+.contmainF ul li dt.dt09{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -430px no-repeat;}
+.contmainF ul li dt.dt10{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -489px no-repeat;}
+.contmainF ul li dt.dt11{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -609px no-repeat;}
+.contmainF ul li dt.dt12{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -548px no-repeat;}
+.contmainF ul li dt.dt13{float:left;width:81px;height:58px;background:url(../Images/ico.jpg) left -669px no-repeat;}
+.contmainF ul li dd{float:left;padding-top:15px;width:748px;}
+/*第三部分*/
+.contmainB{background:url(../Images/Gsibg.jpg) center top no-repeat;height:888px;width:1048px;margin:0 auto;}
+.contmainB .headB{border-top:5px #328d6c solid;width:1034px;}
+.contmainB .fanpai{width:1048px;}
+.contmainB .beizhu{width:1048px;}
+.contmainB .manba{width:1048px;}
+.contmainB .zengsong{width:1044px;}
+.contmainB .Gtable{width:1044px;padding-top:10px;}
+.ctable{padding-top:28px;}
+
+
+.contmainB .fanpai img{margin:0 auto;padding-bottom:20px;}
+.contmainB .beizhu img{margin:0 auto;}
+.contmainB .manba img{margin:0 auto;}
+.contmainB .zengsong img{margin:0 auto;}
+.contmainB .Gtable img{margin:0 auto;}
+
+
+
+/*夏季嘉年华,金利大兑换*/
+.cont2{background:url(../Images/Gbg2.jpg) no-repeat;width:1047px;height:416px;margin:0 auto;margin-top:33px;padding-top:90px;}
+.cont2 .Gtxt4 img{margin:0 auto;padding-top:5px;}
+.cont2 .Gtable img{margin:0 auto;padding-top:20px;}
+/*金利随意拍*/
+.cont3{background:url(../Images/Gbg3.png) center top no-repeat;height:398px;width:1047px;margin:0 auto; padding-top:90px;}
+.cont3 .Gjinli img{margin:0 auto;margin-bottom:10px;margin-left:13px;}
+.cont3 .Gjingpai1 img{margin:0 auto;margin-left:12px;}
+/*底部背景*/
+.footbg{background:url(../Images/Gfooterbg.jpg) center top no-repeat;height:900px;}
+.cont5{background:url(../Images/Gactivenotice.jpg) center top no-repeat;margin:0 auto; width:1055px;height:334px;}
+.Gyun{position:absolute;left:50%;top:50%;margin-left:-700px;}
+
+/*list 页面拍卖金利竞拍*/
+.salehead{background:url(../Images/Gpaimaibg.jpg) center top no-repeat;height:968px;}
+.saleCont{width:1140px;height:1420px;margin:0 auto;}
+.saleCont .salemhead{height:166px;background:url(../Images/Gactivebg.jpg) 78px top no-repeat;position:relative;}
+.saleCont .salemhead .saleLogin{position:absolute;right:61px;top:30px;}
+.saleCont .saletitle{background:url(../Images/Gsaletitle.jpg) 78px top no-repeat;height:38px;text-align:center;}
+.saleCont .saletitle p{margin:0 auto;padding-top:5px;}
+.saleCont .saletitle p span{font-size:14px;width:180px;display:inline-block;}
+
+.saleToday{background:url(../Images/Gtodaybg.jpg) 78px top repeat-y;height:1191px;padding-top:30px;}
+.saleToday .sleTbg{background:url(../Images/Gtlebg.jpg) center top no-repeat;height:560px;position:relative;padding-top:90px;margin-bottom:106px;}
+.saleToday .sleTbg .saleTbgtltle{height:50px;text-align:center;width:100%;line-height:50px;color:#43171d;font-weight:bold;font-size:24px;text-shadow:0px 1px 2px #dac59e;}
+.saleToday .saleKa{width:598px;height:92px;background:url(../Images/Gkaijia.png) center top no-repeat;margin-left:276px; position:relative;}
+.saleToday .saleKa p{position:absolute;left:50%;margin-left:-39px;margin-top:5px;}
+.saleToday .saletxt{width:100%;height:64px;line-height:24px;}
+.saleToday .saletxt dl{width:544px;margin:0 auto;color:#d2fff7;}
+.saleToday .saletxt dl dt{float:left;width:64px;}
+.saleToday .saletxt dl dd{float:left;width:480px;}
+.saleToday .curPrice{width:100%;height:54px;}
+.saleToday .curPrice p{margin:0 auto;width:383px;height:48px;background:url(../Images/Gcurprice.png) no-repeat;}
+.saleToday .curPrice p .text{float:right;width:180px;text-align:right;height:24px;margin-top:12px;margin-right:20px;border-radius:10px;padding:0 12px;color:#fcf4f1;}
+.saleToday .Gzengpai img{margin:0 auto;padding-top:5px;}
+.saleToday .Gqipai{width:522px;height:64px;margin:0 auto;}
+.saleToday .Gqipai ul li{float:left;color:#82ccbf;width:261px;text-align:center;height:29px;}
+.saleToday .Gqipai ul li span.spanbg{background:url(../Images/Ginput.png) no-repeat;display:inline-block;width:70px;height:26px;text-align:center;color:#F00;font-weight:bold;text-align:right;padding-top:3px;padding-right:10px;}
+.saleToday .Gqipai ul li span{width:67px;display:inline-block;}
+.saleToday .Gqipai ul li span.Gren{width:67px;display:inline-block;}
+.Gprice{width:290px;height:33px;margin:0 auto;}
+.Gprice dl dt{float:left;}
+.Gprice dl dd{float:left;}
+.Gprice dl dd span{width:28px;height:26px;display:inline-block;cursor:pointer;}
+.Gprice dl dd span.jiahao{background:url(../Images/jiahao.jpg) center bottom no-repeat;}
+.Gprice dl dd span.jianhao{background:url(../Images/jianhao.jpg) center bottom no-repeat;}
+.Gprice dl dd .Gtxt5{background:url(../Images/Ginput2.jpg) no-repeat;width:93px;height:21px;padding-left:12px;}
+.Ghave{width:170px;text-align:center;margin:0 auto;text-align:right;margin-bottom:3px;}
+.Gend{width:378px;height:37px;background:url(../Images/Gend.jpg) no-repeat;margin:0 auto;}
+.Gend ul{width:270px;float:right;height:37px;}
+.Gend ul li{width:56px;height:33px;margin-right:1px;float:left;padding-left:8px;padding-top:5px;}
+.Gend ul li span{width:23px;height:23px;display:inline-block;text-align:center;line-height:24px;color:#4e000e;}
+.Gending img{margin:0 auto;}
+.Gjingpai{position:absolute;bottom:0;left:44%;margin-bottom:-75px;cursor:pointer;}
+.Gjingpai img:hover{background:url(../Images/jingpai-mo.png) no-repeat;width:155px;height:153px;}
+/*表格部分*/
+.Gbiaoge{background:url(../Images/Gtable6.png) no-repeat;width:603px;height:390px;margin:0 auto;margin-top:180px;text-align:center;}
+.Gbiaoge a{ cursor:pointer;text-decoration:underline;}
+/*footer 部分*/
+.Gfooter{background:url(../Images/footerbg.png) -117px  top no-repeat;height:699px;width:100%;margin:0 auto;}
+
+
+
+
+

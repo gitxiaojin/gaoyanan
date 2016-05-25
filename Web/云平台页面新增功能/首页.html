@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>list1</title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+   <div class="header_m">
+      <div class="logo"><img src="images/default/logo1.jpg"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+   </div>
+</div>
+<div class="main">
+   <div class="SubNav">
+      <ul class="accordion">
+             <li>
+                  <div class="pannel">
+                     <div class="left1 pos1 current"></div>
+                     <div class="left2 current"><a href="首页.html">首页</a></div>
+                  </div>
+                 <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos2"></div>
+                    <div class="left2"><a href="创建虚拟机.html">创建虚拟机</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos3 "></div>
+                    <div class="left3 "><a href="服务器硬件监控.html">服务器监控硬件</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos4 "></div>
+                    <div class="left4 "><a href="群集监控.html">群集监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos5"></div>
+                    <div class="left5"><a href="设置报警规则.html">设置报警规则</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos6"></div>
+                    <div class="left6"><a href="审批租户.html">审批租户</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos7"></div>
+                    <div class="left7"><a href="数据中心监控.html">数据中心监控</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos8"></div>
+                    <div class="left8"><a href="提交工单.html">提交工单</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos9"></div>
+                    <div class="left9"><a href="虚拟机升级.html">虚拟机升级</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos10"></div>
+                    <div class="left10"><a href="巡检报告.html">巡检报告</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos11"></div>
+                    <div class="left11"><a href="巡检报告列表.html">巡检报告列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos12"></div>
+                    <div class="left12"><a href="巡检设置.html">巡检设置</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos14"></div>
+                    <div class="left14"><a href="应用虚机列表2.html">应用虚机列表</a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             
+          </ul>
+       </div>
+   </div>
+   
+   
+   <!----右侧---->
+   <div class="mainPanel">
+     <div class="toph"><img src="images/default/home.png"/><a href="#">我的云平台</a></div>
+         <div class="middleH">
+             <dl>
+               <dt>
+                  <div class="pic">
+                    <div class="picc">
+                    <p class="zijian" style="color:#666">云环境自检状态</p>
+                    <p class="god" style="color:#01C08D">非常好</p>
+                   </div> 
+                  </div>
+                  <div class="middleB">
+                     <div class="tijian" style="color:#FFF;">自我体检</div>
+                  </div>
+               </dt>
+               <dd>
+                 <div class="plant">
+                    <p class="zhuji" style="color:#000;">宿主机</p>
+                    <div class="first">
+                	<ol>
+                		<li style="color:#03C18D">正常</li>
+                          <ol>
+                          	<li class="batai">8台</li>
+                          </ol>
+                        </ol>
+                        <ol style="color:#F00;">异常
+                           <ol>
+                          	<li style="color:#00F";>hv-01关机</li>
+                          	<li style="color:#00F;">hv-02关机</li>
+                          </ol>
+                        </li>
+                	</ol>
+                    </div> 
+                 </div>
+               <div class="plant">
+                    <p class="zhuji" style="color:#000;">存储</p>
+                    <div class="first">
+                	<ol>
+                		<li style="color:#03C18D">正常</li>
+                          <ol>
+                          	<li class="batai">2个</li>
+                          </ol>
+                        </ol>
+                        <ol style="color:#F00;">异常
+                           <ol>
+                          	<li style="color:#666";>高性能存储</li>
+                          </ol>
+                        </li>
+                	</ol>
+                    </div> 
+                 </div>
+                 <div class="plant">
+                    <p class="zhuji" style="color:#000;">网络</p>
+                    <div class="first">
+                	<ol>
+                		<li style="color:#03C18D">正常</li>
+                          <ol>
+                          	<li class="batai">3个</li>
+                          </ol>
+                        </ol>
+                        <ol style="color:#F00;">异常
+                           <ol>
+                          	<li style="color:#666";>教育网络</li>
+                          </ol>
+                        </li>
+                	</ol>
+                    </div> 
+                 </div>
+                 <div class="plant">
+                    <p class="zhuji" style="color:#000;">组件</p>
+                    <div class="first">
+                	<ol>
+                		<li style="color:#03C18D">正常</li>
+                          <ol>
+                          	<li class="batai">三个</li>
+                          </ol>
+                        </ol>
+                        <ol style="color:#F00;">异常
+                           <ol>
+                          	<li style="color:#666";>SCOM服务</li>
+                          </ol>
+                        </li>
+                	</ol>
+                    </div> 
+                 </div>
+                 <div class="cloud">
+                    <p class="zhuji" style="color:#000;">云平台</p>
+                    <div class="first">
+                	<ol>
+                    <li style="color:#03C18D">正常</li>
+                	</ol>
+                    </div> 
+                 </div>
+               </dd>
+             </dl>
+         </div>
+        <div class="middleC">
+            <p class="peiE">云资源配额</p>
+            <div class="middleCC">
+             <div class="hY">
+                 <h3>云名称:hyNewCloud</h3>
+                 <div class="hT">
+                  <ul>
+                  	<li>
+                    <h4 class="user"><span>CPU使用率</span> <span style="float:right;">100核</span></h4>
+                    <meter max="1000" min="100" value="500" low="300" high="800" style="width:197px;"></meter>
+                    </li>
+                    <li>
+                    <h4 class="user"><span>内存使用率</span> <span style="float:right;">100G</span></h4>
+                    <meter max="1000" min="100" value="800" low="300" high="700" style="width:197px;"></meter>
+                    </li>
+                    <li>
+                    <h4 class="user"><span>高性能存储</span> <span style="float:right;">12TB</span></h4>
+                    <meter max="1000" min="100" value="" low="300" high="800" style="width:197px;"></meter>
+                    </li>
+                  	<li>
+                    <h4 class="user"><span>普通存储</span> <span style="float:right;">10TB</span></h4>
+                    <meter max="1000" min="100" value="1000" low="300" high="800" style="width:197px;"></meter>
+                    </li>
+                  </ul>
+                 </div>             
+             </div>
+             <div class="TY">
+                 <h3>租户信息</h3>
+                 <div class="hT">
+                    <p>租户：<b style="font-size:18px">28</b>个</p>
+                    <p>用户：<b style="font-size:18px">32</b>个</p>
+                 </div>             
+             </div>
+            <div class="BY">
+                 <h3>租户信息</h3>
+                 <div class="hT">
+                 <dl>
+                 	<dt>
+                       <p>开机：<b style="color:#0000CC ">32</b>台</p>
+                       <p>开机：<b style="color:#F00">32</b>台</p>
+                       <p>警告：<b style="color:#FFCC00">2</b>台</p>
+                    </dt>             		
+                    <dd>
+                       <p>将到期：<b style="color:#5C687A" >1</b>台</p>
+                       <p>已到期：<b style="color:#5C687A">2</b>台</p>
+
+                    </dd>
+                 </dl>
+                 </div>             
+             </div>
+             <div class="JY">
+                 <h3>警告信息</h3>
+                 <div class="hT">
+                    <h4 class="user"><span>共计16条警告信息</span>&nbsp;&nbsp; &nbsp; <span style="float:right;"><a href="#">更多》</a></span></h4>
+                    <ul>
+                    	<li>虚机CVm20150326003计算机不可访问</li>
+                    	<li>虚机CVm20150326003计算机不可访问</li>
+                    	<li>虚机CVm20150326003计算机不可访问</li>
+                    	<li>虚机CVm20150326003计算机不可访问</li>
+                    </ul>
+                 </div>             
+             </div>
+           </div>
+        </div>
+     <div class="middleCCC">
+       <p class="HV01">
+            服务器：<select style="width:200px;">
+                    <option value="">HV01</option>
+                    <option value="">HV02</option>
+                    <option value="">HV03</option>
+            </select>
+       </p>
+       <div class="hv03">
+             <div class="hv03L">
+             <span><a href="#" class="current">cpu</a> | <a href="#">内存</a> | <a href="#">网络</a> | </span>
+             </div>
+             <div class="hv03R">
+             <span>今日</span> <span>近2天</span> <span>近7天</span> <span>近15天</span> <span>近一个月</span>
+             </div>
+      </div>
+       <div class="pic_tu">
+       	<ul>
+       		<li class="current"><img src="images1/01.png" width="1024"/></li>
+       		<li><img src="images1/02.png" width="1024"  /></li>
+       		<li><img src="images1/03.png" width="1024"/></li>
+       	</ul>
+       </div> 
+     </div>  
+</body>
+</html>

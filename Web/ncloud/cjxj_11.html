@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="style/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".u_info ").hover(function(){
+			$(this).find(".u_info_list").show();
+		},function(){
+			$(this).find(".u_info_list").hide();
+		}
+	);
+	
+	
+	//////////////////////
+	$(".select1").click(function(){
+		if($(this).find(".select1_1_list").is(":hidden")){
+			$(this).find(".select1_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select1_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select1 .select1_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select1 span").text(thistext);
+		$(this).parents("dt").find(".select1_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+	
+	
+	//////////////////////
+	$(".select3").click(function(){
+		if($(this).find(".select3_1_list").is(":hidden")){
+			$(this).find(".select3_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select3_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select3 .select3_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select3 span").text(thistext);
+		$(this).parents("dt").find(".select3_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+	//////////////////////
+	$(".select4").click(function(){
+		if($(this).find(".select4_1_list").is(":hidden")){
+			$(this).find(".select4_1_list").show();
+			$(this).css({"position":"relative"});
+		}else{
+			$(this).find(".select4_1_list").hide();
+			$(this).css({"position":""});
+		}
+	});
+	$(".select4 .select4_1_list a").click(function(e){
+		e.stopPropagation();
+		var thistext = $(this).text();
+		$(".select4 span").text(thistext);
+		$(this).parents("dt").find(".select4_1_list").hide();
+		$(this).parents("dt").css({"position":""});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+   <div class="header_m">
+     <p>&nbsp;</p>
+    <div class="logo"><img src="images/default/logo1.jpg" alt="云计算信息门户"/></div>
+      <div class="right_part">
+           <div class="u_info"><img src="images/default/tx.jpg"/> 崔XX <img src="images/default/header1.jpg"/>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#"><img src="images/default/header3.png"/> 个人资料</a></dt>
+                   <dt><a href="#"><img src="images/default/header4.png"/> 修改密码</a></dt>
+                   <dd><a href="#"><img src="images/default/header5.png"/> 退出帐号</a></dd>
+                </dl>
+             </div>
+           </div>
+           <div class="jinggao"><a href="#"><img src="images/default/header6.png"/><span>5</span></a></div>
+           <div class="jinggao"><a href="#"><img src="images/default/header7.png"/><span>5</span></a></div>
+      </div>
+   </div>
+</div>
+<div class="main">
+   <div class="SubNav">
+      <ul class="accordion">
+         <li>
+              <div class="pannel">
+                 <div class="left1 pos1 current"></div>
+                 <div class="left2 current"><a href="#">我的云平台</a></div>
+              </div>
+              <ul class="sub-menu">
+                 <li><a href="#" >云平台1</a></li>
+                 <li style="border-bottom:none;"><a href="#" class="current">云平台1</a></li>
+              </ul>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+                <div class="left1 pos2"></div>
+                <div class="left2"><a href="#">待办事项<span class="span">15</span></a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                 <div class="left1 pos3"></div>
+                 <div class="left2"><a href="#">租户管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                <div class="left1 pos4"></div>
+                <div class="left2"><a href="#">虚机管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class=" pannel">
+                 <div class="left1 pos5"></div>
+                 <div class="left2"><a href="#">模板管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+          <li>
+             <div class="pannel">
+                <div class="left1 pos6"></div>
+                <div class="left2"><a href="#">云资源管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+             <div class="pannel">
+                <div class="left1 pos7"></div>
+                <div class="left2"><a href="#">公告管理</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+             <div class="pannel">
+                <div class="left1 pos8"></div>
+                <div class="left2"><a href="#">消费明细</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+                <div class="left1 pos9"></div>
+                <div class="left2"><a href="#">资源镜像</a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+         <li>
+            <div class="pannel">
+               <div class="left1 pos10"></div>
+               <div class="left2"><a href="#">虚机日志</a></div>
+            </div>
+         <div class="clear"></div>
+         </li>
+      </ul>
+   </div>
+   <!----右侧---->
+   <div class="mainPanel">
+     <div class="toph"><img src="images/default/home.png"/><a href="#">待办事项</a> > <a href="#"><span>租户审批</span></a></div>
+     <div class="tabnav">
+        <ul>
+           <li><a href="#" class="current">创建虚机</a></li>
+           <li><a href="#">推荐配置</a></li>
+        </ul>
+     </div>
+     <div class="tablist">
+        <div class="tablist_left">
+           <h2>高配置</h2>
+           <p>abckdeedddd</p>
+           <img src="images/default/cjxj1_03.jpg"/>
+        </div>
+        <div class="tablist_mid">
+           <ul>
+              <li>操作系统：Windows 8</li>
+              <li>CPU：4核</li>
+              <li>内存： 8G</li>
+              <li>硬盘：8G</li>
+              <li>虚机名称：<input onfocus="this.value=''" onblur="if(this.value==''){this.value='xxxxxx'}" type="text" value="xxxxxx" /></li>
+           </ul>
+        </div>
+        <div class="tablist_right"><a href="#"><img src="images/default/cjxj1_12.jpg"/></a></div>
+     <div class="clear"></div>
+     </div>
+     <div class="tablist">
+        <div class="tablist_left">
+           <h2>中配置</h2>
+           <p>abckdeedddd</p>
+           <img src="images/default/cjxj1_07.jpg"/>
+        </div>
+        <div class="tablist_mid">
+           <ul>
+              <li>操作系统：Windows 8</li>
+              <li>CPU：4核</li>
+              <li>内存： 8G</li>
+              <li>硬盘：8G</li>
+              <li>虚机名称：<input onfocus="this.value=''" onblur="if(this.value==''){this.value='xxxxxx'}" type="text" value="xxxxxx" /></li>
+           </ul>
+        </div>
+        <div class="tablist_right"><a href="#"><img src="images/default/cjxj1_12.jpg"/></a></div>
+     <div class="clear"></div>
+     </div>
+     <div class="tablist">
+        <div class="tablist_left">
+           <h2>低配置</h2>
+           <p>abckdeedddd</p>
+           <img src="images/default/cjxj1_08.jpg"/>
+        </div>
+        <div class="tablist_mid">
+           <ul>
+              <li>操作系统：Windows 8</li>
+              <li>CPU：4核</li>
+              <li>内存： 8G</li>
+              <li>硬盘：8G</li>
+              <li>虚机名称：<input onfocus="this.value=''" onblur="if(this.value==''){this.value='xxxxxx'}" type="text" value="xxxxxx" /></li>
+           </ul>
+        </div>
+        <div class="tablist_right"><a href="#"><img src="images/default/cjxj1_12.jpg"/></a></div>
+     <div class="clear"></div>
+     </div>
+   </div>  
+<div class="clear"></div>
+</div>
+</body>
+</html>

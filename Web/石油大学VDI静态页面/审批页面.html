@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+<link rel="stylesheet" type="text/css" href="css/mycss.css"/>
+<script type="text/javascript" src="style/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="style/me.js"></script>
+
+</head>
+
+<body>
+<!--header-->
+  <div id="header">
+  	<div class="headNav">
+        <div class="headNavL"><img src="images/logo.png" width="200" ></div>
+        <div class="headNavR">
+        <span>您好，李建勇</span>
+        <button>退出</button>
+        </div>
+    </div>
+    <!--content-->
+  <div id="content">
+      <div class="contL">
+          <ul class="accordion">
+             <li>
+                  <div class="pannel">
+                     <div class="left1 pos1 "></div>
+                     <div class="left2 "><a href="我的vdi(已申请).html">我的VDI</a></div>
+                  </div>
+                 <div class="clear"></div>
+             </li>
+             <li>
+                <div class="pannel">
+                    <div class="left1 pos2 current"></div>
+                    <div class="left2 current"><a href="审批页面.html">审批<span class="span">(15)</span></a></div>
+                </div>
+                <div class="clear"></div>
+             </li>
+             <li>
+             <div class="pannel">
+                 <div class="left1 pos3"></div>
+                 <div class="left2"><a href="操作日志.html">操作日志</a></div>
+             </div>
+         <div class="clear"></div>
+         </li>
+
+          </ul>
+       </div>
+       <div class="contR">
+      		<div class="contR1">
+            <span><img src="images/default/home.png" width="16" height="16"></span><span>审批列表</span>
+            </div>
+         <div class="contR2">
+             申请人编号：<input type="text" style="border:1px #999999 solid"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             申请人姓名：<input type="text" style="border:1px #999999 solid"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             申请人状态：<select name="city">
+                        <option value="">全部</option>
+                        <option value="">待审批</option>
+                        <option value="">已审批</option>
+                        <option value="">审批未通过</option>
+                     </select>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>查询</button>
+          </div>     
+          <div class="contR3">     
+             <table width="1050" class="clist" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th width="5%" height="30px">&nbsp;序号</th>
+                <th width="8%">申请人编号</span></th>
+                <th width="8%">申请人姓名</span></th>
+                <th width="8%">所属院系</span></th>
+                <th width="10%">IP地址</span></th>
+                <th width="10%">申请时间</span></th>
+                <th width="10%">审批时间</span></th>
+                <th width="8%">审批人</span></th>
+                <th width="8%">申请原因</span></th>
+                <th width="8%">申请状态</span></th>
+                <th width="8%">操作</span></th>
+              </tr>
+              <tr>
+                <td height="50" bgcolor="#f6f8fa">&nbsp;1</td>
+                <td bgcolor="#f6f8fa">20030101</td>
+                <td bgcolor="#f6f8fa">刘德华</td>
+                <td bgcolor="#f6f8fa">文理系</td> 
+                <td bgcolor="#f6f8fa">192.168.1.11</td>
+                <td bgcolor="#f6f8fa">2015-06-06 10:33</td>
+               <td bgcolor="#f6f8fa">2015-06-07 09:06</td>
+               <td bgcolor="#f6f8fa">管理员</td>
+               <td bgcolor="#f6f8fa">教学使用</td>
+               <td bgcolor="#f6f8fa">待审批</td>
+               <td bgcolor="#f6f8fa" class="shenpi">审批</td>
+              </tr>
+              <tr>
+               <td height="50" bgcolor="#FFFFFF">&nbsp;2</td>
+               <td bgcolor="#FFFFFF">20030101</td>
+               <td bgcolor="#FFFFFF">刘德华</td>
+               <td bgcolor="#FFFFFF">文理系</td> 
+               <td bgcolor="#FFFFFF">192.168.1.11</td>
+               <td bgcolor="#FFFFFF">2015-06-06 10:33</td>
+               <td bgcolor="#FFFFFF">2015-06-07 09:06</td>
+               <td bgcolor="#FFFFFF">管理员</td>
+               <td bgcolor="#FFFFFF">教学使用</td>
+               <td bgcolor="#FFFFFF">待审批</td>
+               <td bgcolor="#FFFFFF" class="shenpi">审批</td>
+              </tr>
+              <tr>
+                <td height="50" bgcolor="#f6f8fa">&nbsp;3</td>
+                <td bgcolor="#f6f8fa">20030101</td>
+                <td bgcolor="#f6f8fa">刘德华</td>
+                <td bgcolor="#f6f8fa">文理系</td> 
+                <td bgcolor="#f6f8fa">192.168.1.11</td>
+                <td bgcolor="#f6f8fa">2015-06-06 10:33</td>
+               <td bgcolor="#f6f8fa">2015-06-07 09:06</td>
+               <td bgcolor="#f6f8fa">管理员</td>
+               <td bgcolor="#f6f8fa">教学使用</td>
+               <td bgcolor="#f6f8fa">待审批</td>
+               <td bgcolor="#f6f8fa" class="shenpi">审批</td>
+              </tr>
+              <tr>
+                <td height="50" bgcolor="#FFFFFF">&nbsp;4</td>
+                <td bgcolor="#FFFFFF">20030101</td>
+                <td bgcolor="#FFFFFF">刘德华</td>
+                <td bgcolor="#FFFFFF">文理系</td> 
+                <td bgcolor="#FFFFFF">192.168.1.11</td>
+                <td bgcolor="#FFFFFF">2015-06-06 10:33</td>
+               <td bgcolor="#FFFFFF">2015-06-07 09:06</td>
+               <td bgcolor="#FFFFFF">管理员</td>
+               <td bgcolor="#FFFFFF">教学使用</td>
+               <td bgcolor="#FFFFFF">待审批</td>
+               <td bgcolor="#FFFFFF"class="shenpi">审批</td>
+              </tr>
+              <tr>
+                <td height="50" bgcolor="#f6f8fa">&nbsp;5</td>
+                <td bgcolor="#f6f8fa">20030101</td>
+                <td bgcolor="#f6f8fa">刘德华</td>
+                <td bgcolor="#f6f8fa">文理系</td> 
+                <td bgcolor="#f6f8fa">192.168.1.11</td>
+                <td bgcolor="#f6f8fa">2015-06-06 10:33</td>
+               <td bgcolor="#f6f8fa">2015-06-07 09:06</td>
+               <td bgcolor="#f6f8fa">管理员</td>
+               <td bgcolor="#f6f8fa">教学使用</td>
+               <td bgcolor="#f6f8fa">待审批</td>
+               <td bgcolor="#f6f8fa" class="shenpi">查看</td>
+              </tr>
+                <td height="50" bgcolor="#FFFFFF">&nbsp;6</td>
+                <td bgcolor="#FFFFFF">20030101</td>
+                <td bgcolor="#FFFFFF">刘德华</td>
+                <td bgcolor="#FFFFFF">文理系</td> 
+                <td bgcolor="#FFFFFF">192.168.1.11</td>
+                <td bgcolor="#FFFFFF">2015-06-06 10:33</td>
+               <td bgcolor="#FFFFFF">2015-06-07 09:06</td>
+               <td bgcolor="#FFFFFF">管理员</td>
+               <td bgcolor="#FFFFFF">教学使用</td>
+               <td bgcolor="#FFFFFF">待审批</td>
+               <td bgcolor="#FFFFFF">查看</td>
+              </tr>
+               <td height="50" bgcolor="#f6f8fa">&nbsp;7</td>
+               <td bgcolor="#f6f8fa">20030101</td>
+               <td bgcolor="#f6f8fa">刘德华</td>
+               <td bgcolor="#f6f8fa">文理系</td> 
+               <td bgcolor="#f6f8fa">192.168.1.11</td>
+               <td bgcolor="#f6f8fa">2015-06-06 10:33</td>
+               <td bgcolor="#f6f8fa">2015-06-07 09:06</td>
+               <td bgcolor="#f6f8fa">管理员</td>
+               <td bgcolor="#f6f8fa">教学使用</td>
+               <td bgcolor="#f6f8fa">待审批</td>
+               <td bgcolor="#f6f8fa">查看</td>
+            </table>
+            
+            </div>
+            </div>          
+           </div>
+       </div>
+         <!--弹框效果-->
+         <div class="tanc_up">
+                <span class="tanc_up_close"><img src="images/guan.png" width="45" height="45"></span>
+                <p class="tanc_up_tit1">虚拟主机审批</p>
+           <div class="con">
+                    <div class="name">
+                        <p>申请人信息:<img src="images/dot.png" width="518" height="1"></p>
+                    </div>
+                    <span>申请工号：20031010&nbsp;&nbsp;  申请人：刘德华&nbsp;&nbsp;  所属院系：文理&nbsp;&nbsp; </span>
+                    <div class="name1">
+                    <p>申请原因：<img src="images/dot.png" width="518" height="1"></p>
+                    </div>
+                    <div class="txt">                 
+                      申请工号：20030101申请工号：20030101申请工号：20030101申请工号：20030101申请工号：20030101申请工号 
+                      ：20030101申请工号：20030101申请工号：20030101申请工号：20030101申请工号：20030101申请工号：20030101申请工
+                      号：20030101申请工号：20030101申请工号：20030101
+                    </div>
+                    <div class="name1">
+                        <p>审批意见：<img src="images/dot.png" width="518" height="1"></p>
+                    </div>
+                    <div class="txt2">
+                    <textarea style="width:380px;height:90px;" ></textarea>
+                    <br/>0/500
+                    <br/><span>同意</span><span>拒绝</span>
+                    </div>
+
+           </div>
+                <div class="tanc_up_in" style="margin-left:100px;">
+               </div> 
+         </div>
+            <div class="tanc_down"></div>
+       </div>
+  </div>
+</body>
+</html>
