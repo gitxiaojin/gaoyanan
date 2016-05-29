@@ -128,8 +128,6 @@ p.detail span:hover{background:#09F;color:#FFF;}
 
 }
 .cp dd{float:right;height:110px;width:153px;line-height:20px;}
-@media (max-width:981px) {
-	}
 /********************切换************************/	
 .Hp li{display:none;}
 .Hp li.current{display:block;}
@@ -215,16 +213,31 @@ cursor:pointer;border-top:1px #E0E0E0 solid;border-bottom:1px solid #09F;border-
 /********************footer************************/
 .footer{background:#F6F6F6;color:#9C9C9C;}
 .fasten{position:fixed;right:-162px;top:50%; cursor:pointer;}
-.fasten span{background:url(../Images/jishuzhichi.png) no-repeat; display:inline-block;width:86px;height:47px;}
+.fasten span{background:url(../Images/jishuzhichi.png) no-repeat; display:inline-block;width:86px;height:47px;z-index:9999;}
 .all span{ position:absolute; left:-29px; top:50%; margin-top:-58px; cursor:pointer;}
-@media (max-width:981px) {
+@media screen and (min-width:640px) and (max-width:959px) {
 .remain{display:none;}	
 .hut{display:none;}
 .main p span.Enicon{display:none}
 .main .promote span.Enicon,.seniority p .Load{display:none}
 .allow{display:none;}
 .search{display:none;}
-
+.NavR{display:none;}
+.NavMiddle{width:90%;}
+.Notice .head,.seniority .head,.forum .head{background:none;font-size:20px;text-align:left;padding-left:2%;}
+.Notice .head a,.seniority .head a,.forum .head a{font-size:16px;text-align:left;}
+.blong-itemo{display:none;}
+.cp{margin:0 auto;}
+}
+@media screen and (max-width:640px){
+.Navleft{display:none;}	
+.NavR{display:none;}
+.NavMiddle{width:100%;}
+.navigation-up .navigation-v3 li h2 a{padding:0 2px;height:60px;}
+.navigation-up .navigation-v3 .nav-up-selected-inpage{background:none;}
+.NavSor{display:none;}
+.blong-itemo{display:none;}
+.cp{margin:0 auto}
 }
 /*第一部分公共样式控制*/
 .bordNo{border:none;}
