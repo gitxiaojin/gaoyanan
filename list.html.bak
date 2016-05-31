@@ -106,13 +106,6 @@
        <a href="Web/CA 正版化/login.html" class="decoration">项目:第一版CA平台</a>
        <a href="Web/New CA/index.html" class="decoration">第二版NewCA</a>
      </div>
-	  <div class="col-md-4">
-       <div class="workout">
-        <p class="webHover" title="点击放大"><img src="Images/fangda.png" width="35" height="35"></p>
-        <img src="Images/web10.jpg" class="img-responsive";> 
-       </div>
-       <a href="Web/h5/index.html" class="decoration">项目：h5页面</a>
-     </div>
      <div class="col-md-4">
        <div class="workout">
          <p class="webHover" title="点击放大"><img src="Images/fangda.png" width="35" height="35"></p>
@@ -149,7 +142,14 @@
        </div>
        <a href="Web/千禧之星代码制作/index.html" class="decoration">项目：千禧之星</a>
      </div>
-	     <div class="col-md-4">
+	 <div class="col-md-4">
+       <div class="workout">
+        <p class="webHover" title="点击放大"><img src="Images/fangda.png" width="35" height="35"></p>
+        <img src="Images/web10.jpg" class="img-responsive";> 
+       </div>
+       <a href="Web/h5/index.html" class="decoration">项目：h5页面</a>
+     </div>
+     <div class="col-md-4">
        <div class="workout">
         <p class="webHover" title="点击放大"><img src="Images/fangda.png" width="35" height="35"> </p>
         <img src="Images/web09.jpg" class="img-responsive";>
