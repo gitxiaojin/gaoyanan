@@ -1,0 +1,268 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+html{font-size: 62.5%;}
+body{
+      margin:0;
+      padding:0;
+      list-style:none;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-size:14px;
+      border:0;
+      -webkit-box-sizing:border-box;
+  }
+body{
+    line-height: 1.428571429;
+}
+
+/*全局公共样式控制*/
+body{-webkit-overflow-scrolling:touch;}/*流畅滚动*/
+a,button,input,optgroup,select,textarea{ -webkit-tap-highlight-color: rgba(0,0,0,0); }/*防止点击的时候背景变暗*/
+a.img{-webkit-touch-callout:none;}/*禁止长按链接与图片弹起菜单*/
+
+
+a:link,a:hover{list-style:none;text-decoration:none; cursor:pointer;}
+a:visited{list-style:none; text-decoration:none;}
+ul,ul li,p{list-style:none;margin:0;padding:0;}
+/**************************登录***********************/
+img{
+    width:100%;
+    display:block;
+}
+.head{
+    display:-webkit-flex;
+    display: flex;
+    padding:15px;
+    flex-wrap: wrap;
+}
+.head p{
+    width:140px;
+    height:82px;
+    margin:0 5px 0 0;
+}
+.headTitle{
+  background:#e16a0f; 
+  text-align:center; 
+  color:#FFF;
+  flex:1;
+  height:30px;
+  line-height: 30px;
+  margin-top:56px;
+
+}
+.cont_text{
+    padding:0 20px;
+}
+.cont_text div{
+    margin-bottom:10px;
+    padding: 10px;
+}
+.cont_text h4{
+    font-weight: 400;
+    font-size: 17px;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom:5px;
+}
+.cont_text p{
+    color: #999;
+    font-size: 13px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom:15px;
+}
+.cont_text .weui-media-box__desc{
+  -webkit-line-clamp:inherit;
+}
+.cont_grids{
+    padding:10px 20px;
+}
+.cont_grids h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.footer_logo{
+    width:150px;
+    height:38px;
+    padding: 10px;
+    margin-top: 15px;
+}
+/*报名页面*/
+.cont-text__address{
+    display:flex;
+    padding:10px;
+    margin-top: 15px;
+}
+.cont-address__part{
+    flex:1;
+}
+.cont-address__part dt{
+    width:50px;
+    height:50px;
+    display:inline-block;
+}
+.cont-address__part dd{
+    display:inline-block;
+    width:50%;
+    vertical-align: top;
+}
+.cont-address__part dd p{
+    width:100px;
+}
+.weui-btn_enroll{
+   background:#009f97;
+}
+.weui-btn_enroll:active{
+   background:#036d68;
+}
+.cont-download{
+    background: #009f97;
+    width: 100%;
+    font-size: 18px;
+    line-height: 50px;
+    color: #FFF;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+}
+.cont-download p{
+    flex:1;
+    text-align: center;
+}
+.cont-download p:nth-of-type(2){
+    text-align: right;
+    padding-right: 30px;
+}
+.weui-download__title{
+   flex:3; 
+   font-weight: 400;
+   font-size: 16px;
+}
+.weui-btn_enroll .weui-icon-download{
+    color:#FFF;
+}
+.weui-btn_endisable{
+  background:rgba(0, 159, 151, 0.4);
+}
+/*九宫格样式优化*/
+.cont_grids .weui-grids:before,.cont_grids .weui-grid:before{
+    border-right:none;
+    border-top:none;
+}
+.cont_grids .weui-grids:after,.cont_grids .weui-grid:after{
+    border-left:none;
+    border-bottom:none;
+}
+.cont_grids .weui-grid__icon{
+    width:60px;
+    height:60px;
+}
+.weui-grids{
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    display:flex;
+}
+/*ERROR*/
+.error{
+  padding:0 20px;
+  text-align:center;
+}
+.error p:nth-of-type(1){
+  font-size: 20px;
+  font-weight:bold;
+  color:#000;
+  padding-top: 200px;
+}
+.error p:nth-of-type(2){
+  margin-top:20px;
+  word-wrap: break-word;
+}
+.weui-cell__htitle {
+    color:#009D95;
+}
+.weui-cell__fts {
+  position:absolute;
+  right:0;
+  top:0;
+  background:#e0690f;
+  color:#FFF;
+  font-size:12px;
+  padding:2px 10px;
+}
+.weui-pl_pic {
+    height: 60px;
+    width: 60px;
+    border: 1px #eeeaea solid;
+    display: block;
+    padding: 5px;
+    margin-right: 5px;
+}
+.icon__weui-pic {
+    color:#e16a0f;
+    font-size:18px;
+}
+/*二维码扫描页面009f97  e16a0f*/
+.weui-all__code span{
+  width:20px;
+  height:20px;
+  display:inline-block;
+  position:absolute;
+  
+}
+.weui-all__code span:nth-of-type(1){
+  border-top: 5px #e16a0f solid;
+  border-left: 5px #e16a0f solid;
+  left:0;
+  top:0;
+}
+.weui-all__code span:nth-of-type(2){
+  border-top: 5px #e16a0f solid;
+  border-right: 5px #e16a0f solid;
+  right:0;
+  top:0;
+}
+.weui-all__code span:nth-of-type(3){
+  border-bottom: 5px #e16a0f solid;
+  border-right: 5px #e16a0f solid;
+  right:0;
+  bottom:0;
+}
+.weui-all__code span:nth-of-type(4){
+  border-bottom: 5px #e16a0f solid;
+  border-left: 5px #e16a0f solid;
+  left:0;
+  bottom:0;
+}
+.weui-all__code p{
+  text-align: center;
+  line-height: 60px;
+  color:#5d2800;
+  font-weight: bold;
+  font-size: 17px;
+}
+.weui-code{
+  width:20rem;
+  height:20rem;
+  margin:0 auto;
+  border:1px #e16a0f solid;
+  margin-top: 20px;
+  padding:15px;
+  position:relative;
+}
+.weui-msg__success{
+  width:13rem;
+  height:10rem;
+  margin:0 auto;
+}

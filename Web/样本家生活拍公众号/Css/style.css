@@ -1,0 +1,67 @@
+body { font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;  background: #efeff4;}
+/*我的积分*/
+.weui_jf{background:url(../Image/weui_qiaodao.png);height:261px;position:relative; width:100%;background-size:100% 100%;text-align:center;color:#FFF;}
+.weui_jf img{margin-top:2.5rem;}
+.weui_jf p:nth-of-type(2){font-size:1.2rem; font-weight:bold;}
+.weui_credit{background:url(../Image/weui_credit.png) left top no-repeat;padding-left: 30px;background-size:18px 20px;-webkit-background-size:18px 20px;}
+.weui_myticket{background:url(../Image/weui_ticket.png) left top no-repeat;padding-left: 30px;background-size:20px 20px;-webkit-background-size:20px 20px;}
+.weui_gift{background:url(../Image/weui_lpin.png) left top no-repeat;padding-left: 30px;background-size:20px 20px;-webkit-background-size:20px 20px;}
+.weui_personal{background:url(../Image/weui_personal.png) left top no-repeat;padding-left: 30px;background-size:20px 20px;-webkit-background-size:20px 20px;}
+.weui-media__bg{width:100%;background:url(../Image/weui_aqy.jpg) left top no-repeat;display:inline-block;background-size:100% 160px;display:flex;
+align-items:center;-webkit-align-items:center;justify-content:center;-webkit-justify-content:center;font-size:1.8rem;color:#ff5f72;height:160px;}
+
+/*积分增加明细*/
+.weui_bill span{background:url(../Image/weui_bill.png) left top no-repeat;padding-left: 14px;display: inline-block;}
+.weui_dz{color:#369e36;margin-top:5px;}
+.weui_dz li{margin-bottom:10px;}
+.weui-code{margin-top:10px;margin-bottom:10px;}
+.weui-media-box__desc span{color:#f24907;font-size:20px;}
+/*滴滴打车兑换*/
+.weui_title span{background:url(../Image/weui_didi.png) left 3px no-repeat;display:inline-block;padding-left: 34px;background-size:27px 23px;
+    -webkit-background-size:27px 23px;}
+.weui-yk{background:url(../Image/weui_kq.png) left top no-repeat;width:87px;text-align: center;line-height:70px;color:#FFF;font-weight: bold;height:70px;font-size:1.2rem;background-size:87px 70px;
+    -webkit-background-size:87px 70px;}
+/*爱奇艺兑换*/
+.weui_dh{padding:0 15px;height:70px;margin-bottom:20px;background:#FFF;}
+.weui-icon_dh{color:#ed8001;}
+.weui-jk{background:url(../Image/weui_kq_aqy.png) left top no-repeat;width:87px;text-align: center;line-height:70px;color:#FFF;font-weight: bold;height:70px;font-size:1.2rem;background-size:87px 70px;
+    -webkit-background-size:87px 70px;}
+.weui_btn_dh{background:#fd8e20;}
+.weui_title—aqy span{background:url(../Image/weui_aiqiyi.png) left 3px no-repeat;display:inline-block;padding-left: 34px;background-size:32px 23px;}
+/*流量兑换*/
+.weui_title—lulag span{background:url(../Image/weui_m.png) left 3px no-repeat;display:inline-block;padding-left: 34px;background-size:27px 23px;
+    -webkit-background-size:27px 23px;}
+.weui_title{font-size:1.2rem;color:#0f0f0f;}
+.weui-xjf span{font-weight:bold;color:#ff7e00;}
+/*积分兑换*/
+.weui-xjf{padding:0 20px;width:100%;padding-top:.5rem;}
+.weui_tanDown{padding-top:1.3rem;}
+.weui_img{width:auto;max-width:100%;height:auto;}/*图片超过了就缩小，假如图片小了就原尺寸输出*/
+.weui-media_bg{background:url(../Image/weui_aiqiyi.png) left 3px no-repeat;display:inline-block;padding-left: 34px;background-size:32px 23px;}
+
+/*我的票券*/
+.weui_pq{background:url(../Image/weui_piaoqu.png) left top no-repeat;padding-left: 40px;background-size:30px 23px;
+    -webkit-background-size:30px 23px;}
+
+/*评价*/
+.weui-evaluate{float:right;margin:10px 10px 0 0px;}
+.weui_judge{border-bottom: 2px #fd8e20 solid;}
+.weui-ev_all{clear:both;}
+.weui-ev__user span:nth-of-type(1){color:#fd8e20;}
+.weui-ev__user span:nth-of-type(2){color:#ccc;}
+.weui-cell_bg{background:#f7f6f6;}
+.weui-ev__text{color:#1aac19;}
+.weui-pl_pic{margin:10px;}
+/*我要兑换*/
+.page__upload span{background:url(../Image/upload.png) left 3px no-repeat;display:inline-block;padding-left: 34px;}
+.weui-box__full{-webkit-line-clamp:3;}
+.weui-panel__credit{background:url(../Image/weui_dh_aqi.png) center center no-repeat;color:#69b946;font-weight: bold;font-size:2rem;display:flex;align-items: center;justify-content: center;
+    background-size:270px 100px;height:100px;}
+.weui-form-preview__label{color:#FBB77D;}
+.weui-panel_center{text-align:center;position:relative;}
+.weui-panel_center a{position:absolute;left:20px;top:15px;width:100px;height:30px;display:inline-block;text-align:left;color:#999999;}
+.weui-form_away{margin-top:1.17647059em ;}
+
+
+
+   
