@@ -236,11 +236,11 @@ img{display:block;}
     position:relative;
     overflow:hidden;
 	background:#7332de;
-    background:linear-gradient(-90deg,#5653de,#7828e1);
-    background:-moz-linear-gradient(-90deg,#5653de,#7828e1);
-    background:-webkit-linear-gradient(-90deg,#5653de,#7828e1);
-    background:-o-linear-gradient(-90deg,#5653de,#7828e1);
-    background:-ms-linear-gradient(-90deg,#5653de,#7828e1);
+    background:linear-gradient(-180deg,#5653de,#7828e1);
+    background:-moz-linear-gradient(-180deg,#5653de,#7828e1);
+    background:-webkit-linear-gradient(-180deg,#5653de,#7828e1);
+    background:-o-linear-gradient(-180deg,#5653de,#7828e1);
+    background:-ms-linear-gradient(-180deg,#5653de,#7828e1);
 
 }
 .banner ul{
