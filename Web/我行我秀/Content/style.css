@@ -1,0 +1,316 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+html{font-size: 62.5%;}
+body{
+      margin:0;
+      padding:0;
+      list-style:none;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-size:14px;
+      border:0;
+      -webkit-box-sizing:border-box;
+  }
+body{
+    line-height: 1.428571429;
+    background:#f3f3f3;
+}
+
+/*全局公共样式控制*/
+body{-webkit-overflow-scrolling:touch;}/*流畅滚动*/
+a,button,input,optgroup,select,textarea{ -webkit-tap-highlight-color: rgba(0,0,0,0); }/*防止点击的时候背景变暗*/
+a.img{-webkit-touch-callout:none;}/*禁止长按链接与图片弹起菜单*/
+
+
+a:link,a:hover{list-style:none;text-decoration:none; cursor:pointer;}
+a:visited{list-style:none; text-decoration:none;}
+ul,ul li,p{list-style:none;margin:0;padding:0;}
+
+/**************************登录***********************/
+
+.head{
+    position: relative;
+    height:220px;
+}
+.weui-cells_edge{
+    padding-bottom: 20px;
+}
+.logo{
+    position:absolute;
+    left:20px;
+    top:25px;
+
+}
+.title{
+    position:absolute;
+    left:50%;
+    top:56px;
+    -webkit-transform: translate(-50%);
+       -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+         -o-transform: translate(-50%);
+            transform: translate(-50%);
+}
+.cont_rule{
+    padding:0 2rem;
+}
+.cont_rule__head{
+    background:url(../Images/head_bg.png) repeat-x;
+    height:40px;
+    position:relative;
+    color:#FFF;
+    text-align:center;
+    font-weight:bold;
+    line-height:40px;
+    font-size: 1.5rem;
+}
+.cont_rule__flower{
+    position:absolute;
+    left:-20px;
+    top:-20px;
+}
+.cont_rule__cont{
+    background:#FFF;
+    padding:1rem;
+    color:#fd518b;
+}
+/*weui*/
+.weui-btn-area{
+    margin:1.17647059em 22px 0.3em;
+}
+.weui-btn_fu{
+    background:#f47d21;
+}
+.weui-btn_vote{
+    background:#FFF;
+    color:#f47d21;
+}
+.weui-btn_vote:active{
+    background:#ffddc2;
+    color:#FFF;
+}
+.weui-btn_fu:active{
+    background:#f09855;
+}
+
+/*上传详情*/
+nav{
+    height: 40px;
+    line-height: 40px;
+    background: #fd518b;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+.arr{
+    position:absolute;
+    left:9px;
+    top:3px;
+
+}
+.weui-uploader{
+    padding:10px 15px;
+}
+.weui-uploader__input-box{
+    border:1px #D9D9D9 dashed;
+}
+/*登录页*/
+.weui-btn_submit{
+    background:#ff0050;
+}
+.weui-btn_submit:active{
+    background:#fd407b;
+}
+/*视频详情*/
+.weui-search-bar{
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    top:40px;
+}
+.page__title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding:20px;
+}
+
+
+.page__title span{
+    color:#09ba07;
+}
+.weui-panel{
+    padding:20px;
+}
+.weui-panel__cont{
+    display: flex;
+    height:30px;
+    padding-top:10px;
+    color:#898989;
+
+}
+.weui-panel__cont p.weui-vote{
+    text-align:right;
+}
+.weui-vote span{
+    background: #fd518b;
+    color: #FFF;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+.weui-vote span:active{
+    background:#ff82ac;
+}
+.weui-vote-num span{
+    color:#fd518b;
+}
+.weui-panel__cont p{
+    flex:1;
+    text-align:center;
+}
+
+.weui-vid-wrapper{
+    width:100%;
+    position:relative;
+    padding-bottom: 48.25%;
+    height:0;
+}
+.weui-new{
+    position:absolute;
+    right:0;
+    top:0;
+    z-index: 2;
+    
+}
+
+.weui-new span{
+    background:#646464;
+    display: inline-block;
+    background-size: 33px;
+    line-height:26px;
+    color:#FFF;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px 0 0 4px;
+}
+.weui-new span.new{
+    background:#09ba07;
+}
+.weui-new span.weui-top{
+    background:#ff1200;
+    background-size: 33px;
+}
+.weui-new span.weui-sec{
+    background:#ff9000;
+    background-size: 33px;
+}
+.weui-new span.weui-thr{
+    background:#0099ff;
+    background-size: 33px;
+}
+.weui-vid-wrapper .weui-view-img{
+   position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.weui-vote-share span{
+    background:url(../Images/weui-share.png) no-repeat; 
+    padding-left: 22px;
+    background-size: 18px;
+}
+.weui-vote-num,.weui-vote-share{
+    line-height: 30px;
+}
+.weui-vote-title{
+    font-size: 1.5rem;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+
+
+/*弹框*/
+
+/*弹框*/
+.dialog{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    display:-webkit-flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 10;
+    
+   
+}
+.myModal{
+    padding:1rem 2.6rem;
+    background:#FFF;
+    border-radius: 5px;
+    position:relative;
+    text-align:center;
+}
+
+.weui-msg__text-area {
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+.custom-classname{display:none;}
+
+#toast{
+    display: none;
+}
+
+.weui-dialog{
+    padding:10px 0 0 0;
+}
+
+.weui-msg__title{
+    padding:10px 0 0 0;
+}
+.weui-dialog__hd{
+    padding:0 0 10px 0;
+}
+.page__title a{
+    vertical-align: middle;
+}
+.page-title-rank a{
+    background: url(../Images/weui_paihang.png) left 2px no-repeat;
+    display:inline-block;
+    background-size: 20px;
+    padding-left: 23px;
+}
+
+.mark-black{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 11;
+    display:none;
+}
+.mark-black img{
+    position:absolute;
+    right:10px;
+    top:10px;
+}

@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+.navTop{background:#121212;}
+.navTop a{color:#eaeaea;}
+.navCont ul.ul_wrap li.current{color:#37bde7;border-bottom:2px #37bde7 solid;height:50px;}
+.navCont ul.ul_wrap li:hover{color:#37bde7;border-bottom:2px #37bde7 solid;height:50px;}
+.wleft{background:#2ebbe6;}
+.tab_kj{background:#1490b6}
+.wleft ul li:hover{background:#1490b6;}
+.btn_hs{background:#37bc9b;border:none;color:#FFF;}
+.btn_hs:hover{background:#2da184;color:#FFF;}
+.btn_qd{background:#37bc9b;border:none;color:#FFF;}
+.btn_qd:hover{background:#2da184;border:none;color:#FFF;}
+/*.par_nav{background:#23b7e5;}
+.more{border:1px solid #05C1FF;background:#0283ab;color:#FFF;}
+.nav-tabs > li > a:hover{background:#0283ab;border:none;border-radius:0;height:40px;}*/
+.nav_nav a{color:#333;}
+.more{border:1px #e0e0e0 solid;border-left:none;}
+.nav-tabs{border-bottom:1px #e0e0e0 solid;}
+@media screen and (min-width:640px) and (max-width:959px) {
+#nav_hide{border:1px #e0e0e0 solid;}
+}
+/******显示逻辑样式****/
+#logicModal .logicRight {
+    display: none;
+    height: 351px;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    margin-left: 182px;
+    font-size: 14px;
+}
+
+    #logicModal .logicRight.current {
+        display: block;
+    }
+
+    #logicModal .logicRight .display_logic {
+        height: 302px;
+        overflow: auto;
+        padding: 10px 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #logicModal .logicRight .gotoLogic {
+        padding-left: 15px;
+       
+    }
+.gotoLogic {
+           margin-top:15px;
+}
+
+    #logicModal .logicRight .showQuestion {
+        cursor: pointer;
+    }
+
+   #logicModal .logicRight .showQuestion.disabled {
+            color: #999;
+            cursor: not-allowed;
+        }
+
+    #logicModal .logicRight .selected {
+        background: #58a6e7;
+        color: #fff;
+    }
+
+#logicModal .logicLeft {
+    float: left;
+    width: 182px;
+    height: 318px;
+    overflow: auto;
+    font-size: 14px;
+    padding-top:10px;
+}
+
+ #logicModal .logicLeft .option {
+        cursor: pointer;
+        padding: 3px 7px;
+    }
+
+#logicModal .logicLeft .option.current {
+            color: #fff;
+            background: #58a6e7;
+        }
+
+/**********End*********/

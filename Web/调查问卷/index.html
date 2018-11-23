@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>卷调查</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="Images/favicon.ico"><!--ico图标的制作-->
+<link rel="stylesheet" href="Content/bootstrap.min.css" type="text/css">
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<!--[if lte IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="Content/style.css" type="text/css">
+<link rel="stylesheet" href="Content/Newstyle.css">
+</head>
+
+<body>
+
+<div class="navTop">
+    	<div class="navCont">
+           <div class="logo"><img src="Images/logo2.png" width="50" alt="问卷调查" title="问卷调查"></div>
+             <ul class="ul_wrap">
+                <a href=""><li>问卷平台</li></a>
+                <a href="index.html"><li>创建问卷</li></a>
+                <a href="list.html"><li>我的问卷</li></a>
+        	 </ul>
+             <div class="G_line"></div>
+            <div class="u_info">您好,gyn@ctrchina.cn <span class="xia_ld"></span>
+             <div class="u_info_list">
+                <dl class="w2">
+                   <dt><a href="#">退出</a></dt>
+                   <dt><a href="#">退出</a></dt>
+                </dl>
+             </div>
+           </div>
+
+
+        </div>
+    </div><!--头部的编写-->
+<div class="navBt">
+        	<div class="G_left">
+             <a class="G_bianji">编辑问卷</a> 
+             <a class="G_shezhi" data-toggle="modal" data-target="#myModal">设置</a> 
+             <a class="G_view" data-toggle="modal" data-target="#myModal">视图逻辑</a>
+          </div>
+          <div class="G_right"><a class="g_yl">预览</a> <button class="btn btn_hs">开始回收</button></div>
+    </div><!--编辑菜单-->
+<div class="wrapAll">
+   <div class="wrigth">
+   		
+         	 <div class="Gtab2">
+                    <div class="tab-content">
+                          <!--   第一部分 -->
+                           
+                            <div class="parrent par_nav">
+                                <span class="span_left"> < </span>
+                                  <div class="nav_wrap">
+                                    <div id="nav_hide">
+                                        <ul class="nav nav-tabs nav-stacked nav_nav nav_block">
+                                            <li class="active"><a href="#tab_1" data-toggle="tab" class="analistic-01 G_tab" style="border-left:none;"><span>第一页</span> <span class="Ggb">×</span></a>  </li>
+                                            <li class=""><a href="#tab_2" data-toggle="tab" class="analistic-02 G_tab"><span>第二页</span> <span class="Ggb">×</span></a></li>
+                                            <li class=""><a href="#tab_3" data-toggle="tab" class="tehnical G_tab"><span>第三页</span> <span class="Ggb">×</span></a></li> 
+                                            <li class=""><a href="#tab_last" data-toggle="tab" id="Gtehnical G_tab"><span>结束页</span> <span class="Ggb">×</span></a></li>
+                                        </ul>
+                                      </div>
+                                 </div>
+                               <span class="more">+</span>
+                               <span class="span_right"> > </span>
+                            </div>
+                           <!--  tab栏 -->
+                           <div id="pmb">
+                               
+                                <div class="tab-content" id="tab-content-list">
+                                    <div class="tab-pane fade active in" id="tab_1"><div class="blong-itemT wow fadeInUp bg_beijign">
+            	                        
+                                          
+                                          <form role="form">
+                                              <div class="form-group">
+                                                <textarea class="form-control G_tatitle" rows="2">问卷调查</textarea>
+                                              </div>
+                                           </form>
+                                            <form role="form">
+                                              <div class="form-group">
+                                                <textarea class="form-control G_tatxt" rows="3">为了给您提供更好的服务，希望您能抽出几分钟时间，将您的感受和建议告诉我们，我们非常重视每位用户的宝贵意见，期待您的参与！现在我们就马上开始吧！</textarea>
+                                              </div>
+                                           </form>
+                                        
+                                          <div class="bg_add">
+                                              <div class="form-group G_title">
+                                              <label for="firstname" class="col-md-1 col-sm-1 control-label text-right"><span class="G_timu">题目</span></label>
+                                              <div class="col-md-11 col-sm-11 col-xs-11">
+                                                 <input type="text" class="form-control" id="firstname" 
+                                                    placeholder="问卷调查">
+                                              </div>
+                                           </div>
+                                              <div class="form-group G_title">
+                                              <div class="ops">
+                                                  <label for="firstname" class="col-md-1 col-sm-1  control-label text-right"><span class="G_timu">选项</span></label>
+                                                  <div class="col-lg-10 col-md-9 col-sm-8">
+                                                     <input type="text" class="form-control" id="firstname" 
+                                                        placeholder="选项">
+                                                  </div>
+                                                  <div class="col-md-1 col-sm-1 text-center G_shanchu">
+                                                    <button type="button" class="btn btn-default" id="btn_change">
+                                                      <span class="glyphicon glyphicon-picture"></span>
+                                                    </button>
+                                                       <span class="G_dele">×</span>
+                                                  </div>
+                                                  <div class="col-md-11 col-sm-11 text-left col-md-offset-1">
+                                                      <p class="new_adxg"><a class="new_ad">新增选项</a> | <a class="new_xg">批量修改</a></p>
+                                                  </div>
+                                              </div>
+                                              <div class="ops">
+                                                  <label for="firstname" class="col-md-1 col-sm-1  control-label text-right"><span class="G_timu">选项</span></label>
+                                                  <div class="col-lg-10 col-md-9 col-sm-8">
+                                                     <input type="text" class="form-control" id="firstname" 
+                                                        placeholder="选项">
+                                                  </div>
+                                                  <div class="col-md-1 col-sm-1 text-center G_shanchu">
+                                                    <button type="button" class="btn btn-default" id="btn_change">
+                                                      <span class="glyphicon glyphicon-picture"></span>
+                                                    </button>
+                                                       <span class="G_dele">×</span>
+                                                  </div>
+                                                  <div class="col-md-11 col-sm-11 text-left col-md-1 col-md-offset-1">
+                                                      <p class="new_adxg"><a class="new_ad">新增选项</a> | <a class="new_xg">批量修改</a></p>
+                                                  </div>
+                                              </div>
+                                              <div class="ops">
+                                                  <label for="firstname" class="col-md-1 col-sm-1  control-label text-right"><span class="G_timu">选项</span></label>
+                                                  <div class="col-lg-10 col-md-9 col-sm-8">
+                                                     <input type="text" class="form-control" id="firstname" 
+                                                        placeholder="选项">
+                                                  </div>
+                                                  <div class="col-md-1 col-sm-1 text-center G_shanchu">
+                                                    <button type="button" class="btn btn-default" id="btn_change">
+                                                      <span class="glyphicon glyphicon-picture"></span>
+                                                    </button>
+                                                       <span class="G_dele">×</span>
+                                                  </div>
+                                                  <div class="col-md-11 col-sm-11 text-left col-md-offset-1">
+                                                      <p class="new_adxg"><a class="new_ad">新增选项</a> | <a class="new_xg">批量修改</a></p>
+                                                  </div>
+                                              </div>
+                                              
+                                              <div class="col-md-12 col-sm-12 text-center G_queding">
+                                                   <label class="checkbox-inline G_radioi G_qiehuani">
+                                                        <input type="checkbox" id="inlineCheckbox1" value="option1" class="radioclass"> 必填
+                                                   </label>
+                                                   <label class="checkbox-inline G_radioi G_qiehuani">
+                                                      <input type="checkbox" id="inlineCheckbox2" value="option2" class="radioclass"> 其他选项
+                                                   </label>
+                                                   <label class="checkbox-inline G_radioi G_qiehuani">
+                                                      <input type="checkbox" id="inlineCheckbox3" value="option3" class="radioclass"> 选项是否随机排序
+                                                   </label>
+                                                  
+                                              </div>
+                                              <div class="row">
+                                              		<div class="col-md-6 text-right col-sm-6 col-xs-6"> <button class="btn btn_qd">确定</button></div>
+                                                    <div class="col-md-6 text-left col-sm-6 col-xs-6"> <button class="btn btn-default btn_quxiao">取消</button></div>
+                                           </div>
+                                              
+                                              
+                                           </div>
+                                        
+                                          </div>
+                                        <!--   多选题 -->
+                                          <div class="bg_add">
+                                          
+                                              <div class="form-group G_title">
+                                              <label for="firstname" class="col-md-1 col-sm-1 control-label text-right"><span class="G_timu">题目</span></label>
+                                              <div class="col-md-11 col-sm-11 col-xs-11">
+                                                 <input type="text" class="form-control" id="firstname" 
+                                                    placeholder="问卷调查">
+                                              </div>
+                                           </div>
+                                              <div class="form-group G_title">
+                                              <label for="firstname" class="col-md-1 col-sm-1  control-label text-right"><span class="G_timu">长度</span></label>
+                                              <div class="col-md-9 col-sm-9">
+                                                 <input type="text" class="form-control" id="firstname"  placeholder="选项">
+                                              </div>
+                                              <div class="col-md-2 col-sm-2 text-right G_bitian">
+                                                 <label class="checkbox-inline G_radioi G_qiehuani">
+                                                  <input type="checkbox" name="optionsRadiosinline" id="optionsRadios4"  value="option2" class="radioclass"> 必填
+                                                 </label> 
+                                              </div>
+                                              <div class="col-md-11 col-sm-11 text-left col-md-offset-1">
+                                                  <p class="new_adxg"><a class="new_ad">新增选项</a> | <a class="new_xg">批量修改</a></p>
+                                              </div>
+                                              
+                                              <div class="col-md-12 col-sm-12 text-center G_queding">
+                                                   <label class="checkbox-inline G_radioi G_qiehuani">
+                                                      <input type="checkbox" id="inlineCheckbox1" value="option1" class="radioclass"> 必填
+                                                   </label>
+                                                   <label class="checkbox-inline G_radioi G_qiehuani">
+                                                      <input type="checkbox" id="inlineCheckbox2" value="option2" class="radioclass"> 其他选项
+                                                   </label>
+                                                   <label class="checkbox-inline G_radioi G_qiehuani">
+                                                      <input type="checkbox" id="inlineCheckbox3" value="option3" class="radioclass"> 选项是否随机排序
+                                                   </label>
+                                                  
+                                              </div>
+                                              <div class="row">
+                                              		<div class="col-md-6 text-right col-sm-6 col-xs-6"> <button class="btn btn_qd">确定</button></div>
+                                                    <div class="col-md-6 text-left col-sm-6 col-xs-6"> <button class="btn btn-default btn_quxiao">取消</button></div>
+                                            </div>
+                                           </div>
+                                           </div> 
+                                          <!-- 单选文本模块 -->
+                                          <div class="bg_add">
+                                             <div class="form-group G_title">
+                                              <label for="firstname" class="col-md-1 col-sm-1 control-label text-right"><span class="G_timu">题目</span></label>
+                                              <div class="col-md-11 col-sm-11 col-xs-11">
+                                                 <input type="text" class="form-control" id="firstname" 
+                                                    placeholder="问卷调查">
+                                              </div>
+                                           </div>
+                                              <div class="form-group G_title">
+                                                <div class="col-md-1 col-sm-1 text-right G_lx"><span class="G_timu">类型</span></div>
+                                                <div class="col-md-9 col-sm-9">
+                                                  <div class="form-group">
+                                                      <select class="form-control input-sm">
+                                                         <option value="">认同度</option>
+                                                         <option value="">认同度2</option>
+                                                         <option value="">认同度2</option>
+                                                      </select>
+                                                      </div>
+                                                     </div>
+                                                <div class="col-md-2 col-sm-2 text-right G_bitian">
+                                                   <label class="checkbox-inline G_radioi G_qiehuani">
+                                                    <span class="G_bitian2"><input type="checkbox" id="inlineCheckbox1" value="option1" class="radioclass">  必填</span>
+                                                   </label>
+                                                  </div>
+                                              </div>
+                                            <div class="row">
+                                                        <div class="col-md-6 text-right col-sm-6 col-xs-6"> <button class="btn btn_qd">确定</button></div>
+                                                        <div class="col-md-6 text-left col-sm-6 col-xs-6"> <button class="btn btn-default btn_quxiao">取消</button></div>
+                                       </div>
+                                     </div> 
+                                          <!-- 量表题 -->
+                                          <div class="bg_editor">
+                                          	<p class="bg_editor_title">1.测试一</p>
+                                            <p class="bg_editor_ts">无条件跳转</p>
+                                            <ul class="questionOption">
+                                                <li>
+                                                   <input name="radio_8cd588d6-bcd6-4636-99ad-622001632d55" type="radio"> 选项
+                                                </li>
+                                            </ul>
+                                            <div class="bg_btn">
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_bj"> <button class="btn btn-primary btn_qd btn_bianji"><span class="glyphicon glyphicon-pencil"></span> 编辑</button></p>
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_sc"> <button class="btn btn-primary btn_qd btn_shanchu"  data-toggle="modal" data-target="#delModal"><span class="glyphicon glyphicon-trash"></span> 删除</button></p>
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_sc"> <button class="btn btn-primary btn_qd btn_luoji" data-toggle="modal" data-target="#myModall"><span class="glyphicon glyphicon-random"></span> 逻辑</button></p>
+                                            </div>
+                                          
+                                          </div>
+                                          <div class="bg_add">
+                                             <div class="form-group G_title">
+                                              <label for="firstname" class="col-md-1 col-sm-1 control-label text-right"><span class="G_timu">题目</span></label>
+                                              <div class="col-md-11 col-sm-11 col-xs-11">
+                                                 <input type="text" class="form-control" id="firstname" 
+                                                    placeholder="问卷调查">
+                                              </div>
+                                           </div>
+                                              <div class="form-group G_title">
+                                                <div class="col-md-1 col-sm-1 text-right G_lx"><span class="G_timu">量表题型</span></div>
+                                                <div class="col-md-4 col-sm-4">
+                                                <div class="form-group">
+                                                      <select class="form-control input-sm">
+                                                         <option value="">满意度1</option>
+                                                         <option value="">满意度2</option>
+                                                         <option value="">认同度2</option>
+                                                      </select>
+                                                 </div>
+                                                 </div>
+                                                <div class="col-md-1 col-sm-1 text-right G_lx"><span class="G_timu">量表范围</span></div>
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <input type="text" class="form-control" id="firstname"  placeholder="0">
+                                              </div>
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                 <input type="text" class="form-control" id="firstname" 
+                                                    placeholder="1">
+                                              </div>
+                                                <div class="col-md-2 col-sm-2 text-right G_bitian">
+                                                   <label class="checkbox-inline G_radioi G_qiehuani">
+                                                    <span class="G_bitian2"><input type="checkbox" id="inlineCheckbox1" value="option1" class="radioclass">  必填</span>
+                                                   </label>
+                                                  </div>
+                                              </div>
+                                            <div class="row">
+                                                        <div class="col-md-6 text-right col-sm-6 col-xs-6"> <button class="btn btn_qd">确定</button></div>
+                                                        <div class="col-md-6 text-left col-sm-6 col-xs-6"> <button class="btn btn-default btn_quxiao">取消</button></div>
+                                       </div>
+                                     </div> 
+                                          <div class="bg_editor">
+                                          	<p class="bg_editor_title">6.量表图</p>
+                                            <div class="question_G">
+                                               <p class="text-left">
+                                                   <span class="">非常满意</span>
+                                                   <span class="">
+                                                      <input type="radio">1
+                                                      <input type="radio">2
+                                                      <input type="radio">3
+                                                      <input type="radio">4
+                                                   </span>
+                                                  <span class="">非常不满意</span>
+                                               </p>
+                                            </div>
+                                            <div class="bg_btn">
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_bj"> <button class="btn btn-primary btn_qd btn_bianji"><span class="glyphicon glyphicon-pencil"></span> 编辑</button></p>
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_sc"> <button class="btn btn-primary btn_qd btn_shanchu" data-toggle="modal" data-target="#delModal"><span class="glyphicon glyphicon-trash"></span> 删除</button></p>
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_sc"> <button class="btn btn-primary btn_qd btn_luoji" data-toggle="modal" data-target="#myModall"><span class="glyphicon glyphicon-random"></span> 逻辑</button></p>
+                                            </div>
+                                          
+                                          </div>
+                                          <div class="bg_editor">
+                                          	<p class="bg_editor_title">6.量表图</p>
+                                            <div class="question_G">
+                                               <p class="text-left">
+                                                   <span class="">非常满意</span>
+                                                   <span class="">
+                                                      <input type="radio">1
+                                                      <input type="radio">2
+                                                      <input type="radio">3
+                                                      <input type="radio">4
+                                                   </span>
+                                                  <span class="">非常不满意</span>
+                                               </p>
+                                            </div>
+                                            <div class="bg_btn">
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_bj"> <button class="btn btn-primary btn_qd btn_bianji"><span class="glyphicon glyphicon-pencil"></span> 编辑</button></p>
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_sc"> <button class="btn btn-primary btn_qd btn_shanchu" data-toggle="modal" data-target="#delModal"><span class="glyphicon glyphicon-trash"></span> 删除</button></p>
+                                               <p class="col-md-4 text-center col-sm-4 col-xs-4" id="btn_sc"> <button class="btn btn-primary btn_qd btn_luoji" data-toggle="modal" data-target="#myModall"><span class="glyphicon glyphicon-random"></span> 逻辑</button></p>
+                                            </div>
+                                          
+                                          </div>
+                                        
+                                        
+                                       </div>
+                                    </div>
+                            <div class="tab-pane fade" id="tab_2"> 
+                               <div class="blong-itemT wow fadeInUp bg_beijign">
+                                     2空白处
+                               </div> 
+                            </div>
+                            <div class="tab-pane fade" id="tab_3">
+                               <div class="blong-itemT wow fadeInUp bg_beijign">
+                                 第3处空白
+                            </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_last">
+                               <div class="blong-itemT wow fadeInUp bg_beijign">
+                                 <div class="G_end">
+                                     <form role="form">
+                                          <div class="form-group">
+                                            <textarea class="form-control G_Gtatxt" rows="3">问卷到此结束，感谢您的参与！</textarea>
+                                           </div>
+                                      </form>
+                                 </div>
+                              </div>
+                              </div>
+                                </div> <!--tab-content-->  
+                            </div> <!--media-body-->
+                        </div>                 
+                 </div>
+         
+   </div>
+   <div class="wleft">
+           <div class="tmkj_qh" style="overflow:hidden;">
+          	<p class="tab_kj col-md-6 tab_cur">题目控件 </p>
+            <p class="tab_kj col-md-6">答题 </p>
+           </div>
+            <div class="Gmenu">
+            	<ul class="ul_kj current">
+            		<li><span class="span01_dx">单选题</span></li>
+            		<li><span class="span02_dw">多选题</span></li>
+            		<li><span class="span03_dw">单文本题</span></li>
+                   	<li><span class="span04_lb">多文本题</span></li>
+                    <li><span class="span05_lbt">量表题</span></li>
+                    <li><span class="span07_lbt">段落说明</span></li>
+                   
+               </ul>
+               <ul class="ul_kj">
+                	<li><span class="span06_lbt">您的手机号</span></li>
+                    <li><span class="span06_lbt">您的名字是</span></li>
+                   
+               </ul>
+            </div>
+         
+            <div class="L_left">
+                   <a> <span class="span01"><img src="Images/G_01.png" height="40"></span></a>
+                   <a><span class="span02"><img src="Images/G_02.png" height="40"></span></a>
+                   <a><span class="span03"><img src="Images/danxuanpng.png" height="50"></span></a>
+                   <a><span class="span03"><img src="Images/duo_xuan.png" height="40"></span></a>
+                   <a><span class="span03"><img src="Images/liang_biao.png" width="50" height="50"></span></a>
+                </div>
+         </div><!--左边-->
+   <div class="editor_wrap">
+        <span class="lib_close">收起题库</span>
+        <p class="suvey-head">
+            <span>题库</span>
+            <span class="suvey-close">×</span>
+        </p>
+    </div>
+</div>
+ <!--弹出框--> 
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header tan-head">
+        <button type="button" class="close tan-guan" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">问卷设置</h4>
+      </div>
+      <div class="modal-body">
+        ...
+        <div class="cony"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn_qd" data-dismiss="modal">保存</button>
+        <button type="button" class="btn btn-default">删除</button>
+      </div>
+    </div>
+  </div></div> 
+ <div class="modal fade" id="myModall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header tan-head tan-lj">
+        <button type="button" class="close tan-guan " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title G-ljtit" id="myModalLabel">逻辑</h4>
+      </div>
+      <div class="modal-body">
+        内容
+        <div class="cony"></div>
+      </div>
+      <div class="modal-footer tan-foo">
+        <button type="button" class="btn btn_qd" data-dismiss="modal">保存</button>
+        <button type="button" class="btn btn-default">删除</button>
+      </div>
+    </div>
+  </div></div> 
+<div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header tan-head">
+        <button type="button" class="close tan-guan " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title G-ljtit" id="myModalLabel">逻辑</h4>
+      </div>
+      <div class="modal-body">
+        删除页面会删除此页面的所有信息，确定删除吗？
+        <div class="cony"></div>
+      </div>
+      <div class="modal-footer tan-foo">
+        <button type="button" class="btn btn_qd" data-dismiss="modal">保存</button>
+        <button type="button" class="btn btn-default">删除</button>
+      </div>
+    </div>
+  </div></div> 
+
+
+</body>
+<script type="text/javascript" src="Scripts/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="Scripts/my.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+</html>
