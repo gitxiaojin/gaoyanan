@@ -236,6 +236,7 @@ img{display:block;}
     height:768px;
     position:relative;
     overflow:hidden;
+	background:#7332de;
     background:linear-gradient(-90deg,#5653de,#7828e1);
     background:-moz-linear-gradient(180deg,#5653de,#7828e1);
     background:-webkit-linear-gradient(180deg,#5653de,#7828e1);
@@ -709,6 +710,7 @@ img{display:block;}
 
 /*自我介绍页面*/
 .introd{
+	background:#09F;
     background:linear-gradient(180deg,#00c6ff 30%,#09f 60%,#06F 100%);
     width:100%;
     height:auto;
