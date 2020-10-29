@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+/*旅游推荐*/
+.y_timeline{width:786px;height:246px;padding:20px;margin-bottom:11px; background:url(../Images/yang/timeline_bg.png) no-repeat left; position:relative;}
+.y_timeline_title{ font-size:26px; position:absolute; top:3px; left:65px;}
+.y_timeline_star{ position:absolute; top:50px; left:65px; width:500px;}
+.y_timeline_star span{ display:inline-block; padding-right:10px; color:#666666; font-size:14px;}
+.y_timeline_dl{ position:absolute; top:85px; left:65px;}
+.y_timeline_dl dt{ width:800px;}
+.y_timeline_dl dt a{ display:inline-block; width:150px; height:150px; float:left;}
+.y_timeline_dl dt a img{ width:150px; height:150px;}
+.y_timeline_dl dd{ display:inline-block; float:left; width:750px; line-height:23px; padding-top:7px; height:46px; overflow:hidden;}
+.y_timeline_dl dd span{ display:inline-block; padding:0 3px; font-size:30px;}
+.y_entertainment{background:#FFF;border:1px #f0f0f0 solid;margin-top:15px;padding-top:0;padding-left:15px;padding-right:15px;width:318px;}
+.y_entertainment_title{ height:40px; line-height:40px; border-bottom:1px solid #d8d8d8; }
+.y_entertainment_title span{ display:inline-block; font-size:16px; padding:0 3px;}
+.y_entertainment_one{ height:120px; border-bottom:1px solid #ececed; position:relative;}
+.y_entertainment_one_pic{ position:absolute; top:15px; left:0px;}
+.y_entertainment_one_pic img{ width:160px; height:90px;}
+.y_entertainment_one_title{ font-size:13px; color:#d16b4a; position:absolute; top:15px; left:175px; right:10px; height:40px; line-height:20px; overflow:hidden;}
+.y_entertainment_one_content{ position:absolute; top:62px; left:175px; right:10px; line-height:20px; height:40px; overflow:hidden;}
+
+
+
+/*攻略荟萃*/
+.y_list7_part2{height:450px;color:#333333;margin-bottom:20px;}
+.y_report_btn{ padding-top:15px;}
+.y_list_hf{height:50px;line-height:60px;border-bottom:2px solid #dedede;font-size:24px;position:relative;}
+.y_list_hf span{background:url(../Images/yang/pink.png) left bottom no-repeat;height:52px;display:inline-block;}
+.y_list_hf .more{position:absolute;right:0;color:#bbbbbb; font-style:normal;transition:all 0.5s;}
+.y_list_hf .more:hover{color:#ff6c00;font-weight:bold;margin-right:10px;}
+.y_list7_vo{padding-top:15px;}
+.y_list7_vo ul{width:1230px; text-align: left;}
+.y_list7_vo ul li{widht:384px;height:390px;float:left;margin-right:30px;}
+.y_hot_pic{ position:relative; width:100%; height:250px;overflow:hidden;}
+.G_pictu{width:379px;height:450px;overflow:hidden;}
+.G_pictu img{ transition:all 0.5s;}
+.G_pictu img:hover{ transform:rotate(0) scale(1.2);}
+
+.y_lable_pic{ position:absolute; top:0; left:0;}
+.y_commend{ position:absolute; bottom:-60px; left:0;height:60px;background:rgba(0,0,0,0.6);color:#FFF;width:100%;}
+.y_commend_title{ font-size:16px; padding:0 10px; line-height:35px;}
+.y_commend_content{ font-size:12px; padding:0 10px; height:20px; line-height:20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.y_relative_ul{ background:#FFF; border:1px solid #dddddd; height:135px;}
+.y_relative_ul_title{height:14px; line-height:14px; background:url(../Images/yang/dot.gif) repeat-x; margin:0 10px; margin-top:15px;} 
+.y_relative_ul_title span{ display:inline-block; width:80px; text-align:center; background:#FFF; font-size:14px;}
+.y_ul_dl{ width:330px; padding:0 15px;margin-top:8px;}
+.y_ul_dl dt{float:left; display:inline-block; width:260px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding-right:10px;}
+.y_ul_dl dt a{ font-size:12px !important; font-style:normal !important; color:#666666 !important; height:22px; line-height:22px;}
+.y_ul_dl dd{ float:left;  display:inline-block; width:60px;font-size:12px !important; font-style:normal !important; color:#666666; height:22px; line-height:22px;}
+.y_play_block{ height:234px; border:1px solid #dddddd; width:281px; background:#FFF; border-right:0;border-bottom:0;}
+.y_play_block_small{ width:92px; height:78px; border:1px solid #dddddd; margin-left:-1px; margin-top:-1px; position:relative; text-align:center; float:left; transition:all 0.5s;cursor:pointer;}
+.y_play_block_small:hover{background:rgba(255,108,0,0.5);color:#FFF;}
+.y_play_block_small dt{ font-size:14px; padding-top:15px;}
+.y_play_block_small dd{ font-size:12px; padding-top:10px;}
+.y_play_block_small dd a{ font-size:12px; color:#999999;}
+.y_play_block_small dd a:hover{color:#FFF;}
+.y_play_block2{ height:234px; border:1px solid #dddddd; width:280px; background:#FFF;}
+.y_play_block_pic{ position: relative; width:282px; height:146px; }
+.y_play_block_pic span{width:280px;height:146px;display:inline-block;overflow:hidden;}
+.y_play_block_pic span img{ transition:all 0.5s;}
+.y_play_block_pic span img:hover{ transform:rotate(0) scale(1.2);}
+.y_blogs_lable{ background: url(../Images/yang/jpyj_bg.png) no-repeat; width:82px; height:25px; color:#FFF; font-size:13px; text-align:center; line-height:23px; position:absolute; top:0; left:0;}
+.y_blogs_lable2{background:rgba(0,0,0,0.6);color:#e3e2e1; width:82px; height:23px;  font-size:13px; text-align:center; line-height:23px; position:absolute; top:26px; left:0; overflow:hidden;}
+.y_blogs_lable2 span{ display:inline-block; font-size:12px;}
+.y_blogs_lable2 img{ vertical-align:middle; padding-top:5px;}
+.y_play_block_title{ height:30px; line-height:30px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding:0 10px; font-size:14px; color:#000;}
+.y_play_block_scontent{ height:20px; line-height:20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding:0 10px; font-size:12px;}
+.y_play_block_grey{ background:#f6f6f6; height:32px; line-height:32px; margin-top:6px; padding:0 10px; position:relative}
+.y_play_block_grey_left{position:absolute; top:3px; left:5px; height:22px;overflow:hidden;width:130px;}
+.y_play_block_grey_right{ position:absolute; top:3px; right:5px;overflow:hidden;width:90px; height:20px;}
+.y_play_block_grey_right span{ display:inline-block;}
+.y_play_block_grey_right span img{ display:inline-block;}
+.y_list7_shipin2{padding-top:15px; width:1226px;}
+.y_list7_part4{width:1200px;height:350px;}
+.y_list7_part4 a{font-size:14px;}
+.y_list7_part4 ul li{float:left;margin-right:24px; transition:all 0.5s;}
+.y_list7_part4 ul li:hover{ box-shadow:2px 2px 4px #CCC;}
+.y_play_block3{ height:234px; border:1px solid #dddddd; width:280px; background:#FFF; position:relative;}
+.y_blogs_lable3{ background:#66bbff; width:82px; height:25px; color:#FFF; font-size:13px; text-align:center; line-height:23px; position:absolute; top:0; left:0;}
+.y_play_block_title2{ height:30px; line-height:30px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;font-size:14px; color:#000; border-bottom:1px dashed #dddddd; margin:0 10px;}
+.y_star1{ height:30px; line-height:30px; margin:10px;}
+.y_star2{ position: absolute; bottom:5px; right:5px; color:#000; z-index:999;}
+.y_star2 span{ display:inline-block;color:#000 !important; padding:0 5px;}
+.y_star2 span img{ display:inline-block;}
+.y_play_block_icon{  border-top:1px solid #e3e3e3; padding-top:8px; margin:0 10px;margin-top:6px;}
+.y_play_block_icon span{ display:inline-block; width:80px; text-align:center; border-right:1px solid #eae7ea;}
+.y_play_block_icon span img{ display:inline-block;}
+
+
+
+
+
+
+/*美景攻略*/
+.y_list_purple3{height:440px;}
+.y_commend_relative{ height:130px; width:310px; margin:0 auto;}
+.y_commend_relative_top{ height:70px;position:relative;width:310px}
+.y_commend_relative_bottom{ height:60px;position:relative;width:310px; background:#f6f6f6; border-bottom:1px solid #eeeeee;}
+.y_commend_relative_bottom span{ display:inline-block; font-size:12px; color:#888888; height:30px; line-height:22px; overflow:hidden; padding:8px 15px;}
+.y_commend_relative_head{ position:absolute; top:20px; left:10px; height:32px; width:32px; border-radius:50%;}
+.y_commend_relative_name{ font-size:12px; color:#000; position:absolute; top:17px; left:55px; width:50px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.y_commend_relative_word{font-size:12px; color:#999999; position:absolute; top:17px; left:105px; }
+.y_commend_relative_red{font-size:12px; color:#ff0000; position:absolute; top:17px; right:5px; width:160px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.y_commend_relative_star{position:absolute; top:40px; left:55px;}
+.y_one_accommondation{ width:820px; height:180px; border-bottom:1px solid #dddddd; position:relative; margin-bottom:10px;}
+.y_one_accommondation_pic{ position: absolute; top:8px; left:8px;}
+.jh_icon{ position:absolute; top:0; left:-1px;}
+.y_one_accommondation_title{ position:absolute; left:250px; right:10px; font-size:18px; color:#333333; top:10px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;}
+.y_one_accommondation_title img{ display:inline-block; padding:0 5px; }
+.y_one_accommondation_date{ position:absolute; left:250px; right:10px; font-size:12px; color:#999999; top:40px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;}
+.y_one_accommondation_date img{ display:inline-block;}
+.y_one_accommondation_dl1{ position:absolute; top:65px; left:250px; width:460px; line-height:22px; height:70px; overflow:hidden;}
+.y_grey{ color: #999999;}
+.y_one_accommondation_iconleft{ position:absolute; top:140px; left:250px;}
+.y_one_accommondation_iconleft span{ display:inline-block; padding-right:15px;}
+.y_one_accommondation_iconleft span img{ display:inline-block; padding-right:4px;}
+.y_one_accommondation_iconright{ position:absolute; top:140px; left:400px;}
+.y_one_accommondation_circle{ position:absolute; top:40px; right:20px; line-height:35px; text-align:center; width:45px; font-size:13px;}
+
+
+
+
+/*特色农产品*/
+.y_products{ width:1200px; background:url(../Images/yang/map_bg.png) no-repeat; height:377px; position:relative; margin-top:40px;}
+.y_products_one{ width:230px; text-align:center;}
+.y_products_content{ text-align:left; font-size:14px; line-height:22px; height:110px; overflow:hidden;}
+.y_products_title{ font-size:29px; color:#5c8d1a;}
+.y_location1{ position:absolute; top:55px; left:70px;}
+.y_location2{ position:absolute; top:145px; left:310px;}
+.y_location3{ position:absolute; top:145px; left:580px;}
+.y_location4{ position:absolute; top:40px; left:850px;}
+.y_listo_part1_right{width:1200px;height:420px; margin-top:120px;}
+.y_listo_part1_right ul li{width:274px;height:200px; float:left;margin:0 20px 20px 0;}
+
+
+
+
+/*住宿预定*/
+.y_one_accommondation2{ width:820px; height:195px; border:1px solid #dddddd; position:relative; margin-bottom:10px; background:#FFF;}
+.y_one_accommondation_pic2{ position: absolute; top:0px; left:0px;width:350px;height:196px; overflow:hidden;}
+.y_one_accommondation_pic2 img{transition:all 2s;}
+.y_one_accommondation_pic2 img:hover{ transform:rotate(0deg) scale(1.2);}
+.y_one_accommondation_title2{ position:absolute; left:370px; right:10px; font-size:18px; color:#333333; top:10px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;}
+.y_one_accommondation_date2{ position:absolute; left:370px; right:10px; font-size:12px; color:#999999; top:40px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis; line-height:20px;}
+.y_one_accommondation_date2 span{ display:block;}
+.y_one_accommondation_date2 span img{ display:inline-block;}
+.y_one_accommondation_price{ margin-top:15px;}
+.y_one_accommondation_price span{ display:inline-block;}
+.y_orange{ font-size:24px; color:#ff6600;}
+.y_delete{ text-decoration:line-through;}
+.y_book{ position:absolute; top:125px; right:30px;  z-index:999}
+.y_book a{width:115px; height:35px; background:#fc9a29;display:inline-block;text-align:center;line-height:35px;border-radius:5px;color:#FFF;
+font-size:18px; transition:all 0.5s;cursor:pointer;}
+.y_book a:hover{ background:#ff6c00;}
+.y_book img{transition:all 0.5s;}
+.y_book img:hover{background:url(../Images/yang/ljqg_btn_hover.png) left top no-repeat;width:115px;height:35px;}
+.y_time{ height:25px; line-height:25px; background:#fafafa; position:absolute; bottom:0; left:350px; right:0;}
+.y_time_left{ float:left;}
+.y_time_left img{ display:inline-block; padding-left:15px;}
+.y_time_right{ float:right; padding-right:15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

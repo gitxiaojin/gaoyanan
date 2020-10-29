@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>报告生成</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="Images/favicon.ico"><!--ico图标的制作-->
+<link rel="stylesheet" href="Content/bootstrap.min.css" type="text/css">
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<!--[if lte IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="Content/style.css" type="text/css">
+</head>
+
+<body style="background:url(Images/boby.jpg) repeat" data-spy="scroll" data-target="#myScrollspy";>
+   <div class="target_head"></div>
+   <div class="container">
+      <div class="target_title">项目名称</div>
+      <div class="col-md-9">
+      	 <div class="target_xg">
+   		<p><span>返回修改</span> <span>保存为PDF文档</span> <span>下载EXCEL文件</span> <a href="登录页.html"><span>关闭</span></a></p> 
+      </div>
+          <div class="target_subhead" id="section-1">报告说明</div>
+          <div class="target_txt">
+             <p class="target_txtz"> 研究范围：</p>
+             <p> 本报告基于CNRS 2015.1-2015.12的数据，选取 一、二线城市 的样本进行研究，推及人口共 xxx.x 万。</p>
+             <p class="target_txtz"> 媒体类型：</p>
+             <p> 电视：全国性电视台（全部）；</p>
+             <p> 广播：地方性广播台（吉林省）；</p>
+             <p>杂志：时尚类（全部）；</p>
+             <p class="target_txtz">受众定义：</p>
+             <p>学历：高中 以上</p>
+             <p>年龄：18-25岁</p>
+             <p>消费：过去12个月购买过膨化食品</p>
+          </div>
+          <div class="target_subhead" id="section-2">人口背景</div>
+          <div class="target_dgh">
+            <div class="col-md-6">
+              <p class="target_txtf">性别</p>
+               <p><img src="Images/tar_rkbj.png" width="432" height="237"></p>
+             </div>
+            <div class="col-md-6">
+              <p class="target_txtf">收入结构</p>
+              <p><img src="Images/tar_rkbj2.png" width="398" height="268"></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="target_subhead"  id="section-3">媒体大类分析</div>
+          <div class="target_media">
+            <div class="col-md-6 ">
+              <p class="target_txtf">样本最高学历</p>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group col-md-6">
+                     <select class="form-control input-xs">
+                         <option value="">日达率</option>
+                         <option value="">月达率</option>
+                         <option value="">周达率</option>
+                     </select>
+                
+                </div>
+                <div class="form-group col-md-6">
+                     <select class="form-control input-xs">
+                         <option value="">显示推及人口</option>
+                         <option value="">显示比例</option>
+                     </select>
+                
+                </div>
+            
+            </div>
+            <div class="col-md-6"><span class="ddl">到达率</span></div>
+            <div class="col-md-6 target_bs"><span></span>人群A  <span class="rqb"></span>人群B</div>
+            <div class="col-md-12">
+               <div class="tar_mtdlfx"> 
+                <img src="Images/tar_mtdlfx.png" width="800">
+               </div>
+            </div>
+            <div class="col-md-12">
+            	<p class="col-md-3">
+                <label class="checkbox-inline G_radioi G_qiehuani">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1" class="radioclass">  显示集中度
+                </label>
+               </p>
+              <p class="col-md-3">
+                <label class="checkbox-inline G_radioi G_qiehuani">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1" class="radioclass">  对照总体人群
+                </label>
+               </p>
+            </div>
+         </div>
+          <div class="target_xfxwf">
+            <div class="target_subhead" id="section-4">消费行为分析</div>
+            <p class="col-md-12 target_txtf">过去12个月外出旅游</p>
+               <div class="col-md-12 target_rq"><img src="Images/renqa.png" width="800"></div>
+          
+          </div>
+          <div class="target_pacd">
+             <div class="target_subhead" id="section-5">品牌重合度分析</div>
+             <p class="col-md-12 target_txtf">人群A的化妆品品牌重合度</p>
+             <div class="tar_pinpai">
+               <div class="table-responsive" id="table_biao">
+                <table class="table">
+                <tr>
+                    <th class="text-center">品牌1</th>
+                    <th class="text-center">品牌2</th>
+                    <th class="text-center">品牌3</th>
+                    <th class="text-center">品牌4</th>
+                    <th class="text-center">品牌5</th>
+                    <th class="text-center">品牌6</th>
+                    <th class="text-center">品牌7</th>
+                    <th class="text-center">品牌8</th>
+                    <th class="text-center">品牌9</th>
+                    <th class="text-center">品牌10</th>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌2</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌3</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌4</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌5</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌6</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌7</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌8</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌9</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="pinpai">品牌10</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                    <td>80%</td>
+                    <td>60%</td>
+                </tr>
+            </table>
+        </div>
+             
+             
+             </div>
+             
+          
+          </div><!--表格-->
+          <div class="target_life">
+            <div class="target_subhead" id="section-6">生活形态分析</div>
+            <div class="col-md-6 tar_xto"><img src="Images/qt.png" width="400"></div>
+            <div class="col-md-6 tar_xtt"><img src="Images/qt.png" width="400"></div>
+         </div><!--生活形态分析-->
+      
+      </div>  
+      <div class="col-xs-3 fastNav" id="myScrollspy">
+          <ul class="nav nav-tabs nav-stacked nav-scroll" data-spy="affix" data-offset-top="125">
+             <li class="active"><a href="#section-1">报告说明</a></li>
+             <li><a href="#section-2">人口背景</a></li>
+             <li><a href="#section-3">媒体大类分析</a></li>
+             <li><a href="#section-4">消费行为分析</a></li>
+             <li><a href="#section-5">品牌重合度</a></li>
+             <li><a href="#section-6">生活形态分析</a></li>
+           </ul>
+      </div>
+   </div>
+   <div class="footer">
+     <p><span><a>关于我们</a></span> | <span><a>商务合作</a></span> | <span><a>账号购买</a></span> | <span><a>投诉建议</a></span></p>
+     <p>EASY CNRS™是CTR央视市场研究的品牌和服务平台</p>
+    </div>
+   <div class="ftop">
+   	 <p><img src="Images/ftop.png" width="22" height="33"></p>
+     <p>返回顶部</p>
+   </div>
+   
+</body>
+<script type="text/javascript" src="Scripts/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="Scripts/my.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+</html>
