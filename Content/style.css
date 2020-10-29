@@ -2,10 +2,15 @@
 /* CSS Document */
 
 /*全局控制*/
-body {margin:0;padding:0; font-size:12px; font-family:"微软雅黑";}
+body {
+    margin:0;
+    padding:0;
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif !important;
+}
 /*公共样式控制*/
 .time a{
     color:#06ddf3;
+    display:inline-block;
 }
 .time a.company_name{
    text-decoration: underline; 
@@ -15,11 +20,19 @@ a:visited{list-style:none; text-decoration:none;}
 ul,ul li,ol,ol li{list-style:none;margin:0;padding:0;}
 input{border:none;}
 img{display:block;}
+.navright li a{color:#000;}
 .describe_main{
     font-style: normal;
     color:#f00;
     font-weight: bold;
 }
+.banner_image{display:block;}
+.phone_image{display:none;}
+@media (min-width: 1200px){
+	.container{width:1200px;}
+}
+
+.zcool{vertical-align: bottom;}
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');
@@ -36,7 +49,7 @@ img{display:block;}
   line-height: 1;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon_svg{width:60px;}
 /*out 进入页面*/
 .outbg{
     width:100%;
@@ -194,15 +207,23 @@ img{display:block;}
 }
 /*导航*/
 .header{
-    width:100%;
-    height:60px;
-    background:#000;
-    padding-top:10px;
+    width:80px;
     position:fixed;
-    left:0;
-    top:0;
+    right:0;
+    top:50%;
     z-index:1000;
 }
+.header ul li .icon img{width:26px;margin:0 auto;}
+.header ul li{
+    height:auto;
+    text-align: center;
+    font-size: 15px;
+    color:#1f1d00;
+    background:#fff406;
+    margin-bottom:15px;
+    padding:10px;
+}
+.header a{color:#FFF;}
 .navleft{width:20%;}
 .navright{width:80%;}
 .navright .head{
@@ -217,39 +238,25 @@ img{display:block;}
     float:left;
     width:14%;
     text-align:center;
-    font-size:14px;
+    font-size:20px;
     height:50px;
     line-height:40px;
-    color:#FFF;
+    color:#282828;
 }
-.navright ul li.current{
-    background:url(../Images/current.png) center bottom no-repeat;
-}
-.navright ul li:hover{
-    background:url(../Images/current.png) center bottom no-repeat;
-    cursor:pointer;
-    color:#999;
-}
+
+
 /*banner图*/
 .banner{
     width:100%;
     position:relative;
     overflow:hidden;
-	background:#7332de;
-    background:linear-gradient(-180deg,#5653de,#7828e1);
-    background:-moz-linear-gradient(-180deg,#5653de,#7828e1);
-    background:-webkit-linear-gradient(-180deg,#5653de,#7828e1);
-    background:-o-linear-gradient(-180deg,#5653de,#7828e1);
-    background:-ms-linear-gradient(-180deg,#5653de,#7828e1);
-
-}
-.banner ul{
-	margin-bottom:0;
 }
 .banner ul li{
     width:100%;
-    height:716px;
-    background:url(../Images/banner3.jpg) center 60px no-repeat;
+    height:auto;
+}
+.banner ul li img{
+	width:100%;
 }
 /*service 第二大部分*/
 .service{
@@ -367,8 +374,8 @@ img{display:block;}
     display:block;
 }
 .webPage h2 span.current{
-    color:#00fff0;
-    border-bottom:4px #00fff0 solid;
+    color:#fed15b;
+    border-bottom:4px #fed15b solid;
     background:rgba(56, 56, 56, 0.15);
 }
 .work{
@@ -413,7 +420,6 @@ img{display:block;}
     text-align: center;
     font-size: 15px;
     margin-top: 8px;
-    width:345px;
     overflow:hidden;
 }
 .workout span{
@@ -426,7 +432,7 @@ img{display:block;}
 .workout .decoration{
     text-align: center;
     font-size: 15px;
-    color:#03ffe2;
+    color:#fed15b;
     border-bottom:1px #9b9b9b solid;
     display:inline-block;
     line-height:40px;
@@ -644,6 +650,11 @@ img{display:block;}
 }
 .skillPart  ul li p{
     text-indent: 2em;
+    background: rgb(0 0 0 / 37%);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-top: 14px;
 }
 .skillYearOne{
     position:absolute;
@@ -661,25 +672,40 @@ img{display:block;}
     top:270px;
 }
 .skillPart ul li div{
-    width: 320px;
+    width: 310px;
     color: #FFF;
-    left: -299px;
+    left:-299px;
     position: absolute;
     top: 50px;
+    line-height: 26px;
+    font-size: 15px;
+}
+.skillPart ul li div.recordOne{
+   left: -283px;
+   top:-90px;
+}
+.skillPart ul li div.recordTwo{
+    left:-260px;
+    top:-30px;
+}
+.skillPart ul li div.recordThree{
+    left:-320px;
+    top:97px;
+    width:370px;
 }
 .skillPart ul li div .time a:nth-of-type(1){
-    color:#FFF;
-    font-size: 30px;
+    color:#fed15b;
+    font-size: 22px;
 }
 .skillYearOne .recordCircle{
    position: absolute;
-   left: 51px;
-   top: 130px;
+   left: 89px;
+   top: 40px;
 }
 .skillYearTwo .recordCircle{
    position: absolute;
-   left: -420px;
-   top: 100px;
+   left: -333px;
+   top: 166px;
 }
 .skillYearThird .recordCircle{
      position: absolute;
@@ -712,7 +738,6 @@ img{display:block;}
 
 /*自我介绍页面*/
 .introd{
-	background:#09F;
     background:linear-gradient(180deg,#00c6ff 30%,#09f 60%,#06F 100%);
     width:100%;
     height:auto;
@@ -726,7 +751,7 @@ img{display:block;}
     font-size:24px;
 }
 .introdL{
-    width:220px;
+    width:240px;
     font-size: 15px;
     margin:0 auto;
 }
@@ -836,6 +861,7 @@ img{display:block;}
     animation-name:xuanzhuan;
     -webkit-animation-name:xuanzhuan ;
 }
+
 @keyframes xuanzhuan{
     0% { opacity:0; transform:rotate(120deg);-webkit-transform:rotate(120deg);}
     50% { opacity:0.5; transform:scale(1.5,1.5);-webkit-transform:scale(1.5,1.5);}
@@ -849,6 +875,11 @@ img{display:block;}
     padding-left:0!important;
     padding-right:0!important;
   }
+  .header ul li p{margin-bottom:0;font-size:12px;}
+  .header {width:50px;}
+  .header ul li .icon img{width:18px;}
+  .banner_image{display:none;}
+  .phone_image{display:block;}
   .navright{
     position: fixed;
     background: #000;
@@ -877,24 +908,24 @@ img{display:block;}
     color:#FFF;
   }
   .banner{
-    display:none;
+    display:block;
   }
   .service{
-    padding-top:60px;
-    height:1200px;
+    padding-top:0;
+    height:auto;
   }
   .skillPart ul li div,.skillYearOne,.skillYearTwo,.skillYearThird{
     position:static;
   }
   .work{
-    padding-top: 280px;
+    padding-top:0;
   }
   .skillPart ul{
-    padding:0 50px;
+    padding:0 20px;
   }
   .skillPart ul li div{
     width:100%;
-    border-bottom: 1px #CCC dashed;
+    border-bottom:none;
     margin-bottom: 15px;
   }
   .workout p{
@@ -904,8 +935,11 @@ img{display:block;}
     display:none;
   }
   .logo{
-    margin:0 auto;
+    text-align: center;
+	width:100%;
+	height:auto;
   }
+  .logo img{width:150px;margin-left:0;}
   .navright .head{
     display:block;
   }
@@ -921,7 +955,31 @@ img{display:block;}
   .rotation{
     display:none;
   }
+  .skillPart{position:static;margin-left:0;}
+  .skill{height:auto;}
   .head_tx{
-    height:400px;
+    height:auto;
+	text-align: center;
   }
+  .workout{height:180px;margin-bottom:15px;}
+  .workout span{display:block;line-height: 24px;padding:0 10px;border-bottom:none;font-size:12px;}
+  .workout .decoration{border-bottom:none;}
+  .webPage h2 span{
+		width:auto;
+	    height:30px;
+	    line-height: 30px;
+	    font-size:16px;
+	    padding:0 20px;
+   }
+ .web,.Apptitle{width:100%;}
+ .container{padding-left:0;padding-right:0;}
+ .webPage .data_time{display:none;}
+ .workMain{padding-bottom:0;}
+ .skillPart ul li div .time a:nth-of-type(1){font-size:18px;}
+ .work-title{font-size:24px;}
+ .workout p{margin-top:0;}
+ .row{margin-left:0;margin-right:0;}
+ .head_tx img{position:static;margin:0 auto;margin-bottom:15px;}
+/*  .skillPart{margin-left:0;position: static;}*/
+  .header ul li .icon img.icon_svg{width:30px;}
 }
