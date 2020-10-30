@@ -49,7 +49,7 @@ img{display:block;}
   line-height: 1;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon_svg{width:60px;}
+
 /*out 进入页面*/
 .outbg{
     width:100%;
@@ -214,15 +214,18 @@ img{display:block;}
     z-index:1000;
 }
 .header ul li .icon img{width:26px;margin:0 auto;}
+.header ul li .icon img.icon_svg{width:60px;}
 .header ul li{
     height:auto;
     text-align: center;
     font-size: 15px;
     color:#1f1d00;
     background:#fff406;
-    margin-bottom:15px;
+    margin-bottom:10px;
     padding:10px;
 }
+.header ul li p{margin:0 0 0 0;}
+.header ul li p.text{font-size:13px;}
 .header a{color:#FFF;}
 .navleft{width:20%;}
 .navright{width:80%;}
@@ -317,7 +320,7 @@ img{display:block;}
 .sermainbot dt .serImg03:hover{background-position: -210px -100px;}
 .sermainbot dt .serImg04:hover{background-position: -319px -100px;}
 .sermainbot dd{
-    margin-top:20px;
+    margin-top:0;
 }
 .sermainbot dd .title{
     font-size:16px;
@@ -334,7 +337,7 @@ img{display:block;}
     margin-bottom:30px;
 }
 .ae-pic{
-    height: 188px;
+    height: 158px;
     overflow: hidden;
     background: #fff;
     border: 5px rgba(206, 206, 206, 0.79) solid;
@@ -346,7 +349,6 @@ img{display:block;}
 .webPage{
     margin:0 auto;
     text-align: right;
-    padding-right: 15px;
 }
 .webPage h2{
     font-weight: normal;
@@ -389,14 +391,14 @@ img{display:block;}
     font-size:30px;
     font-weight:bold;
     margin-bottom:30px;
-    width:300px;
+    width:100%;
     height:50px;
 }
-.workMain img{
+.workMain_cont img{
     margin:0 auto;
     transition:all .5s;
 }
-.workMain img:hover{
+.workMain_cont img:hover{
     transform:rotate(0deg) scale(1.2);
 }
 .workMain{
@@ -606,7 +608,7 @@ img{display:block;}
         -moz-animation-play-state: paused;
         -ms-animation-play-state: paused;
         -o-animation-play-state: paused;
-        -webkit- animation-play-state: paused;
+        -webkit-animation-play-state: paused;
         animation-play-state: paused;
 }
 .logo{
@@ -861,6 +863,7 @@ img{display:block;}
     animation-name:xuanzhuan;
     -webkit-animation-name:xuanzhuan ;
 }
+.drawing_part{height:250px;}
 
 @keyframes xuanzhuan{
     0% { opacity:0; transform:rotate(120deg);-webkit-transform:rotate(120deg);}
@@ -939,7 +942,7 @@ img{display:block;}
 	width:100%;
 	height:auto;
   }
-  .logo img{width:150px;margin-left:0;}
+  .logo img{width:110px;margin-left:0;margin:0 auto;}
   .navright .head{
     display:block;
   }
@@ -961,9 +964,9 @@ img{display:block;}
     height:auto;
 	text-align: center;
   }
-  .workout{height:180px;margin-bottom:15px;}
-  .workout span{display:block;line-height: 24px;padding:0 10px;border-bottom:none;font-size:12px;}
-  .workout .decoration{border-bottom:none;}
+  .workout{height:190px;margin-bottom:15px;line-height: 30px;}
+  .workout span{display:block;line-height: 20px;padding:0 10px;border-bottom:none;font-size:12px;}
+  .workout .decoration{border-bottom:none;line-height: 24px;}
   .webPage h2 span{
 		width:auto;
 	    height:30px;
@@ -971,15 +974,23 @@ img{display:block;}
 	    font-size:16px;
 	    padding:0 20px;
    }
- .web,.Apptitle{width:100%;}
+ .webPageCont .col-xs-6{padding:5px;}
+ .web,.Apptitle{width:100%;text-align: center;}
  .container{padding-left:0;padding-right:0;}
  .webPage .data_time{display:none;}
  .workMain{padding-bottom:0;}
  .skillPart ul li div .time a:nth-of-type(1){font-size:18px;}
  .work-title{font-size:24px;}
  .workout p{margin-top:0;}
+ .skillPart ul li div.recordThree{width:100%;}
  .row{margin-left:0;margin-right:0;}
+ .introdL{width:100%;}
+ .row_col{text-align: center;}
  .head_tx img{position:static;margin:0 auto;margin-bottom:15px;}
+ .ae-plane .col-xs-6{padding-left:0;padding-right:0;padding:0 5px;}
 /*  .skillPart{margin-left:0;position: static;}*/
   .header ul li .icon img.icon_svg{width:30px;}
+  .introd p{text-align: center;}
+  .introd-title{width:100%;}
+  .message{display:none;}
 }
