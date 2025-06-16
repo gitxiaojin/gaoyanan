@@ -12,6 +12,7 @@ body {
     color:#06ddf3;
     display:inline-block;
 }
+.company_name{color:#06ddf3;}
 .time a.company_name{
    text-decoration: underline; 
 }
@@ -26,8 +27,14 @@ img{display:block;}
     color:#f00;
     font-weight: bold;
 }
+.cool_font{font-style:italic;font-weight:bold;font-size:16px;color:#06ddf3; }
 .banner_image{display:block;}
 .phone_image{display:none;}
+.header ul li.red_book{background:#ff2442;}
+.red_book_text{color:#FFF;font-weight:bold;margin:0 0 0;}
+.gengr_meet img{width:100%;}
+.sacc{margin-bottom:20px;height: 280px;}
+
 @media (min-width: 1200px){
 	.container{width:1200px;}
 }
@@ -49,7 +56,7 @@ img{display:block;}
   line-height: 1;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon_svg{width:60px;}
 /*out 进入页面*/
 .outbg{
     width:100%;
@@ -199,7 +206,7 @@ img{display:block;}
 }
 
 .work-title{
-  font-size:50px;
+  font-size:42px;
   color:#FFF;
 }
 .zcool-btn a,.zcool-btn a:hover{
@@ -214,18 +221,15 @@ img{display:block;}
     z-index:1000;
 }
 .header ul li .icon img{width:26px;margin:0 auto;}
-.header ul li .icon img.icon_svg{width:60px;}
 .header ul li{
     height:auto;
     text-align: center;
     font-size: 15px;
     color:#1f1d00;
     background:#fff406;
-    margin-bottom:10px;
+    margin-bottom:15px;
     padding:10px;
 }
-.header ul li p{margin:0 0 0 0;}
-.header ul li p.text{font-size:13px;}
 .header a{color:#FFF;}
 .navleft{width:20%;}
 .navright{width:80%;}
@@ -270,11 +274,11 @@ img{display:block;}
     width:100%;
     height:339px;
     background:url(../Images/service.jpg) center center no-repeat;
-    background-color:#09F;
+    background-color:#446de4;
 }
 .sermainbot{
     width:100%;
-    height:339px;
+    height:290px;
     background:url(../Images/servicebottom.jpg) center top no-repeat;
     background-color:#1E1E1E;
 }
@@ -283,7 +287,7 @@ img{display:block;}
     text-align:center;
 }
 .sertxt{
-    color:#005084;
+    color:#c2cdff;
     font-size:16px;
 }
 .serTu img{
@@ -320,7 +324,7 @@ img{display:block;}
 .sermainbot dt .serImg03:hover{background-position: -210px -100px;}
 .sermainbot dt .serImg04:hover{background-position: -319px -100px;}
 .sermainbot dd{
-    margin-top:0;
+    margin-top:20px;
 }
 .sermainbot dd .title{
     font-size:16px;
@@ -337,7 +341,7 @@ img{display:block;}
     margin-bottom:30px;
 }
 .ae-pic{
-    height: 158px;
+    height: 188px;
     overflow: hidden;
     background: #fff;
     border: 5px rgba(206, 206, 206, 0.79) solid;
@@ -349,6 +353,7 @@ img{display:block;}
 .webPage{
     margin:0 auto;
     text-align: right;
+    padding-right: 15px;
 }
 .webPage h2{
     font-weight: normal;
@@ -391,18 +396,17 @@ img{display:block;}
     font-size:30px;
     font-weight:bold;
     margin-bottom:30px;
-    width:100%;
+    width:300px;
     height:50px;
 }
-.workMain_cont img{
+.workMain img{
     margin:0 auto;
     transition:all .5s;
 }
-.workMain_cont img:hover{
+.workMain img:hover{
     transform:rotate(0deg) scale(1.2);
 }
 .workMain{
-    padding-top:50px;
     height:auto;
     padding-bottom: 50px;
     overflow:hidden;
@@ -421,7 +425,6 @@ img{display:block;}
     margin: 0;
     text-align: center;
     font-size: 15px;
-    margin-top: 8px;
     overflow:hidden;
 }
 .workout span{
@@ -589,11 +592,11 @@ img{display:block;}
     position:absolute;
     left:0;
     top:0; 
-    -webkit-animation:run 8s linear infinite;
-    -moz-animation:run 8s linear infinite;
-    -o-animation:run 8s linear infinite;
-    -ms-animation:run 8s linear infinite;
-    animation:run 8s linear infinite;
+    -webkit-animation:run 15s linear infinite;
+    -moz-animation:run 15s linear infinite;
+    -o-animation:run 15s linear infinite;
+    -ms-animation:run 15s linear infinite;
+    animation:run 15s linear infinite;
 }
 .plane ul li{float:left;}
 @keyframes run{
@@ -601,14 +604,14 @@ img{display:block;}
                 left:0;
             }
             to{
-                left:-500px;
+                left:-2000px;
             }
         }
 .plane ul:hover{
         -moz-animation-play-state: paused;
         -ms-animation-play-state: paused;
         -o-animation-play-state: paused;
-        -webkit-animation-play-state: paused;
+        -webkit- animation-play-state: paused;
         animation-play-state: paused;
 }
 .logo{
@@ -651,7 +654,6 @@ img{display:block;}
     margin-left:-236px;
 }
 .skillPart  ul li p{
-    text-indent: 2em;
     background: rgb(0 0 0 / 37%);
     padding: 15px;
     border-radius: 5px;
@@ -684,7 +686,7 @@ img{display:block;}
 }
 .skillPart ul li div.recordOne{
    left: -283px;
-   top:-90px;
+   top:-170px;
 }
 .skillPart ul li div.recordTwo{
     left:-260px;
@@ -717,7 +719,7 @@ img{display:block;}
 .recordCircle{
     width:20px;
     height:20px;
-    border-radius: 50%;
+    border-radius: 100%;
     transition:all .2s;
     display:inline-block;
     background: #00fff0;
@@ -758,7 +760,7 @@ img{display:block;}
     margin:0 auto;
 }
 .avator{
-    background:url(../Images/gao.png) center bottom no-repeat;
+    background:url( "../Images/7889.png") center bottom no-repeat;
     width:158px;
     height:200px;
     margin:0 auto;
@@ -770,6 +772,7 @@ img{display:block;}
     transition:all 1s ease-out;
     cursor:pointer;
     opacity:1;
+	margin-bottom:30px;
 }
 .avator:hover{
     background:url(../Images/7889.png) center bottom no-repeat;
@@ -863,16 +866,168 @@ img{display:block;}
     animation-name:xuanzhuan;
     -webkit-animation-name:xuanzhuan ;
 }
-.drawing_part{height:250px;}
 
 @keyframes xuanzhuan{
     0% { opacity:0; transform:rotate(120deg);-webkit-transform:rotate(120deg);}
     50% { opacity:0.5; transform:scale(1.5,1.5);-webkit-transform:scale(1.5,1.5);}
     100% { opacity:1; transform: scale(1,1);-webkit-transform:scale(1,1);}
 }
+/*花絮轮播*/
+.gs{position: relative; width: 1200px; margin: 0 auto; padding-bottom: 40px; }
+#huaxu{width:1200px;height:424px;margin: 0 auto;}
+#huaxu li{width:800px;height:411px; background:#000; list-style: none;}
+#huaxu li img{width: 100%;display:block;}
+.s_bg{ height:100%; position:absolute; width:100%; left:0; top:0;}
+.s_bg{ display:none;}
+.swiper-button-prev{position:absolute;top:50%;width:52px;height:94px;margin-top:-47px;z-index:10;cursor:pointer; background: url(http://zt.itpub.net/topic/images/picture/left2.png) no-repeat center;}
+.swiper-button-next{position:absolute;top:50%; width:52px;height:94px;margin-top:-47px;z-index:10;cursor:pointer; background: url(http://zt.itpub.net/topic/images/picture/right2.png) no-repeat center;}
+.swiper-wrapper{perspective:1200px; margin-left:0;}
+.swiper-wrapper {
+    perspective: 1200px;
+    margin-left: 0;
+}
+.swiper-wrapper{perspective:1200px; margin-left:0;}
+.w1200{width:1200px;margin:0 auto;}
+/*3d轮播*/
+.tiaoman{overflow:hidden;}
+.tiaoman_grid img{width:100%;}
+.gengr_meet{
+	overflow: hidden;
+    padding: 20px;
+    border: 10px #182a4a solid;
+    background: #05152f;
+	margin-bottom: 50px;
+}
+.gap{margin-bottom:40px;}
+.tiaoman_cont{overflow:hidden;}
+.more_works{text-align: center;padding-bottom: 20px;}
+.tiaoman_grid{margin-bottom:30px;}
+.more_works .zcool-btn{display: inline-block;cursor: pointer;font-size:16px;background: #ff2442;padding:10px 20px;font-weight: 600;}
+.more_works a{color:#FFF;}
+.w600{width:600px;margin:0 auto;overflow:hidden;}
+.sacc_btn,.dtcc_btn{text-align: center;}
+.sacc_btn span,.dtcc_btn span{display:inline-block;margin-bottom: 20px;padding:10px 20px;background:#0081ff;}
+.sacc_btn a,.dtcc_btn a{color:#FFF;}
+@media screen and (max-width:1200px) and (min-width:800px){
+	body{
+    padding-left:0!important;
+    padding-right:0!important;
+  }
+  .header ul li p{margin-bottom:0;font-size:12px;}
+  .header {width:50px;}
+  .header ul li .icon img{width:18px;}
+  .banner_image{display:none;}
+  .phone_image{display:block;}
+  .navright{
+    position: fixed;
+    background: #000;
+    left: -30%;
+    top: 0;
+    height: 100%;
+    width: 30%;
+  }
+  .navright ul li{
+    width:100%;
+  }
+
+  .iconCollaspe{
+    position:absolute;
+    right:13px;
+    top:15px;
+    color:#FFF;
+    font-size: 20px;
+    display:block;
+    transition: all 0.5s ease-out;
+  }
+  .recordCircle{
+    display:none;
+  }
+  .iconCollaspe a{
+    color:#FFF;
+  }
+  .banner{
+    display:block;
+  }
+  .service{
+    padding-top:0;
+    height:auto;
+  }
+  .skillPart ul li div,.skillYearOne,.skillYearTwo,.skillYearThird{
+    position:static;
+  }
+  .work{
+    padding-top:0;
+  }
+  .skillPart ul{
+    padding:0 20px;
+  }
+  .skillPart ul li div{
+    width:100%;
+    border-bottom:none;
+    margin-bottom: 15px;
+  }
+  .workout p{
+    width:100%;
+  }
+  .fold,.Uwork{
+    display:none;
+  }
+  .logo{
+    text-align: center;
+	width:100%;
+	height:auto;
+  }
+  .logo img{width:150px;margin-left:0;}
+  .navright .head{
+    display:block;
+  }
+  .sertxt{
+    display:none;
+  }
+  .sermainbot dt{
+     text-align:center;
+  }
+  .sermainbot dt a{
+    margin-left:0;
+  }
+  .rotation{
+    display:none;
+  }
+  .skillPart{position:static;margin-left:0;}
+  .skill{height:auto;}
+  .head_tx{
+    height:auto;
+	text-align: center;
+  }
+  .workout{height:180px;margin-bottom:15px;}
+  .workout span{display:block;line-height: 24px;padding:0 10px;border-bottom:none;font-size:12px;}
+  .workout .decoration{border-bottom:none;}
+  .webPage h2 span{
+		width:auto;
+	    height:30px;
+	    line-height: 30px;
+	    font-size:16px;
+	    padding:0 20px;
+   }
+ .web,.Apptitle{width:100%;}
+ .container{padding-left:0;padding-right:0;}
+ .webPage .data_time{display:none;}
+ .workMain{padding-bottom:0;}
+ .skillPart ul li div .time a:nth-of-type(1){font-size:18px;}
+ .work-title{font-size:24px;}
+ .workout p{margin-top:0;}
+ .row{margin-left:0;margin-right:0;}
+ .head_tx img{position:static;margin:0 auto;margin-bottom:15px;}
+ .header ul li .icon img.icon_svg{width:30px;}
+  .list_tit img{display: none;}
+  .tiaoman{overflow: hidden;}
+}
+.service dl{height:auto;}
+
+
 /*手机端*/
 /*list页面*/
-@media screen and (max-width:640px){
+@media screen and (max-width:800px){
     /*导航*/
   body{
     padding-left:0!important;
@@ -942,7 +1097,7 @@ img{display:block;}
 	width:100%;
 	height:auto;
   }
-  .logo img{width:110px;margin-left:0;margin:0 auto;}
+  .logo img{width:150px;margin-left:0;}
   .navright .head{
     display:block;
   }
@@ -964,9 +1119,9 @@ img{display:block;}
     height:auto;
 	text-align: center;
   }
-  .workout{height:190px;margin-bottom:15px;line-height: 30px;}
-  .workout span{display:block;line-height: 20px;padding:0 10px;border-bottom:none;font-size:12px;}
-  .workout .decoration{border-bottom:none;line-height: 24px;}
+  .workout{height:180px;margin-bottom:15px;}
+  .workout span{display:block;line-height: 24px;padding:0 10px;border-bottom:none;font-size:12px;}
+  .workout .decoration{border-bottom:none;}
   .webPage h2 span{
 		width:auto;
 	    height:30px;
@@ -974,23 +1129,27 @@ img{display:block;}
 	    font-size:16px;
 	    padding:0 20px;
    }
- .webPageCont .col-xs-6{padding:5px;}
- .web,.Apptitle{width:100%;text-align: center;}
+ .web,.Apptitle{width:100%;}
  .container{padding-left:0;padding-right:0;}
  .webPage .data_time{display:none;}
  .workMain{padding-bottom:0;}
  .skillPart ul li div .time a:nth-of-type(1){font-size:18px;}
  .work-title{font-size:24px;}
  .workout p{margin-top:0;}
- .skillPart ul li div.recordThree{width:100%;}
  .row{margin-left:0;margin-right:0;}
- .introdL{width:100%;}
- .row_col{text-align: center;}
  .head_tx img{position:static;margin:0 auto;margin-bottom:15px;}
- .ae-plane .col-xs-6{padding-left:0;padding-right:0;padding:0 5px;}
-/*  .skillPart{margin-left:0;position: static;}*/
   .header ul li .icon img.icon_svg{width:30px;}
-  .introd p{text-align: center;}
-  .introd-title{width:100%;}
-  .message{display:none;}
+  .w1200{width:100%;}
+  .gs{ width: 100%;}
+  #huaxu{width:100%; height: auto;}
+  #huaxu li{width:100%; height: auto;}
+  .swiper-wrapper {perspective-origin:center!important;}
+  .list_tit img{display: none;}
+  .tiaoman_grid img{width:100%;}
+  .w600{width:100%}
+  .gs{padding-bottom:20px;}
+  .tiaoman_grid{margin-bottom:10px;}
+  .more_works .zcool-btn{width:100%;margin-top:20px;}
+  .sacc{height:auto;}
+  .service dl{height:100px;}
 }
