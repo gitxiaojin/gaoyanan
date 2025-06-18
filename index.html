@@ -1,0 +1,894 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0 user-scalable=no">
+<title></title>
+
+<link href="Content/animate.css" rel="stylesheet" type="text/css">
+<link href="Content/bootstrap.min.css" type="text/css" rel="stylesheet">
+<!--<link href="Content/bootstrap-responsive.css" type="text/css" rel="stylesheet">-->
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+<link href="Content/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="Content/swiper.min.css">
+  <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+  <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+  <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<script>
+<!--
+document.write(unescape("%3Cbody%20style%3D%22background%3A%231E1E1E%22%3E%0A%3Cdiv%20class%3D%22header%22%3E%0A%20%20%20%20%20%20%09%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23section1%22%3E%0A%20%20%20%20%20%20%09%09%20%20%3Cli%3E%0A%09%09%09%09%20%20%3Cp%20class%3D%22icon%22%3E%3Cimg%20src%3D%22SVG/gongzuojingli.svg%22%20alt%3D%22%22%3E%3C/p%3E%0A%09%09%09%09%20%20%3Cp%3E%u5DE5%u4F5C%u7ECF%u5386%3C/p%3E%0A%09%09%09%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23section2%22%3E%0A%20%20%20%20%20%20%09%09%20%20%3Cli%3E%0A%09%09%09%20%20%20%20%3Cp%20class%3D%22icon%22%3E%3Cimg%20src%3D%22SVG/zuopin.svg%22%20alt%3D%22%22%3E%3C/p%3E%0A%09%09%09%20%20%20%20%3Cp%3E%u4F5C%u54C1%u5C55%u793A%3C/p%3E%0A%09%09%09%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23section3%22%3E%0A%20%20%20%20%20%20%09%09%3Cli%3E%0A%20%20%20%20%09%09%09%20%20%3Cp%20class%3D%22icon%22%3E%3Cimg%20src%3D%22SVG/lianxifangshi.svg%22%20alt%3D%22%22%3E%3C/p%3E%0A%20%20%20%20%09%09%09%20%20%3Cp%3E%u8054%u7CFB%u65B9%u5F0F%3C/p%3E%0A%09%09%09%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.zcool.com.cn/u/13000928%22%20target%3D%22_blank%22%3E%0A%20%20%09%09%20%20%20%20%20%3Cli%20class%3D%22zcool%22%3E%0A%09%09%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22icon%22%3E%3Cimg%20src%3D%22SVG/logo.svg%22%20alt%3D%22%22%20%20class%3D%22icon_svg%22%3E%3C/p%3E%0A%09%09%09%20%20%20%20%20%3Cp%3E%u7AD9%u9177%u4F5C%u54C1%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%09%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.xiaohongshu.com/user/profile/5dc411c00000000001003b5d%3Fm_source%3Dpinpai%22%20target%3D%22_blank%22%3E%0A%20%20%09%09%20%20%20%20%20%3Cli%20class%3D%22red_book%22%3E%0A%09%09%09%20%20%20%20%20%3Cp%20class%3D%22red_book_text%22%3E%u5C0F%u7EA2%u4E66%20%3Cbr%3E%u4F5C%u54C1%3C/p%3E%0A%09%09%09%09%20%0A%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%09%3C/ul%3E%0A%20%20%20%20%3C/div%3E%09%0A%3C%21--%u5BFC%u822A--%3E%0A%3Cdiv%20class%3D%22banner%22%3E%0A%20%20%20%3Cul%3E%0A%09%09%3Cli%20class%3D%22banner_image%22%3E%3Cimg%20src%3D%22Images/banner2.jpg%22%20alt%3D%22%22%3E%3C/li%3E%0A%09%20%20%20%20%3Cli%20class%3D%22phone_image%22%3E%3Cimg%20src%3D%22Image2/phone_banner.jpg%22%20alt%3D%22%22%3E%3C/li%3E%0A%20%20%20%3C/ul%3E%0A%3C/div%3E%0A%0A%3C%21--%u6211%u7684%u670D%u52A1--%3E%0A%3Csection%20class%3D%22service%20louCeng%22%3E%0A%20%20%3Cdiv%20class%3D%22sermaintop%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%09%3Cp%20class%3D%22serTu%20wow%20fadeInDown%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/fuwu.png%22%20class%3D%22img-responsive%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22text-center%20sertxt%20wow%20fadeInDown%22%3E%u80FD%u529B%u6807%u7B7E%3A%u64C5%u957F%u624B%u7ED8%u300110%u5E74%u4E92%u8054%u7F51%u8BBE%u8BA1%u7ECF%u9A8C%uFF0C%u95F2%u6687%u65F6%u4F1A%u753B%u70B9%u63D2%u753B%u3001%u6F2B%u753B%u8BB0%u5F55%u81EA%u5DF1%u7684%u751F%u6D3B%u65E5%u5E38......%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22serviceIn%20wow%20fadeInDown%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22sermainbot%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInLeft%22%20data-wow-duration%3D%221.3s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%20%3Cdl%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdt%3E%3Ca%20href%3D%22%22%20title%3D%22%u7B80%u7EA6%u7684%u9875%u9762%u3001%u5408%u7406%u7684%u5E03%u5C40%u3001%u65E0%u5904%u4E0D%u5728%u7684%u5706%u89D2%u3001%u7CBE%u7F8E%u7684%u56FE%u6807%u3002%22%20class%3D%22serImg01%22%3E%3C/a%3E%3C/dt%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdd%3E%0A%20%20%20%20%20%20%20%20%20%20%20%09%3Cp%20class%3D%22text-center%20title%22%3E%u7ED8%u5236%u6F2B%u753B%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22fadeInDown%20subtitle%22%3E%u5DE5%u4F5C%u4E2D%u7ED8%u5236%u4E00%u4E9B%u79D1%u6280%u6761%u6F2B%uFF0C%u751F%u6D3B%u4E2D%u4F1A%u5236%u4F5C%u4E00%u4E9B%u65E5%u5E38%u751F%u6D3B%u4E2D%u7684%u5C0F%u4E8B......%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/dd%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/dl%3E%0A%20%20%20%20%20%20%3C/div%3E%20%09%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInLeft%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdt%3E%3Ca%20href%3D%22%22%20title%3D%22%u4E3A%u79FB%u52A8%u8BBE%u5907%u3001%u5E73%u677F%u7535%u8111%u3001%u79FB%u52A8%u4EA7%u54C1%u7B49%u7EC8%u7AEF%u63D0%u4F9B%u4EA4%u4E92%u6D41%u7A0B%u53CA%u754C%u9762%u8BBE%u8BA1%u3002%22%20class%3D%22serImg02%22%3E%3C/a%3E%3C/dt%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdd%3E%0A%20%20%20%20%20%20%20%20%20%20%20%09%3Cp%20class%3D%22text-center%20title%22%3E%u754C%u9762%u8BBE%u8BA1%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22subtitle%22%3E%u6BCF%u5E74%u4E3A%u516C%u53F8%u793E%u533A%u7F51%u7AD9%u8FDB%u884C%u6539%u7248%u3001%u5927%u4F1A%u5B98%u7F51%u8FDB%u884C%u8BBE%u8BA1%u3001%u4EE5%u53CA%u505A%u4E00%u4E9B%u5546%u4E1A%u6D3B%u52A8%u7684%u4E13%u9898%u8BBE%u8BA1......%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/dd%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20fadeInRight%20wow%22%20data-wow-duration%3D%221.3s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdt%3E%3Ca%20href%3D%22%23%22%20title%3D%22%u4EA4%u4E92%u8BBE%u8BA1%u662F%u4E00%u79CD%u5982%u4F55%u8BA9%u4EA7%u54C1%u6613%u7528%uFF0C%u6709%u6548%u800C%u8BA9%u4EBA%u6109%u60A6%u7684%u6280%u672F%u3002%22%20class%3D%22serImg03%22%3E%3C/a%3E%3C/dt%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdd%3E%0A%20%20%20%20%20%20%20%20%20%20%20%09%3Cp%20class%3D%22text-center%20title%22%3EWeb%20%u524D%u7AEF%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22subtitle%22%3E%u5DE5%u4F5C%u4E2D%u4F1A%u6D89%u53CA%u5230%u5199%u524D%u7AEF%u7684%u4EE3%u7801%uFF0C%u5236%u4F5C%u4E13%u9898%u9875%u9762%u7684%u4EA4%u4E92%u6548%u679C......%3C/p%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%3C/dd%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInRight%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdt%3E%3Ca%20href%3D%22%22%20title%3D%22%u6839%u636E%u4F01%u4E1A%u8BBE%u8BA1%u76F8%u5E94VI%u4F01%u4E1A%u54C1%u724C%u3001%u5E7F%u544A%u3001%u8BBE%u8BA1%u3001%u6DD8%u5B9D%u76F8%u5173%u4EA7%u54C1%u8BBE%u8BA1%u4E0E%u88C5%u4FEE%u3002%22%20class%3D%22serImg04%22%3E%3C/a%3E%3C/dt%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdd%3E%0A%20%20%20%20%20%20%20%20%20%09%20%20%20%3Cp%20class%3D%22text-center%20title%22%3E%u5E73%u9762%u8BBE%u8BA1%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22subtitle%22%3E%u8D1F%u8D23%u516C%u53F8%u7684%u65E5%u5E38%u5BA3%u4F20%uFF0C%u5DE5%u4F5C%u4E2D%u505A%u4E00%u4E9B%u70B9%u7EBF%u4E0B%u7684%u4F1A%u5C55%u6D3B%u52A8%u3001%u7269%u6599%u8BBE%u8BA1%u7B49......%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/dd%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%3C/section%3E%0A%3C%21--%u6211%u7684%u5C65%u5386--%3E%0A%3Cdiv%20id%3D%22section1%22%3E%3C/div%3E%0A%3Csection%20class%3D%22skill%20louCeng%22%3E%0A%20%20%20%20%3Cp%20class%3D%22stitle%20wow%20fadeInDown%22%3E%0A%20%20%20%20%20%20%3Cimg%20src%3D%22Images/skill.png%22%20width%3D%22114%22%20height%3D%2271%22%3E%0A%20%20%20%20%3C/p%3E%0A%20%20%20%20%3Cp%20class%3D%22text-center%20wow%20fadeInDown%20work-title%22%3E%20%0A%20%20%20%20%20%20%u6211%u7684%u5DE5%u4F5C%u7ECF%u5386%0A%20%20%20%20%3C/p%3E%0A%20%20%20%20%3Cdiv%20class%3D%22skillPart%22%3E%0A%20%20%20%20%20%20%3Cimg%20src%3D%22Images/recordSkill.png%22%20class%3D%22rotation%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22head_tx%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/tou_x3.jpg%22%20class%3D%22wow%20fadeInDown%22/%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%3Cli%20class%3D%22skillYearOne%20wow%20bounceInUp%22%20data-wow-duration%3D%221.3s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22recordCircle%20dot_act%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22recordOne%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22time%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%3E%u5317%u4EAC%u65F6%u4EE3%u4F18%u8BAF%u5E7F%u544A%u6709%u9650%u516C%u53F8%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22http%3A//www.hyitech.com/%22%20target%3D%22_blank%22%20class%3D%22company_name%22%3E2019/01-2025/06%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22cool_font%22%3E%201.%20%3C/span%3E%u5728%u9879%u76EE%u7EC4%u62C5%u4EFB%u89C6%u89C9%u8BBE%u8BA1%u5E08%uFF0C%u4E3B%u8981%u8D1F%u8D23%u516C%u53F8%u9879%u76EE%u7EC4%u5BF9%u5916%u5546%u914D%u9879%u76EE%u7684%u8BBE%u8BA1%u5DE5%u4F5C%uFF0C%u66FE%u8D1F%u8D23%u8FC7%uFF08%u6234%u5C14%u3001%u601D%u79D1%u3001%u60E0%u666E%u3001%u77BB%u535A%u7F51%u7EDC%u3001%u9510%u6377%u3001%u6D6A%u6F6E%u3001AWS%u3001%u8682%u8681%u91D1%u670D%u3001%u534E%u4E3A%u3001%u65B0%u534E%u4E09%u3001%u5B9D%u5229%u901A%u3001%u8054%u60F3%u7B49%u516C%u53F8%u7684%u5BF9%u5916%u7684%u5BA3%u4F20%u6D3B%u52A8%u8BBE%u8BA1%uFF09%uFF0C%u5176%u4E2D%u5305%u62EC%u7EBF%u4E0A%u6D3B%u52A8%u7684%u4E13%u9898%u9875%u9762%u8BBE%u8BA1%u5236%u4F5C%u3001%u8DA3%u5473%u56FE%u8BF4%u8BBE%u8BA1%u3001%u6D3B%u52A8%u8FD0%u8425%u6D77%u62A5%u8BBE%u8BA1%u3001%u5546%u914D%u6D3B%u52A8%u7684%u4E3Bkv%u8BBE%u8BA1%u3001%u7EBF%u4E0A%u6D3B%u52A8banner%u63A8%u5E7F%u56FE%u8BBE%u8BA1%u3001%u4EE5%u53CA%u7EBF%u4E0B%u5C55%u4F1A%u6D3B%u52A8%u7684%u4E00%u4E9B%u7269%u6599%u8BBE%u8BA1%u5305%u62EC%u6613%u62C9%u5B9D%u3001%u624B%u5361%u3001%u624B%u63D0%u888B%u7B49......%0A%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20%20class%3D%22cool_font%22%3E%202.%20%3C/span%3E%u5728%u6B64%u671F%u95F4%u8D1F%u8D23%u4E866%u5C4A%u5927%u4F1A%u7684%u8BBE%u8BA1%uFF0C%u5206%u522B%u662F%20%3Ca%20href%3D%22https%3A//dtcc.it168.com/%22%20target%3D%22_blank%22%20class%3D%22company_name%22%3EDTCC%u6570%u636E%u5E93%u5927%u4F1A%3C/a%3E%u548C%20%3Ca%20href%3D%22https%3A//sacc.it168.com/%22%20target%3D%22_blank%22%20class%3D%22company_name%22%3ESACC%u67B6%u6784%u5E08%u5927%u4F1A%3C/a%3E6%u5E74%u4EE5%u6765%u7684%u5927%u4F1A%u4E3BKV%u8BBE%u8BA1%uFF0C%u6839%u636E%u4E3BKV%u8FDB%u884C%u76F8%u5173%u7EBF%u4E0A%u7684%u754C%u9762%u8BBE%u8BA1%uFF0C%u5305%u62EC%u7EBF%u4E0B%u6D3B%u52A8%0A%20%20%20%20%20%20%20%20%20%20%20%20%u5BA3%u4F20%u7269%u6599%u8BBE%u8BA1%u7B49......%0A%09%09%09%0A%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20%20class%3D%22cool_font%22%3E%203.%3C/span%3E%20itpub%u5B98%u7F51%u7684%u6539%u7248%uFF0CITPUB%u6280%u672F%u6808%u7684%u79FB%u52A8%u7AEF%u8BBE%u8BA1%uFF0C%u79FB%u52A8%u7AEF%u7684%u754C%u9762%u5236%u4F5C%u3001%u5728%u7EBF%u6280%u672F%u8BFE%u7A0B%u7684%u5609%u5BBE%u76F4%u64AD%u6D77%u62A5%u8BBE%u8BA1......%0A%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%09%09%20%20%20%3Cp%3E%0A%09%09%09%20%3Cspan%20%20class%3D%22cool_font%22%3E%204.%3C/span%3E%20%u4E3A%u516C%u53F8%u7ED8%u5236%u79D1%u6280IT%u7C7B%u7684%u6280%u672F%u6761%u6F2B%u7B49%0A%09%09%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%3Cli%20class%3D%22skillYearTwo%20wow%20bounceInUp%22%20data-wow-duration%3D%221.3s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22recordCircle%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22recordTwo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22time%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%3E%u592E%u89C6%u5E02%u573A%u7814%u7A76%u80A1%u4EFD%u6709%u9650%u516C%u53F8%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22http%3A//www1.sgconline.com.cn/%22%20target%3D%22_blank%22%20class%3D%22company_name%22%3E2016/07-2018/11%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%u4EFB%u804C%u671F%u95F4%u62C5%u4EFB%u524D%u7AEFUI%u8BBE%u8BA1%u5E08%u4E00%u804C%uFF0C%u5728%u8BE5%u516C%u53F8%u4E3B%u8981%u8D1F%u8D23%u95EE%u5377%u7CFB%u7EDF%u7684%u8BBE%u8BA1%uFF0C%u5728%u6B64%u671F%u95F4%u62C5%u4EFB%u524D%u7AEF%u8BBE%u8BA1%u5DE5%u4F5C%u3002%u5728%u804C%u671F%u95F4%u4F7F%u7528vue%u7ED3%u5408element%20ui%u642D%u5EFA%u524D%u7AEF%u6846%u67B6%u505A%u9875%u9762%u4EA4%u4E92%uFF0C%u8D1F%u8D23%u7684%u9879%u76EE%u6709%u5B9D%u9A6C%u7684%u90AE%u4EF6%u6536%u53D1%u7CFB%u7EDF%u3001%u624B%u673A%u7AEF%u95EE%u5377%u7B54%u9898%u754C%u9762%u3001ictr%u95E8%u6237%u535A%u5BA2%u3001easycnrs%u591A%u5A92%u4F53%u5E7F%u544A%u6570%u636E%u5E73%u53F0%u8BBE%u8BA1%uFF0C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%u5E76%u53C2%u4E0Eictr%u5FAE%u4FE1%u516C%u4F17%u53F7%uFF08%u6837%u672C%u5BB6%u751F%u6D3B%u62CD%u79EF%u5206%u5151%u6362%u754C%u9762%u53CA%u5A92%u4F53%u8BFE%u5802%u8BBE%u8BA1%uFF09%u5E76%u5B66%u4E60weui%u5236%u4F5C%u5FAE%u4FE1%u754C%u9762%uFF08%u5236%u4F5C%u4E86h5%u62A2%u7EA2%u5305%u9875%u9762%u548C%u4E09%u516B%u5DE5%u4F1A%u6D3B%u52A8%u9875%u9762%uFF09%u3002%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%3Cli%20class%3D%22skillYearThird%20wow%20bounceInUp%22%20data-wow-duration%3D%221.3s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22recordCircle%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22recordThree%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22time%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%3E%u5317%u4EAC%u73AF%u5B87%u901A%u8FBE%u79D1%u6280%u6709%u9650%u516C%u53F8%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22http%3A//www.ctrchina.cn/%22%20target%3D%22_blank%22%20class%3D%22company_name%22%3E2015/03-2016/06%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%u5317%u4EAC%u73AF%u5B87%u901A%u8FBE%u79D1%u6280%u6709%u9650%u516C%u53F8%uFF0C%u5728%u8BE5%u516C%u53F8%u4E3B%u8981%u8D1F%u8D23%u516C%u53F8%u4E91%u5E73%u53F0%u5B98%u7F51%u53CA%u540E%u53F0%u754C%u9762%u8BBE%u8BA1%uFF0C%u4EE5%u53CA%u4F01%u4E1A%u7684%u5BA3%u4F20%u8D44%u6599%uFF0C%u5305%u62EC%u5BA3%u4F20%u518C%u3001%u6298%u9875%u3001%u6613%u62C9%u5B9D%u3001%u5C55%u67B6......%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%3C/div%3E%0A%3C/section%3E%0A%3Cdiv%20id%3D%22section2%22%3E%3C/div%3E"));
+//-->
+</script>
+<!--我的作品 作品展示开始 网页作品展示-->
+<section class="work louCeng">
+  <div class="w1200">
+     <p class="wow fadeInDown">
+       <img src="Images/work.png" class="img-responsive" style="margin:0 auto;" />
+     </p>
+     <p class="title text-center wow fadeInDown">
+       我的作品
+     </p>
+     <p class="text-center" style="color:#C9C9C9;margin-bottom:20px;">（2019-至今 大会主视觉设计）</p>
+     <div class="DTCC_content">
+		<div class="w1200">
+		    <div class="gs">
+				<div class="swiper-button-prev preva"></div>
+				<div class="swiper-button-next nexta"></div>
+				<div class="swiper-pagination pagi pag2"></div>
+				<div class="swiper-container" id="huaxu">
+				  <ul class="swiper-wrapper">
+						
+					<li class="swiper-slide">
+					 <img src="Image2/dtcc2025.jpg" alt="">
+					</li>
+					<li class="swiper-slide">
+					 <img src="Image2/dtcc-2020.jpg" alt="">
+					</li>
+					<li class="swiper-slide">
+					 <img src="Image2/beijing.jpg" alt="">
+					</li>
+					<li class="swiper-slide">
+					 <img src="Image2/sacc-2020_da.jpg" alt="">
+					</li>
+					<li class="swiper-slide">
+					 <img src="Image2/sacc-2021.jpg" alt="">
+					</li>
+					<li class="swiper-slide">
+					 <img src="Image2/800.jpg" alt="">
+					</li>
+					
+				  </ul>
+				</div>
+			  </div>
+		</div>
+
+		<div class="w600">
+		  <div class="col-md-6 col-xs-12 sacc_btn"><a href="https://sacc.it168.com/" target="_blank"><span class="zcool-btn">查看SACC 大会官网</span></a></div> 
+		  <div class="col-md-6 col-xs-12 dtcc_btn"><a href="https://dtcc.it168.com/" target="_blank"><span class="zcool-btn">查看DTCC 大会官网</span></a></div> 
+		</div>
+		<div class="w1200">
+		   <div class="gengr_meet" style="overflow: hidden;">
+			    <div class="col-md-6 sacc"> <img src="Image2/800.jpg" alt=""></div>
+			    <div class="col-md-6 sacc"> <img src="Image2/广州.jpg" alt=""></div>
+				<div class="col-md-6 sacc"> <img src="Image2/北京站-天坛.jpg"  alt=""></div>
+			    <div class="col-md-6 sacc"> <img src="Image2/sacc-2022.jpg" alt=""></div>
+			    <div class="col-md-6 sacc"> <img src="Image2/sacc-2020.jpg" alt=""></div>
+			    <div class="col-md-6 sacc"> <img src="Image2/dtcc2019.jpg" alt=""></div>
+			    <div class="col-md-6 sacc"> <img src="Image2/dtcc-2019.jpg" alt=""></div>
+			    <div class="col-md-6 sacc"> <img src="Image2/dtcc-2020_xiao.jpg" alt=""></div>
+			   <div class="col-md-6 sacc"> <img src="Image2/dtcc-2021.jpg" alt=""></div>
+			   <div class="col-md-6 sacc"> <img src="Image2/dtcc-2022.jpg" alt=""></div>
+		   </div> 
+		</div>
+	 </div>
+	 
+<!--轮播图	-->
+	<div class="tiaoman">
+	  <div class="w1200">
+		     <p class="wow fadeInDown">
+       			<img src="Images/work.png" class="img-responsive" style="margin:0 auto;" />
+    		 </p>
+     		 <p class="title text-center gap">我的条漫作品</p>
+             <div class="tiaoman_cont">
+		       <div class="col-md-3 col-xs-6 tiaoman_grid">
+				  <img src="Image2/tiaoman_1.jpg" alt="">
+			   </div>
+			   <div class="col-md-3 col-xs-6  tiaoman_grid">
+				  <img src="Image2/tiaoman_2.jpg" alt="">
+			   </div>
+			    <div class="col-md-3 col-xs-6  tiaoman_grid">
+				  <img src="Image2/tiaoman_3.jpg" alt="">
+			   </div>
+		       <div class="col-md-3 col-xs-6 tiaoman_grid">
+				  <img src="Image2/tiaoman_4.jpg" alt="">
+			   </div>
+			   <div class="col-md-3 col-xs-6  tiaoman_grid">
+				  <img src="Image2/tiaoman_5.jpg" alt="">
+			   </div>
+			    <div class="col-md-3 col-xs-6 tiaoman_grid">
+				  <img src="Image2/tiaoman_6.jpg" alt="">
+			   </div>
+			   <div class="col-md-3 col-xs-6  tiaoman_grid">
+				  <img src="Image2/tiaoman_7.jpg" alt="">
+			   </div>
+			   <div class="col-md-3 col-xs-6  tiaoman_grid">
+				  <img src="Image2/tiaoman_8.jpg" alt="">
+			   </div>
+		     </div>
+		     <div class="more_works"> <a href="https://www.xiaohongshu.com/user/profile/5dc411c00000000001003b5d?m_source=pinpai" target="_blank"> <span class="zcool-btn">更多绘画作品</span></a> </div>
+	  </div>
+	</div>
+
+	<div class="workMain">
+     <div class="web" style="margin:50px 0">......Web <span style="font-size:20px;" >网页制作</span></div>
+     <div class="webPage wow fadeInDown">
+        <h2>
+          <span class="current">专题界面</span>
+          <span>网站</span>
+          <span>h5作品</span>
+        </h2>
+        <ul class="webPageCont">
+		  <li class="current">
+		   <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.it168.com/topic/dellemc/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web38.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                     如何利用IT转型加速行业创新？
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2019-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/DeepSeek/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/poju.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                    DeepSeek破局
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2025-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+		    <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/H3CZXZG/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web13.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                    智行中国2020 新华三地市技术论坛
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+ 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/JuniperSONiC/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web27.jpg" class="img-responsive" />
+                 </p>
+                 <span>
+                     瞻博网络全方位支持SONiC
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2019-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			<div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/h3c/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web30.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                    H3C 极ZHI IT
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2023-6</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			  <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				<a href="https://zt.itpub.net/topic/Dell0921sjms/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/daier.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   戴尔—算力降碳，绿色赋能
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2023-9</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/Tencent0421/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/phone_banner.jpg" class="img-responsive" />
+                 </p>
+                 <span>
+                     第六届数字中国建设成果展览会
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/2024jishuzhuoyue/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web99.jpg" class="img-responsive" />
+                 </p>
+                 <span>
+                     技术卓越奖评选界面2024
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2024-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/KADC2025/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/kadc.jpg" class="img-responsive" />
+                 </p>
+                 <span>
+                    华为创想周
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2025-5</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+			  <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/jishuzhy/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/jishu.jpg" class="img-responsive" />
+                 </p>
+                 <span>
+                     技术卓越奖评选界面2023
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2023-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+			  
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				<a href="http://zt.itpub.net/topic/wifi6/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web21.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                     Wi-Fi 6时代 大厂们如何卡位未来？
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			  <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/campusnet/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/H3c.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   新华三园区解决方案
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2022-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				<a href="https://zt.itpub.net/topic/SinoDB/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/xingruige.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   星瑞格数据库专题发布
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2023-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>   
+			 <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+<!--
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				<a href="https://sacc.it168.com/2020/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web14.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   2020系统架构师大会
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+-->
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/innovation/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web29.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   2019深信服创新大会
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/h3c2020/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/poju_h3c.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                     “破局转型之困”2020线上沙龙
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/zbwl2019/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web36.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   瞻博网络-集中式安全管理
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/2019Navigate/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web35.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   2019新华三领航者峰会
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			   <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/RuijieMedicine/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/ruijie.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                  医药企业数字化 转型创新实践
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2022-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+			     <a href="http://zt.itpub.net/topic/juniper2020/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web16.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                     利用人工智能构建面向未来的网络
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			
+			  <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/ruijie/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web32.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   锐捷网络云办公4.0解决方案发布
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/RuijieWiFi6/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web31.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                    锐捷Wi-Fi 6 好体验看得见
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			
+		     <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/2020salon/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web18.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                     ITPUB讲坛-2020ITPUB在线沙龙
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/wanzhao/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web25.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                     园区全万兆-汇聚·核心
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2019-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			<div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/DellPower/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/suanlishidai.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   开启算力新时代
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2022-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+			  
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/itpub19/#a3" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web26.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   ITPUB社区19年站庆专题
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2019-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div>
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="https://zt.itpub.net/topic/star/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/mingrentang.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   名人堂
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				 <a href="http://zt.itpub.net/topic/optane/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web19.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                    数据洪流时代“新宠
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				<a href="https://zt.itpub.net/topic/DellLati/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web44.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   智能、自由、高效开启混合办公新篇章
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+				<a href="https://zt.itpub.net/topic/JuniperDataCenter/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web90.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   瞻博网络领跑数据中心网络多云时代
+                 </span>
+			     </a>
+                 <p class="data_time">DATE：2021-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+			      <a href="http://sacc.it168.com/2019/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web22.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                    SACC大会官网 2019年-2025年
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 <div class="col-md-4 col-xs-6">
+               <div class="workout">
+			      <a href="http://dtcc.it168.com/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web23.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                    DTCC大会官网 2019年-2025年
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			 
+		     <div class="col-md-4 col-xs-6">
+               <div class="workout">
+			     <a href="http://zt.itpub.net/topic/lenovoIDV01/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/web24.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   尖峰对话：联想智能云桌面落地秘籍
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2020-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			  <div class="col-md-4 col-xs-6">
+               <div class="workout">
+			     <a href="https://zt.itpub.net/topic/DataWarehouse/" target="_blank" class="decoration">
+                 <p>
+                  <img src="Images/shishishujuku.jpg" class="img-responsive">
+                 </p>
+                 <span>
+                   实时数据库选型指南
+                   <!-- （账号：jiazhen 密码：123456 CTR众拍APP） -->
+                 </span>
+			      </a>
+                 <p class="data_time">DATE：2023-3</p>
+                 <p class="data_time">所属类型：专题页面</p>
+               </div>
+             </div> 
+			<!--以上专题页面-->
+         </li>
+           <!--网站-->
+           <li>
+			  <div class="col-md-4 col-xs-6">
+               <div class="workout">
+                 <p> 
+                   <img src="Images/power.png" class="img-responsive">
+                 </p>
+                 <span>
+                   <a href="https://adm.ictr.com.cn/login" target="_blank" class="decoration">
+                   ictr宝马监测系统(使用了vue的框架)
+                   </a>
+                 </span>
+                 <p class="data_time">DATE：2017-3</p>
+                 <p class="data_time">所属类型：后台网站</p>
+               </div>
+             </div>
+             <div class="col-md-4 col-xs-6">
+              <div class="workout">
+                <p>
+                 <a href="https://www.itpub.net/" target="_blank">
+                  <img src="Images/itpub.jpg" class="img-responsive">
+                 </a>
+                </p>
+                 <span>
+                   <a href="https://www.itpub.net/" target="_blank" class="decoration">ITPUB平台</a>
+                 </span>
+                 <p class="data_time">DATE：2022-3</p>
+                 <p class="data_time">所属类型:博客网站</p>
+               </div>
+             </div>
+             <div class="col-md-4 col-xs-6">
+              <div class="workout">
+                <p>
+                 <a href="https://www.zcool.com.cn/work/ZMjMzMDI5NjA=.html" target="_blank">
+                  <img src="Images/web12.png" class="img-responsive">
+                 </a>
+                </p>
+                 <span>
+                   <a href="Web/EasyCnrs/登录页.html" target="_blank" class="decoration">easyCnrs 广告监测与数据分析</a>
+                 </span>
+                 <p class="data_time">DATE：2017-3</p>
+                 <p class="data_time">所属类型:广告分析监测</p>
+               </div>
+             </div>
+             <div class="col-md-4 col-xs-6">
+              <div class="workout">
+                <p>
+                  <img src="Images/web09.jpg" class="img-responsive"/>
+                </p>
+               <span>
+                 <a href="Web/activepage/index.html" target="_blank" class="decoration">
+                 三国策-五一活动界面
+                 </a>
+               </span> 
+               <p class="data_time">DATE：2017-3</p>
+               <p class="data_time">所属类型：游戏活动界面</p>
+              </div>
+             </div>
+
+             <div class="col-md-4 col-xs-6">
+               <div class="workout">
+                <p>
+                  <img src="Images/qunjingtu.jpg" class="img-responsive">
+                </p>  
+                <span>
+                   <a href="https://blog.itpub.net/db/index" target="_blank" class="decoration">
+                   <!--  -->
+                   项目：数据库全景图</a>
+                </span>
+                <p class="data_time">DATE：2017-3</p>
+                <p class="data_time">所属类型：专题</p>
+               </div>
+            </div>
+         
+            
+             <div class="col-md-4 col-xs-6">
+               <div class="workout">
+                 <p>
+                   <img src="Images/web03.jpg" class="img-responsive">
+                 </p>
+                 <span class="decoration">
+                  <a href="Web/CA 正版化/login.html" target="_blank" style="color:#FFF">项目:第一版CA平台</a>
+                  <a href="Web/New CA/index.html" target="_blank" style="color:#FFF">第二版NewCA</a>
+                 </span>
+                 <p class="data_time">DATE：2017-3</p>
+                 <p class="data_time">所属类型：后台网站</p>
+               </div>
+            </div>
+             <div class="col-md-4">
+             <div class="workout">
+              <p>
+                <img src="Images/web16.png" class="img-responsive">
+              </p>
+              <span>
+                <a href="Web/调查问卷/index.html" target="_blank" class="decoration">项目:问卷平台</a>
+              </span>
+              <p class="data_time">DATE：2017-3</p>
+              <p class="data_time">所属类型：后台网站</p>
+             </div>
+            </div>
+            
+        
+<!--
+        <div class="col-md-4">
+          <div class="workout">
+            <p>
+             <img src="Images/web10.jpg" class="img-responsive"/> 
+            </p>
+            <span><a href="Web/h5/index.html" target="_blank" class="decoration">项目：h5页面</a></span>
+            <p>DATE：2017-3</p>
+            <p>所属类型：移动端</p> 
+           </div>
+         </div>
+-->
+       </li>
+           <!--	移动端界面 -->
+           <li>
+        <div class="col-md-4 col-xs-6">
+              <div class="workout">
+                <p>
+                 <a href="http://m.blog.itpub.net/" target="_blank">
+                  <img src="Images/web12.png" class="img-responsive">
+                 </a>
+                </p>
+                 <span>
+                   <a href="Web/EasyCnrs/登录页.html" target="_blank" class="decoration">itpub博客</a>
+                 </span>
+                 <p class="data_time">DATE：2017-3</p>
+                 <p class="data_time">所属类型:响应式页面</p>
+               </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+         <div class="workout">
+          <p>
+           <a href="https://www.zcool.com.cn/work/ZMjI5NjMyODQ=.html" target="_blank">
+            <img src="Images/web18.png" class="img-responsive">
+           </a>
+          </p> 
+          <span>
+            <a href="Web/餐饮问卷/餐饮问卷.html" target="_blank" class="decoration">餐饮问卷(响应式问卷)</a>
+          </span>
+          <p class="data_time">DATE：2017-3</p>
+          <p class="data_time">所属类型：响应式页面</p> 
+         </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <div class="workout">
+			  <p>
+				<a href="https://www.zcool.com.cn/work/ZMzA0NzI1MTY=.html"  target="_blank">
+				 <img src="Images/web37.jpg" class="img-responsive"/> 
+				</a>
+			  </p>
+			  <span>
+				  <a href="https://z.itpub.net/" target="_blank" class="decoration">技术栈移动端界面</a>
+			  </span>
+			  <p class="data_time">DATE：2017-3</p>
+			  <p class="data_time">所属类型：移动端</p> 
+          </div>
+         </div>
+		<div class="col-md-4 col-xs-6">
+          <div class="workout">
+			  <p>
+				<a href="https://www.zcool.com.cn/work/ZMzA0NzI1MTY=.html"  target="_blank">
+				 <img src="Images/web24.png" class="img-responsive"/> 
+				</a>
+			  </p>
+			  <span>
+				  <a href="http://survey.ictr.com.cn/answer/d/1ba85772-eddd-4d18-81b7-2df0465afd01" target="_blank" class="decoration">移动端问卷答题</a>
+			  </span>
+			  <p class="data_time">DATE：2017-3</p>
+			  <p class="data_time">所属类型：移动端</p> 
+          </div>
+         </div>
+         <div class="col-md-4 col-xs-6">
+          <div class="workout">
+             <p>
+              <a href="https://www.zcool.com.cn/work/ZMjMzMzM1MTI=.html"  target="_blank">
+               <img src="Images/web14.png" class="img-responsive">
+              </a>
+             </p>
+             <span>
+              <a href="Web/抢红包页面/index.html" target="_blank" class="decoration">h5抢红包
+               <i class="describe_main">(关注样本家生活拍微信公众号)</i>
+              </a>
+             </span>
+             <p class="data_time">DATE：2017-3</p>
+             <p class="data_time">所属类型：移动端</p> 
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+             <div class="workout">
+                <p>
+                  <a href="https://www.zcool.com.cn/work/ZMjMzNDgyMDg=/2.html" target="_blank">
+                    <img src="Images/web13.png" class="img-responsive">
+                  </a>
+                </p>
+                <span>
+                   <a href="Web/样本家生活拍公众号/我的积分.html" target="_blank" class="decoration">
+                     积分兑换<i class="describe_main">(关注样本家生活拍微信公众号)</i>
+                   </a>
+                </span>
+               <p class="data_time">DATE：2017-3</p>
+               <p class="data_time">所属类型：移动端</p> 
+             </div>
+           </div>
+        
+        <div class="col-md-4 col-xs-6">
+         <div class="workout">
+           <p>
+            <a href="https://www.zcool.com.cn/work/ZMjA5NjMxODA=.html" target="_blank">
+            <img src="Images/web15.jpg" class="img-responsive"> 
+            </a>
+           </p>
+           <span>
+            <a href="Web/我行我秀/登录页.html" target="_blank" class="decoration">三八专题活动页面 —— 我行我秀</a>
+           </span>
+           <p class="data_time">DATE：2017-3</p>
+           <p class="data_time">所属类型：移动端</p> 
+         </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+         <div class="workout">
+          <p>
+              <a href="https://www.zcool.com.cn/work/ZMjUyMDE4MTY=.html" target="_blank">
+             <img src="Images/web21.png" class="img-responsive"/> 
+             </a>
+          </p>
+          <span>
+              <a href="Web/媒介课堂UI界面/二维码展示.html" target="_blank" class="decoration">媒介课堂UI界面</a>
+          </span>
+          <p class="data_time">DATE：2017-3</p>
+          <p class="data_time">所属类型：移动端</p> 
+         </div>
+        </div>
+     
+       </li>
+        </ul>
+     </div>
+    </div>
+	</div>
+  </section>
+<script>
+<!--
+document.write(unescape("%20%3Csection%20class%3D%22Uwork%22%3E%0A%20%20%20%3Cdiv%20class%3D%22container%22%20id%3D%22container%22%3E%0A%20%20%20%20%3Cp%20class%3D%22Apptitle%22%3E%20%3Cspan%20style%3D%22font-size%3A20px%3B%22%3E......%u90E8%u5206%u7CFB%u5217%u5546%u4E1A%u6D77%u62A5%u4F5C%u54C1%3C/span%3E%20%3C/p%3E%0A%09%09%3Cdiv%20class%3D%22page%20page2%20wow%20fadeInUp%22%20data-wow-duration%3D%221.5s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%09%09%09%3Cdiv%20class%3D%22zhanshi%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22app%20box%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22yixing%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22anniumen%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22zuo%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22you%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%09%09%09%09%09%09%3Cul%3E%0A%09%09%09%09%09%09%09%3Cli%20class%3D%22no0%22%3E%3Cimg%20src%3D%22Images/01.jpg%22%20width%3D%22197%22%20height%3D%22353%22%3E%3C/li%3E%0A%09%09%09%09%09%09%09%3Cli%20class%3D%22no1%22%3E%3Cimg%20src%3D%22Images/03.jpg%22%20width%3D%22197%22%20height%3D%22353%22%3E%3C/li%3E%0A%09%09%09%09%09%09%09%3Cli%20class%3D%22no2%22%3E%3Cimg%20src%3D%22Images/07.gif%22%20width%3D%22197%22%20height%3D%22353%22%3E%3C/li%3E%0A%09%09%09%09%09%09%09%3Cli%20class%3D%22no3%22%3E%3Cimg%20src%3D%22Images/04.jpg%22%20width%3D%22197%22%20height%3D%22353%22%3E%3C/li%3E%0A%09%09%09%09%09%09%09%3Cli%20class%3D%22no4%22%3E%3Cimg%20src%3D%22Images/05.jpg%22%20width%3D%22197%22%20height%3D%22353%22%3E%3C/li%3E%0A%09%09%09%09%09%09%09%3Cli%20class%3D%22waiting%22%3E%3Cimg%20src%3D%22Images/06.jpg%22%20width%3D%22197%22%20height%3D%22353%22%3E%3C/li%3E%0A%09%09%09%09%09%09%3C/ul%3E%0A%09%09%09%09%09%3C/div%3E%0A%09%09%09%09%09%3C/div%3E%0A%09%09%20%20%20%3C/div%3E%0A%09%09%20%20%3C/div%3E%0A%09%20%20%3C/div%3E%0A%20%20%3C/section%3E%0A%20%20%3Csection%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22text-center%20wow%20fadeInUp%20cont-title%22%20data-wow-duration%3D%221.3s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%20%3Cspan%20style%3D%22font-size%3A24px%3B%22%3EAE%u5C0F%u52A8%u753B%3C/span%3E%u5C55%u793A%u6548%u679C%0A%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22text-center%20wow%20fadeInUp%20cont-subtitle%22%20style%3D%22margin-bottom%3A50px%3B%22%20data-wow-duration%3D%221.5s%22%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%u95F2%u6687%u4E4B%u4F59%u8BBE%u8BA1%u7684%u52A8%u753B%u6548%u679C%0A%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%3Cdiv%20class%3D%22ae-plane%22%3E%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22ae-pic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Image2/1.gif%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22ae-pic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Image2/2.gif%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22ae-pic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Image2/3.gif%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22ae-pic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Image2/4.gif%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/section%3E%0A%20%20%3Csection%20class%3D%22planar%22%3E%0A%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%3Cp%20class%3D%22Apptitle%20wow%20fadeInUp%22%20data-wow-duration%3D%221s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20......%u63D2%u753B%u5E73%u9762%u8BBE%u8BA1%0A%20%20%20%20%20%20%0A%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%3Cp%20class%3D%22text-center%20cont-title%20wow%20fadeInUp%22%20data-wow-duration%3D%221s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%u6700%u4F73%u7684%u89C6%u89C9%u4F53%u9A8C%uFF0C%u521B%u9020%u4E0D%u4E00%u6837%u7684%u7A7A%u95F4%u611F%0A%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%3Cp%20class%3D%22text-center%20cont-subtitle%20wow%20fadeInUp%22%20data-wow-duration%3D%221s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20The%20best%20visual%20experience%0A%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%3Cp%20class%3D%22text-center%20cont-subtitle%20wow%20fadeInUp%22%20data-wow-duration%3D%221s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20to%20create%20different%20space%0A%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%3Cdiv%20class%3D%22plane%20wow%20fadeInUp%22%20data-wow-duration%3D%221s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%09%3Cul%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/laoshu1.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/9000.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/zhixiang.png%22/%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/3000.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/gun9.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/5000.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/laoshu2.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/laoshu4.jpg%22%3E%3C/li%3E%0A%09%09%20%20%20%20%3Cli%3E%3Cimg%20src%3D%22Images/H3c.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/nannan.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/yamaxun.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/najjing.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/gun8.jpg%22%3E%3C/li%3E%0A%09%09%09%3Cli%3E%3Cimg%20src%3D%22Images/huijian.jpg%22%3E%3C/li%3E%0A%20%20%20%20%20%09%3C/ul%3E%09%0A%20%20%20%20%20%3C/div%3E%0A%09%20%20%20%3Cdiv%20class%3D%22more_works%22%3E%20%3Ca%20href%3D%22https%3A//www.xiaohongshu.com/user/profile/5dc411c00000000001003b5d%3Fm_source%3Dpinpai%22%20target%3D%22_blank%22%3E%20%3Cspan%20class%3D%22zcool-btn%22%3E%u66F4%u591A%u7ED8%u753B%u4F5C%u54C1%3C/span%3E%3C/a%3E%20%3C/div%3E%0A%20%20%20%20%20%3Cp%20class%3D%22text-center%20wow%20fadeInUp%20cont-title%22%20data-wow-duration%3D%221s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%20%20%u539F%u521B%20%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20style%3D%22font-size%3A30px%22%3Elogo%3C/span%3E%20%0A%20%20%20%20%20%20%20%20%20%20%u5C55%u793A%0A%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%3Cp%20class%3D%22text-center%20wow%20fadeInUp%20cont-subtitle%22%20data-wow-duration%3D%221s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.3s%22%20style%3D%22margin-bottom%3A20px%3B%20font-size%3A12px%3B%22%3E%u5B83%u4EE5%u5355%u7EAF%u3001%u663E%u8457%u3001%u6613%u8BC6%u522B%u7684%u7269%u8C61%u3001%u56FE%u5F62%u6216%u6587%u5B57%u7B26%u53F7%uFF0C%u662F%u76F4%u89C2%u8BED%u8A00%u3002%3C/p%3E%0A%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%09%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo3.png%22%3E%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo2.png%22%3E%0A%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo4.png%22%3E%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo6.png%22%3E%0A%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo8.png%22%3E%0A%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%09%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo7.png%22%3E%0A%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%09%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo9.png%22%3E%0A%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo10.png%22%3E%0A%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%09%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo11.png%22%3E%0A%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%09%20%20%3Cdiv%20class%3D%22col-md-3%20col-xs-6%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3s%22%0A%20%20%20%20%20%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/logo12.png%22%3E%0A%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%09%0A%09%09%20%0A%20%20%20%20%20%3C/div%3E%0A%20%20%20%3C/div%3E%0A%20%20%3C/section%3E%0A%20%20%3C%21--%u6298%u9875%u8BBE%u8BA1--%3E%0A%20%0A%20%20%3Csection%20class%3D%22fold%22%3E%0A%20%20%09%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22text-center%20wow%20fadeInUp%20cont-title%22%20data-wow-duration%3D%221.3s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%20%20%20%20%3Cspan%20style%3D%22font-size%3A24px%3B%22%3E%u6298%u9875%3C/span%3E%u5C55%u793A%u6548%u679C%0A%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22text-center%20wow%20fadeInUp%20cont-subtitle%22%20style%3D%22margin-bottom%3A50px%3B%22%20data-wow-duration%3D%221.5s%22%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%20%u516C%u53F8/%u9879%u76EE/%u4EA7%u54C1%u7B49%u7528%u4E8E%u54C1%u724C%u5BA3%u4F20%u7684%u5E7F%u544A%u5370%u5237%u54C1%0A%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%3Cdiv%20class%3D%22foldmain%20wow%20fadeInUp%22%3E%0A%20%20%09%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Cimg%20src%3D%22Images/s01.jpg%22%20width%3D%221000%22%20height%3D%22471%22%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Cimg%20src%3D%22Images/foldMAIN.jpg%22%20width%3D%221000%22%20height%3D%22471%22%3E%3C/li%3E%0A%20%20%09%20%20%09%3Cli%3E%3Cimg%20src%3D%22Images/fold3.jpg%22%20width%3D%221000%22%20height%3D%22471%22%3E%3C/li%3E%0A%20%20%09%20%20%09%3Cli%3E%3Cimg%20src%3D%22Images/fold04.jpg%22%20width%3D%221000%22%20height%3D%22471%22%3E%3C/li%3E%0A%20%20%09%20%20%09%3Cli%3E%3Cimg%20src%3D%22Images/fold05.jpg%22%20width%3D%221000%22%20height%3D%22471%22%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Cimg%20src%3D%22Images/fold1.jpg%22%20width%3D%221000%22%20height%3D%22471%22%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Cimg%20src%3D%22Images/fold007.jpg%22%20width%3D%221000%22%20height%3D%22471%22%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Cimg%20src%3D%22Images/fold09.jpg%22%20width%3D%221000%22%20height%3D%22471%22%3E%3C/li%3E%0A%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%0A%3C/section%3E%0A%3C%21--%u4F5C%u54C1%u5C55%u793A%u5185%u5BB9%u7ED3%u675F--%3E%0A%3C%21--%u81EA%u6211%u4ECB%u7ECD%u9875%u9762%u5F00%u59CB--%3E%0A%3Cdiv%20id%3D%22section3%22%3E%3C/div%3E%0A%3Csection%20class%3D%22introd%20louCeng%22%3E%0A%20%20%3Cp%20class%3D%22text-center%20contact%20wow%20fadeInUp%22%20data-wow-duration%3D%221s%22%20data-wow-delay%3D%220.3s%22%3E%0A%20%20%20%20%20%3Cspan%3E%u8BF7%20%u8054%20%u7CFB%20%u6211%3C/span%3E%0A%20%20%3C/p%3E%0A%20%20%3Cdiv%20class%3D%22introdL%22%3E%0A%20%20%20%20%20%3Cp%20class%3D%22avator%20wow%20fadeInUp%22%20data-wow-duration%3D%221.3%22%20data-wow-delay%3D%220.5s%22%3E%3C/p%3E%0A%20%20%20%20%20%3Cdiv%20class%3D%22wow%20fadeInUp%22%20data-wow-duration%3D%221.5%22%20data-wow-delay%3D%220.5s%22%3E%0A%20%20%20%20%20%20%20%3Cp%3E%3Cspan%3E%u59D3%20%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%u540D%uFF1A%0A%20%20%20%20%20%20%20%20%20%3C/span%3E%3Cspan%3E%u9AD8%u4E9A%u6960%3C/span%3E%3C/p%3E%0A%20%20%20%20%20%20%20%3Cp%3E%3Cspan%3E%u90AE%20%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%u7BB1%uFF1A%3C/span%3E%3Cspan%20style%3D%22padding-left%3A3px%3B%22%3E2442612875@qq.com%3C/span%3E%20%3C/p%3E%0A%20%20%20%20%20%20%20%3Cp%3E%3Cspan%20style%3D%22padding-left%3A%2071px%3B%22%3E18701600761@163.com%3C/span%3E%3C/p%3E%0A%20%20%20%20%20%20%20%3Cp%3E%3Cspan%3E%u8054%u7CFB%u7535%u8BDD%uFF1A%3C/span%3E%20%3Cspan%20style%3D%22margin-left%3A%20-6px%3B%22%3E18701600761%3C/span%3E%20%3C/p%3E%0A%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%3Cspan%3E%u8BBE%u8BA1%u4F5C%u54C1%3A%3C/span%3E%20%0A%20%20%20%20%20%20%20%3Cspan%20class%3D%22zcool-btn%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.zcool.com.cn/u/13000928%22%20target%3D%22_blank%22%3E%20%20%0A%20%20%20%20%20%20%20%20%20%20%u7AD9%u9177%u7F51%u7CFB%u5217%u8BBE%u8BA1%u4F5C%u54C1%0A%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%0A%20%20%20%20%3Cdiv%20id%3D%22cloud%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3C/div%3E%0A%3C/section%3E%0A%3C%21--%u4F5C%u54C1%u5F39%u6846%u5F00%u59CB--%3E%0A%3Cdiv%20class%3D%22Webclick%22%3E%0A%20%20%20%3Cspan%20class%3D%22closeAll%22%3E%3C/span%3E%0A%20%20%20%3Cdiv%20class%3D%22WebTu%22%3E%0A%20%20%20%20%20%20%20%3Cimg%20src%3D%22Images/yunpingtai.jpg%22%20width%3D%221000%22%20height%3D%224332%22%3E%0A%20%20%20%3C/div%3E%0A%3C/div%3E"));
+//-->
+</script>
+</body>
+</html>
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" src="Scripts/swiper.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="Scripts/wow.min.js"></script>
+<script type="text/javascript" src="Scripts/my.js"></script>
+<!--<script>new WOW().init();</script>-->
+<script type="\x74\x65\x78\x74\x2f\x6a\x61\x76\x61\x73\x63\x72\x69\x70\x74" >  var TyHD1 = new Swiper('\x23\x68\x75\x61\x78\x75', {    effect: '\x63\x6f\x76\x65\x72\x66\x6c\x6f\x77',    grabCursor: true,    centeredSlides: true,    slidesPerView: "\x61\x75\x74\x6f",    loop: true,    autoplay: {      delay: 3000,      stopOnLastSlide: false,      disableOnInteraction: true,    },    coverflowEffect: {      rotate: 0,      stretch: 45,      depth: 300,      modifier: 1.2,    },    navigation: {      nextEl: '\x2e\x6e\x65\x78\x74\x61',      prevEl: '\x2e\x70\x72\x65\x76\x61',    },  })  $('\x23\x68\x75\x61\x78\x75')["\x6d\x6f\x75\x73\x65\x65\x6e\x74\x65\x72"](function ()  {    TyHD1["\x61\x75\x74\x6f\x70\x6c\x61\x79"]["\x73\x74\x6f\x70"]();  })  $('\x23\x68\x75\x61\x78\x75')["\x6d\x6f\x75\x73\x65\x6c\x65\x61\x76\x65"](function ()  {    TyHD1["\x61\x75\x74\x6f\x70\x6c\x61\x79"]["\x73\x74\x61\x72\x74"]();  })</script>
+
